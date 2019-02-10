@@ -25,7 +25,7 @@
   --warning: #ff4828;
   --danger: #e71d21;
 
-  --subtitle-text: rgba(0,0,0,0.75);
+  --subtitle-text: rgba(0,0,0,0.8);
   --date-text: rgba(30,50,50,0.3);
 
   /*
@@ -312,6 +312,27 @@ h6{
   margin-top:20px;
 }
 
+.profile-footer > ul {
+  list-style: none;
+  display:flex;
+  margin:0px auto;
+  margin-top:15px;
+  padding:0px;
+  flex-direction: column;
+  width:80%;
+}
+
+.profile-footer > ul > li {
+  margin-top:10px;
+}
+
+.profile-icon{
+  width:16px;
+  height:16px;
+  font-size:16px;
+  color: var(--primary);
+}
+
 .content{
   width:100%;
 }
@@ -325,8 +346,7 @@ h6{
 .menu{
   height:auto;
   min-height: 40px;
-  background: var(--secondary);
-  color: var(--secondary-text);
+  background: var(--primary);
 }
 
 .menu-list{
@@ -336,6 +356,7 @@ h6{
   padding:0px;
   flex-direction: column;
   width:100%;
+  color: white;
   display: none;
 }
 
@@ -351,7 +372,7 @@ h6{
 }
 
 .menu-list > li:hover{
-  background-color: var(--secondary-v);
+  background-color: var(--primary-v);
   color: inherit;
   cursor: pointer;
 }
