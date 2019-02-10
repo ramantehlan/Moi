@@ -231,12 +231,19 @@ h6{
   font-family: roboto_r;
 }
 
+.card-holder{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .card{
+  width:85%;
   background-color: var(--card);
   color: var(--card-text);
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  margin:1rem;
+  margin:0.5rem auto;
   border:1px solid transparent;
 }
 
@@ -270,7 +277,7 @@ h6{
   display:flex;
   justify-content:flex-start;
   flex-flow: column wrap;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index:1;
 }
 
 .profile-pic{
@@ -342,11 +349,18 @@ h6{
   height:auto;
   min-height:40px;
   margin:0px;
-  margin-bottom:30px;
+  margin-bottom:20px;
+  background:white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .menu-down{
   background-color: var(--primary)
+}
+
+.menu-title{
+  letter-spacing: var(--title-spacing);
+  font-family: roboto_m;
 }
 
 .menu-list{
@@ -381,8 +395,17 @@ h6{
   display:block;
 }
 
+.menu-control{
+  display: flex;
+}
+
+.menu-title{
+  line-height:40px;
+  text-align: center;
+  width:100%;
+}
+
 .menu-icon{
-    float: right;
     color: white;
     text-align: center;
     line-height: 40px;
