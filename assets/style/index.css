@@ -280,9 +280,17 @@ h6{
    width:100px;
    height:100px;
    border-radius:200px;
-   background: var(--primary);
    margin-top: 40px;
    align-self: center;
+   background-color: var(--primary);
+}
+
+.profile-pic img{
+    width:102%;
+    height:102%;
+    margin-top: -1%;
+    margin-left: -1%;
+    border-radius:200px;
 }
 
 .profile-name{
