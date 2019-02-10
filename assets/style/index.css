@@ -49,7 +49,7 @@
   --h5-spacing: 0rem;
   --h6-spacing: 0.009375rem;
 
-  --title-size: 1.15rem;
+  --title-size: 1.25rem;
   --subtitle-1-size: 1rem;
   --subtitle-2-size: 0.875rem;
   --body-1-size: 1rem;
@@ -97,7 +97,7 @@ html{
   padding: 0px;
   background-color: var(--background);
   color: var(--background-text);
-  font-size: var(--body-1-size);
+  font-size: var(--body-2-size);
   font-family:roboto_r;
 }
 
@@ -243,9 +243,6 @@ h6{
   border:1px solid transparent;
 }
 
-.card:hover{
-  border: 1px solid var(--primary-v);
-}
 
 .card-header{
   padding: var(--header-padding);
@@ -292,11 +289,12 @@ h6{
   text-align: center;
   margin-top:10px;
   font-family:rock;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 .profile-designation{
   text-align: center;
+  font-size: var(--body-1-size);
 }
 
 .profile-about{
@@ -357,11 +355,11 @@ h6{
 .menu-icon{
     float: right;
     color: white;
-    width: 20px;
-    height: 20px;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
     font-size: 20px;
-    margin-right:10px;
-    margin-top:10px;
     cursor: pointer;
 }
 
