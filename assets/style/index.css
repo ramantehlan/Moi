@@ -6,12 +6,12 @@
 ///
 */
 
-  --primary: #4a0d67;
-  --primary-v: #240b30;
+  --primary: #791e94;
+  --primary-v: #3a0e47;
 
   --primary-text: #FFFFFF;
 
-  --background: #E5E5E5;
+  --background: #efefef;
   --card: #ffffff;
 
   --background-text: #000000;
@@ -271,6 +271,7 @@ h6{
   justify-content:flex-start;
   flex-flow: column wrap;
   padding-bottom:30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .profile-pic{
@@ -406,10 +407,11 @@ h6{
 .footer{
   margin-top:30px;
   padding:20px;
-  background: #1a090d;
+  background: #1b2845;
   color: white;
   text-align: center;
   font-size:12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /*
