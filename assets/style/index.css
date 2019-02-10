@@ -393,7 +393,7 @@ h6{
 }
 
 .menu-icon:hover{
-  color: var(--secondary-v);
+  background-color: black;
 }
 
 /*
