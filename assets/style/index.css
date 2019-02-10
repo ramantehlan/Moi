@@ -8,11 +8,8 @@
 
   --primary: #4a0d67;
   --primary-v: #240b30;
-  --secondary: #2f4858;
-  --secondary-v: #18252d;
 
   --primary-text: #FFFFFF;
-  --secondary-text: #ffffff;
 
   --background: #E5E5E5;
   --card: #ffffff;
@@ -395,6 +392,15 @@ h6{
 
 .menu-icon:hover{
   background-color: black;
+}
+
+.footer{
+  margin-top:30px;
+  padding:20px;
+  background: #1a090d;
+  color: white;
+  text-align: center;
+  font-size:12px;
 }
 
 /*
