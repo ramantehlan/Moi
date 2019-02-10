@@ -330,6 +330,7 @@ h6{
   height:16px;
   font-size:16px;
   color: var(--primary);
+  margin-right:10px;
 }
 
 .content{
@@ -407,11 +408,10 @@ h6{
 .footer{
   margin-top:30px;
   padding:20px;
-  background: #1b2845;
-  color: white;
+  background: #dbdbdb;
+  color: #7f7f7f;
   text-align: center;
   font-size:12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /*
