@@ -15,3 +15,14 @@ if (menuList.className === "menu-list") {
   menu.className = "menu";
 }
 }, false);
+
+fetch("data.json")
+.then(res => res.json())
+.then(data => console.log(data))
+
+var app = new Vue({
+  el: '#view',
+  data: {
+
+    }
+})
