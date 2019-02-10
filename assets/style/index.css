@@ -316,26 +316,47 @@ h6{
   margin-bottom:30px;
 }
 
-.menu > ul{
+.menu{
+  height:auto;
+  min-height: 40px;
+  background: var(--secondary);
+  color: var(--secondary-text);
+}
+
+.menu-list{
   list-style: none;
   display:flex;
   margin:0px;
   padding:0px;
   flex-direction: column;
-  display:none;
+  width:100%;
+  display: none;
 }
 
-.menu > ul > li{
-  background: blue;
-  height:25px;
-  line-height:25px;
-  margin-top:5px;
-  padding-left:10px;
+
+
+.menu-list > li{
+  height:40px;
+  line-height:40px;
+  padding-left:20px;
+  padding-right:20px;
+  font-family: roboto_m;
+  width:auto;
+}
+
+.menu-list > li:hover{
+  background-color: var(--secondary-v);
+  color: inherit;
+  cursor: pointer;
+}
+
+.menu-list-responsive {
+  display:block;
 }
 
 .menu-icon{
     float: right;
-    color: var(--primary);
+    color: white;
     width: 20px;
     height: 20px;
     font-size: 20px;
@@ -343,6 +364,11 @@ h6{
     margin-top:10px;
     cursor: pointer;
 }
+
+.menu-icon:hover{
+  color: var(--secondary-v);
+}
+
 /*
 ///
 /// Fonts
