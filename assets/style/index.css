@@ -49,7 +49,7 @@
   --h5-spacing: 0rem;
   --h6-spacing: 0.009375rem;
 
-  --title-size: 1.25rem;
+  --title-size: 1.45rem;
   --subtitle-1-size: 1rem;
   --subtitle-2-size: 0.875rem;
   --body-1-size: 1rem;
@@ -297,7 +297,8 @@ h6{
   text-align: center;
   margin-top:10px;
   font-family:rock;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
+  font-weight:bold;
 }
 
 .profile-designation{
