@@ -163,9 +163,7 @@ caption{
   font-family: roboto_r;
 }
 
-.date{
-  font-size: var(--caption-size);
-}
+
 
 .icon{
   margin-right: var(--icon-padding);
@@ -324,7 +322,7 @@ h6{
   width:80%;
   margin: 0px auto;
   margin-top:10px;
-  margin-bottom:30px;
+  margin-bottom:20px;
   flex-flow: column wrap;
 }
 
@@ -358,10 +356,7 @@ h6{
   background-color: var(--primary)
 }
 
-.menu-title{
-  letter-spacing: var(--title-spacing);
-  font-family: roboto_m;
-}
+
 
 .menu-list{
   list-style: none;
@@ -396,16 +391,22 @@ h6{
 }
 
 .menu-control{
-  display: flex;
+  display:flex;
 }
 
 .menu-title{
+  float: left;
   line-height:40px;
   text-align: center;
   width:100%;
+  letter-spacing: var(--title-spacing);
+  font-family: roboto_m;
 }
 
+
 .menu-icon{
+    position: absolute;
+    right: 0px;
     color: white;
     text-align: center;
     line-height: 40px;
