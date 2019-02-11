@@ -100,43 +100,56 @@
   },
   "menu": [{
     "title": "home",
-    "active": true
+    "active": true,
+    "icon": "fas fa-home"
   }, {
     "title": "about",
-    "active": true
+    "active": true,
+    "icon": "fas fa-user"
   }, {
     "title": "work",
-    "active": true
+    "active": true,
+    "icon": "fas fa-briefcase"
   }, {
     "title": "skills",
-    "active": true
+    "active": true,
+    "icon": "fas fa-tools"
   }, {
     "title": "projects",
-    "active": true
+    "active": true,
+    "icon": "fas fa-project-diagram"
   }, {
     "title": "achievements",
-    "active": true
+    "active": true,
+    "icon": "fas fa-award"
   }, {
     "title": "contribution",
-    "active": true
+    "active": true,
+    "icon": "fas fa-hands-helping"
   },{
     "title": "education",
-    "active": true
+    "active": true,
+    "icon": "fa fa-graduation-cap"
   },  {
     "title": "communities",
-    "active": true
+    "active": true,
+    "icon": "fas fa-people-carry"
   }, {
     "title": "publications",
-    "active": false
+    "active": false,
+    "icon": "fas fa-globe-asia"
   }, {
     "title": "blogs",
-    "active": true
+    "active": true,
+    "icon": "fas fa-star"
   },{
     "title": "talks",
-    "active": true
+    "active": true,
+    "icon": "fas fa-microphone"
   }, {
     "title": "links",
-    "active": false
+    "active": false,
+    "icon": "fa fa-link"
   }],
   "work": [{
     "name": "Udacity",

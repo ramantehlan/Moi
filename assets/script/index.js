@@ -1,9 +1,9 @@
 /*
-* This is the main script to power the tempate
-*
-* Creator: Raman Tehlan <ramantehlan@gmail.com
-* Date of Creation: 12/02/2019
-*/
+ * This is the main script to power the tempate
+ *
+ * Creator: Raman Tehlan <ramantehlan@gmail.com
+ * Date of Creation: 12/02/2019
+ */
 
 //
 // Card Tempate
@@ -49,47 +49,56 @@ var app = new Vue({
   el: '#view',
   data: {
     // To stop anything to render before data.json is loaded
-    render: false
+    render: false,
+    menuIconAllow: true
   },
   components: {
     card: card
   }
 })
 
-$(document).ready(function(){
+function init() {
 
-  fetch('data.json')
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      console.log("Json Loaded");
-      app.data = data;
-      app.render = true;
-      menuToggle();
-      itemToggle();
-    }).catch(function(error) {
-      console.log(error);
-  });
+  $(".hidden").hide();
+  $("#home").show();
 
-})
-
-
-
-function itemToggle(){
-    let hidden = c("hidden");
-    let home = i("home");
-
-    hideAll(hidden);
-    show(home)
-}
-
-
-function menuToggle() {
-
-  $("#menuIcon").click(function(){
+  $("#menuIcon").click(function() {
     $("#menuList").slideToggle();
     $("#menuTitle").toggle();
   })
 
 }
+
+$(document).ready(function() {
+
+  // Fetch the user data
+  fetch('data.json').then((response) => {
+    return response.json();
+  }).then((data) => {
+    console.log("Json Loaded");
+    app.data = data;
+    app.render = true;
+    init();
+  }).catch(function(error) {
+    console.log(error);
+  });
+
+
+  // To allow menu icon only when screen size is small
+  if ($(document).width() > 1200) {
+    app.menuIconAllow = false
+  } else {
+    app.menuIconAllow = true;
+  }
+
+  window.onresize = function(event) {
+    if ($(document).width() > 1200) {
+      app.menuIconAllow = false
+    } else {
+      app.menuIconAllow = true;
+    }
+  };
+
+
+
+})

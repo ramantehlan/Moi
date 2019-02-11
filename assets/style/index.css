@@ -341,7 +341,7 @@ h6 {
   margin: 0px;
   margin-bottom: 20px;
   background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
   z-index:100;
 }
 
@@ -359,7 +359,7 @@ h6 {
   display: none;
 }
 
-.menu-list>span>li {
+.menu-list-span > li {
   height: 40px;
   line-height: 40px;
   padding-left: 20px;
@@ -369,7 +369,15 @@ h6 {
   text-transform: capitalize;
 }
 
-.menu-list>span>li:hover {
+.menu-list-span > li > i{
+  width:14px;
+  height:14px;
+  font-size:14px;
+  margin-right:15px;
+
+}
+
+.menu-list-span >li:hover {
   background-color: var(--primary);
   color: white;
   cursor: pointer;
@@ -461,6 +469,10 @@ p{
     box-shadow:none;
   }
 
+  .menu-list{
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.12), 3px 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
   .menu-icon:hover {
     color: #7dc4c1;
   }
@@ -507,7 +519,7 @@ p{
     padding: 0px;
     color: var(--primary);
     display: block;
-
+    box-shadow:none;
     background:none;
   }
 
@@ -527,7 +539,7 @@ p{
   }
 
   .menu-list>span>li:hover {
-    background-color: none;
+    background: none;
     color: var(--primary-v);
     border-bottom:3px solid var(--primary-v);
   }

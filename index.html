@@ -68,7 +68,10 @@
         </div>
         <ul class="menu-list" id="menuList">
           <span v-if="render" class="menu-list-span">
-            <li v-for="menu in data.menu" v-if="menu.active"> {{ menu.title }} </li>
+            <li v-for="menu in data.menu" v-if="menu.active">
+              <i :class="menu.icon" v-if="menuIconAllow"></i>
+              {{ menu.title }}
+            </li>
           </span>
         </ul>
       </div>
