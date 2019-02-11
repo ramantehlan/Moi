@@ -58,15 +58,21 @@ var app = new Vue({
 })
 
 function init() {
-
   $(".hidden").hide();
   $("#home").show();
+  $("#menuIcon").click(menuToggle);
+}
 
-  $("#menuIcon").click(function() {
-    $("#menuList").slideToggle();
-    $("#menuTitle").toggle();
-  })
+function menuToggle(){
+  $("#menuList").slideToggle();
+  $("#menuTitle").toggle();
+}
 
+function showSection(section){
+  $(".hidden").hide();
+  $("#" + section).show();
+  $("#menuTitle").html(section);
+  menuToggle();
 }
 
 $(document).ready(function() {

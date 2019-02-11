@@ -372,7 +372,7 @@ h6 {
 .menu-list-span > li > i{
   width:14px;
   height:14px;
-  font-size:14px;
+  font-size:14p x;
   margin-right:15px;
 
 }
@@ -397,6 +397,7 @@ h6 {
   width: 100%;
   letter-spacing: var(--title-spacing);
   font-family: roboto_m;
+  text-transform: capitalize;
 }
 
 .menu-icon {

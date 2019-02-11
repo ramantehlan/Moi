@@ -125,7 +125,7 @@
   }, {
     "title": "contribution",
     "active": true,
-    "icon": "fas fa-hands-helping"
+    "icon": "fas fa-people-carry"
   },{
     "title": "education",
     "active": true,
@@ -133,7 +133,7 @@
   },  {
     "title": "communities",
     "active": true,
-    "icon": "fas fa-people-carry"
+    "icon": "fas fa-hands-helping"
   }, {
     "title": "publications",
     "active": false,
