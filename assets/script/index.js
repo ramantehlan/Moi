@@ -5,39 +5,31 @@ var card = Vue.component('card', {
   template: `
 <div class="card">
   <div class="card-header">
-
+  <!--  <div class="decoration">
+      {{ info.title }}
+    </div> -->
     <div class="title">
-      <a href="#">{{ info.title }}</a>
+      <a :href="info.url">{{ info.title }}</a>
     </div>
     <div class="subtitle-2">
       <div class="fas fa-location-arrow icon"></div>
-      NASA International Space App Challenge - 2018, Rohini, Delhi
+      <a :href="info.projectUrl">
+        {{ info.projectTitle }}
+      </a>,
+      {{ info.location }}
     </div>
     <div class="subtitle-2 date">
       <div class="fas fa-clock icon"></div>
-      07/09/2018 - 09/09/2018
+      {{ info.timeline }}
     </div>
     <div class="subtitle-2 badge-container">
       <div class="fas fa-tags icon"></div>
-      <div class="badge">C++</div>
-      <div class="badge">Start Up</div>
-      <div class="badge">Design Thinking</div>
-      <div class="badge">New Life</div>
+      <div class="badge" v-for="tag in info.tag">{{tag}}</div>
     </div>
 
   </div>
   <div class="card-body body-2">
-    Smart AI to keep people safe on beaches from all the dangers. It uses ML
-    and real time data to inform people about UV Index, Weather forecasts,
-    Tsunamis, Harmful Algal Blooms (HABs), Animal Attacks and RIP currents
-    (Using Optical Flow Analysis) etc, all through just one app.
-
-    <ul>
-      <li>Using current location fetch all the environmental factors, like
-        UV Index, Pressure, Air Quality.</li>
-      <li>Camera can take a short video of ocean to do Optical Flow Analysis
-        , to detect RIP Currents.</li>
-    </ul>
+      {{ info.about }}
   </div>
 </div>
 `

@@ -32,33 +32,35 @@
     <!-- Profile Box  -->
 
     <div class="profile" v-if="render">
-      <div class="profile-pic">
-        <img :src="data.profile.image" alt="User">
+      <div class="profile-content">
+        <div class="profile-pic">
+          <img :src="data.profile.image" alt="User">
+        </div>
+        <div class="profile-name title">
+          {{ data.profile.name }}
+        </div>
+        <div class="profile-designation subtitle-2">
+          {{ data.profile.domains }}
+        </div>
+        <div class="profile-about">
+          {{ data.profile.vision }}
+        </div>
+        <ul class="profile-footer">
+          <a v-for="link in data.profile.link" v-if="link.active" :href="link.url">
+            <li>
+              <i :class="'profile-icon ' + link.icon"></i>
+              {{ link.label }}
+            </li>
+          </a>
+        </ul>
       </div>
-      <div class="profile-name title">
-        {{ data.profile.name }}
-      </div>
-      <div class="profile-designation subtitle-2">
-        {{ data.profile.domains }}
-      </div>
-      <div class="profile-about">
-        {{ data.profile.vision }}
-      </div>
-      <ul class="profile-footer">
-        <a v-for="link in data.profile.link" v-if="link.active" :href="link.url">
-          <li>
-            <i :class="'profile-icon ' + link.icon"></i>
-            {{ link.label }}
-          </li>
-        </a>
-      </ul>
     </div>
 
     <!-- Menu Box -->
 
 
 
-    <div class="content">
+    <div class="body">
 
       <div id="menu" class="menu">
         <div class="menu-control">
@@ -72,14 +74,11 @@
         </ul>
       </div>
 
-      <div class="card-holder" v-if="render">
-          <card
-            v-for="info in data.projects"
-            v-bind:info = "info"
-            v-bind:key = "info.key"
-          ></card>
+      <div class="content">
+        <div class="card-holder" v-if="render">
+          <card v-for="info in data.projects" v-bind:info="info" v-bind:key="info.key"></card>
+        </div>
       </div>
-
 
       <div class="footer">
         Made with <i class="fas fa-heart"></i> by Raman Tehlan
