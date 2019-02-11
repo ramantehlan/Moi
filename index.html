@@ -1,130 +1,121 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Welcome to awsome</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<head>
+  <title>Welcome to awsome</title>
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-  	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-  	<link rel="stylesheet" type="text/css" href="assets/style/index.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 
-    <!-- Basic meta tags -->
-    <meta name="author" content="">
-  	<meta name="title" content="">
-  	<meta name="keywords" content="">
-  	<meta name="description" content="">
-  	<meta name="language" content="English">
-  	<meta charset="utf-8">
-  	<meta name="robots" content="INDEX , FOLLOW">
-  	<meta name="google-site-verification" content="" />
-    <!-- View point -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/style/index.css">
 
-  </head>
-  <body>
+  <!-- Basic meta tags -->
+  <meta name="author" content="">
+  <meta name="title" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="language" content="English">
+  <meta charset="utf-8">
+  <meta name="robots" content="INDEX , FOLLOW">
+  <meta name="google-site-verification" content="" />
+  <!-- View point -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div id="view">
+</head>
 
+<body>
 
-    <div class="profile">
+  <div id="view">
 
-        <div class="profile-pic">
-            <img src="https://doc-0o-38-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/3suq00h141gcvb74n710kphgh4k75k6e/1549814400000/01037974987289729712/*/1qlBcPkxg9usJxJaMZe2y5YYyhGBu6tEh?e=view"
-            alt="User">
-        </div>
+    <!-- Profile Box  -->
 
-        <div class="profile-name title">
-          Raman Tehlan
-        </div>
-
-        <div class="profile-designation subtitle-2">
-          Engineer | Developer | Designer
-        </div>
-
-        <div class="profile-about">
-          FOSS enthusiast, Just show me the code, love to attend hackathons and
-          startup weekends, Fan of GNU/Linux, UI/UX and good Engineering, Also
-          a visionary.
-        </div>
-
-        <ul class="profile-footer">
-          <li><i class="fas fa-user profile-icon"></i>Résumé</li>
-          <li><i class="fas fa-paper-plane profile-icon"></i>Ramantehlan[at]gmail</li>
-          <li><i class="fab fa-github profile-icon"></i>github/ramantehlan</li>
-          <li><i class="fab fa-linkedin profile-icon"></i>linkedin/in/ramantehlan</li>
-        </ul>
-
-    </div>
-    <div class="content">
-      <div class="menu" id="menu">
-        <div class="menu-control">
-          <div class="menu-title">Projects</div>
-          <div class="fas fa-bars menu-icon" id="menuIcon"></div>
-        </div>
-        <ul class="menu-list" id="menuList">
-          <li>Home</li>
-          <li >About</li>
-          <li>Work</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Achievements</li>
-          <li>Education</li>
-          <li>Courses</li>
-          <li>Blog</li>
-          <li>Talks</li>
-          <li>Contribution</li>
-          <li>Interest</li>
-        </ul>
+    <div class="profile" v-if="render">
+      <div class="profile-pic">
+        <img :src="data.profile.image" alt="User">
       </div>
+      <div class="profile-name title">
+        {{ data.profile.name }}
+      </div>
+      <div class="profile-designation subtitle-2">
+        {{ data.profile.domains }}
+      </div>
+      <div class="profile-about">
+        {{ data.profile.vision }}
+      </div>
+      <ul class="profile-footer">
+        <a v-for="link in data.profile.link" v-if="link.active" :href="link.url">
+          <li>
+            <i :class="'profile-icon ' + link.icon"></i>
+            {{ link.label }}
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <!-- Menu Box -->
+
+    <div id="menu" class="menu">
+      <div class="menu-control">
+        <div class="menu-title" id="menuTitle">Projects</div>
+        <div id="menuIcon" class="fas fa-bars menu-icon"></div>
+      </div>
+      <ul class="menu-list" id="menuList">
+        <span v-if="render">
+          <li v-for="menu in data.menu"> {{ menu.title }} </li>
+        </span>
+      </ul>
+    </div>
+
+    <div class="content">
 
       <div class="card-holder">
 
-    <div class="card">
-  <div class="card-header">
+        <div class="card">
+          <div class="card-header">
 
-    <div class="title">
-      <a href="#">Supernova</a>
-    </div>
-    <div class="subtitle-2">
-      <div class="fas fa-location-arrow icon"></div>
-       NASA International Space App Challenge - 2018, Rohini, Delhi
-    </div>
-    <div class="subtitle-2 date">
-      <div class="fas fa-clock icon"></div>
-      07/09/2018 - 09/09/2018
-    </div>
-    <div class="subtitle-2 badge-container">
-      <div class="fas fa-tags icon"></div>
-      <div class="badge">C++</div>
-      <div class="badge">Start Up</div>
-      <div class="badge">Design Thinking</div>
-      <div class="badge">New Life</div>
-    </div>
+            <div class="title">
+              <a href="#">Supernova</a>
+            </div>
+            <div class="subtitle-2">
+              <div class="fas fa-location-arrow icon"></div>
+              NASA International Space App Challenge - 2018, Rohini, Delhi
+            </div>
+            <div class="subtitle-2 date">
+              <div class="fas fa-clock icon"></div>
+              07/09/2018 - 09/09/2018
+            </div>
+            <div class="subtitle-2 badge-container">
+              <div class="fas fa-tags icon"></div>
+              <div class="badge">C++</div>
+              <div class="badge">Start Up</div>
+              <div class="badge">Design Thinking</div>
+              <div class="badge">New Life</div>
+            </div>
 
-  </div>
-  <div class="card-body body-2">
-    Smart AI to keep people safe on beaches from all the dangers. It uses ML
-     and real time data to inform people about UV Index, Weather forecasts,
-     Tsunamis, Harmful Algal Blooms (HABs), Animal Attacks and RIP currents
-     (Using Optical Flow Analysis) etc, all through just one app.
+          </div>
+          <div class="card-body body-2">
+            Smart AI to keep people safe on beaches from all the dangers. It uses ML
+            and real time data to inform people about UV Index, Weather forecasts,
+            Tsunamis, Harmful Algal Blooms (HABs), Animal Attacks and RIP currents
+            (Using Optical Flow Analysis) etc, all through just one app.
 
-     <ul>
-       <li>Using current location fetch all the environmental factors, like
-          UV Index, Pressure, Air Quality.</li>
-      <li>Camera can take a short video of ocean to do Optical Flow Analysis
-        , to detect RIP Currents.</li>
-    </ul>
-  </div>
-</div>
+            <ul>
+              <li>Using current location fetch all the environmental factors, like
+                UV Index, Pressure, Air Quality.</li>
+              <li>Camera can take a short video of ocean to do Optical Flow Analysis
+                , to detect RIP Currents.</li>
+            </ul>
+          </div>
+        </div>
 
-</div>
+      </div>
 
 
-    <div class="footer">
+      <div class="footer">
         Made with <i class="fas fa-heart"></i> by Raman Tehlan
-    </div>
+      </div>
     </div>
 
 
@@ -132,10 +123,10 @@
 
   </div>
 
-  </body>
+</body>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script type="text/javascript" src="assets/script/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="assets/script/index.js"></script>
 
 
 </html>

@@ -275,7 +275,7 @@ h6{
   display:flex;
   justify-content:flex-start;
   flex-flow: column wrap;
-  z-index:1;
+  z-index:100;
 }
 
 .profile-pic{
@@ -326,7 +326,7 @@ h6{
   flex-flow: column wrap;
 }
 
-.profile-footer > li {
+.profile-footer > a {
   margin-top:10px;
 }
 
@@ -350,6 +350,7 @@ h6{
   margin-bottom:20px;
   background:white;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  z-index: 90;
 }
 
 .menu-down{
@@ -371,7 +372,7 @@ h6{
 
 
 
-.menu-list > li{
+.menu-list > span > li{
   height:40px;
   line-height:40px;
   padding-left:20px;
@@ -380,7 +381,7 @@ h6{
   width:auto;
 }
 
-.menu-list > li:hover{
+.menu-list > span > li:hover{
   background-color: var(--primary-v);
   color: inherit;
   cursor: pointer;
