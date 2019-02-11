@@ -56,33 +56,117 @@
       </div>
     </div>
 
-    <!-- Menu Box -->
-
-
+    <!-- Body Box -->
 
     <div class="body">
 
+      <!-- Menu Box -->
       <div id="menu" class="menu">
         <div class="menu-control">
-          <div class="menu-title" id="menuTitle">Projects</div>
+          <div class="menu-title" id="menuTitle">Home</div>
           <div id="menuIcon" class="fas fa-bars menu-icon"></div>
         </div>
         <ul class="menu-list" id="menuList">
-          <span v-if="render">
-            <li v-for="menu in data.menu"> {{ menu.title }} </li>
+          <span v-if="render" class="menu-list-span">
+            <li v-for="menu in data.menu" v-if="menu.active"> {{ menu.title }} </li>
           </span>
         </ul>
       </div>
 
+      <!-- Content Box -->
       <div class="content">
-        <div class="card-holder" v-if="render">
-          <card v-for="info in data.projects" v-bind:info="info" v-bind:key="info.key"></card>
+
+        <div class="content-body">
+
+          <div id="home" class="hidden">
+            <span v-if="render">
+              <h1 class="home-h1"> {{ data.home.title }} </h1>
+              <p> {{ data.home.body }} </p>
+            </span>
+          </div>
+
+          <div id="about" class="hidden">
+            <span v-if="render">
+              Hello, The about section is this</p>
+            </span>
+          </div>
+
+          <div id="work" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.work" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="skills" class="hidden">
+            <span v-if="render">
+            </span>
+          </div>
+
+          <div id="projects" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.projects" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="achievements" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.achievement" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="contributions" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="education" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.education" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="communities" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="publications" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="blogs" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.blogs" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="talks" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+          <div id="links" class="hidden">
+            <span v-if="render">
+              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key"></card>
+            </span>
+          </div>
+
+
         </div>
+
+
       </div>
 
+      <!-- Footer -->
       <div class="footer">
         Made with <i class="fas fa-heart"></i> by Raman Tehlan
       </div>
+
     </div>
 
 
@@ -92,7 +176,8 @@
 
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="assets/script/jquery.js"></script>
+<script type="text/javascript" src="assets/script/vue.js"></script>
 <script type="text/javascript" src="assets/script/index.js"></script>
 
 

@@ -1,13 +1,22 @@
-"use strict";
+/*
+* This is the main script to power the tempate
+*
+* Creator: Raman Tehlan <ramantehlan@gmail.com
+* Date of Creation: 12/02/2019
+*/
+
+//
+// Card Tempate
+//
 
 var card = Vue.component('card', {
   props: ['info'],
   template: `
 <div class="card">
   <div class="card-header">
-  <!--  <div class="decoration">
+    <div class="decoration" v-if="decoration">
       {{ info.title }}
-    </div> -->
+    </div>
     <div class="title">
       <a :href="info.url">{{ info.title }}</a>
     </div>
@@ -35,9 +44,11 @@ var card = Vue.component('card', {
 `
 })
 
+// Vue app lives in #view
 var app = new Vue({
   el: '#view',
   data: {
+    // To stop anything to render before data.json is loaded
     render: false
   },
   components: {
@@ -45,40 +56,40 @@ var app = new Vue({
   }
 })
 
-fetch('data.json')
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log("Json Loaded");
-    app.data = data;
-    app.render = true;
-    menuToggle();
-  }).catch(function(error) {
-    console.log(error);
+$(document).ready(function(){
+
+  fetch('data.json')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Json Loaded");
+      app.data = data;
+      app.render = true;
+      menuToggle();
+      itemToggle();
+    }).catch(function(error) {
+      console.log(error);
   });
 
-function menuToggle() {
-  var menu = _("menu");
-  var menuIcon = _("menuIcon");
-  var menuList = _("menuList");
-  var menuTitle = _('menuTitle');
+})
 
-  menuIcon.addEventListener('click', function() {
-    if (menuList.className === "menu-list") {
-      menuList.className += " menu-list-responsive";
-      menuIcon.className += " menu-icon-clicked";
-      menu.className += " menu-down";
-      menuTitle.style = "display:none";
-    } else {
-      menuList.className = "menu-list";
-      menuIcon.className = "fas fa-bars menu-icon";
-      menu.className = "menu";
-      menuTitle.style = "display:block";
-    }
-  }, false);
+
+
+function itemToggle(){
+    let hidden = c("hidden");
+    let home = i("home");
+
+    hideAll(hidden);
+    show(home)
 }
 
-function _(div) {
-  return document.getElementById(div);
+
+function menuToggle() {
+
+  $("#menuIcon").click(function(){
+    $("#menuList").slideToggle();
+    $("#menuTitle").toggle();
+  })
+
 }
