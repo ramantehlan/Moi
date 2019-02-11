@@ -359,7 +359,7 @@ h6 {
   display: none;
 }
 
-.menu-list-span > li {
+.menu-list-item {
   height: 40px;
   line-height: 40px;
   padding-left: 20px;
@@ -369,7 +369,7 @@ h6 {
   text-transform: capitalize;
 }
 
-.menu-list-span > li > i{
+.menu-list-item > i{
   width:14px;
   height:14px;
   font-size:14p x;
@@ -377,10 +377,15 @@ h6 {
 
 }
 
-.menu-list-span >li:hover {
+.menu-list-item:hover {
   background-color: var(--primary);
   color: white;
   cursor: pointer;
+}
+
+.menu-list-selected{
+  background-color: var(--primary);
+  color: white;
 }
 
 
@@ -456,7 +461,7 @@ p{
 
 @media only screen and (min-width: 800px) and (min-height: 450px) {
   .profile{
-    width: 35%;
+    width: 30%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     position:fixed;
     height:100%;
@@ -465,7 +470,7 @@ p{
   .menu{
     position:fixed;
     top:0px;
-    width:65%;
+    width:70%;
     background-color:var(--background);
     box-shadow:none;
   }
@@ -488,8 +493,8 @@ p{
   }
 
   .body{
-    width:65%;
-    margin-left:35%;
+    width:70%;
+    margin-left:30%;
     margin-top:60px;
   }
 }
@@ -497,16 +502,16 @@ p{
 
 @media only screen and (min-width: 1200px) {
   .profile{
-    width: 30%;
+    width: 25%;
   }
 
   .body{
-    width:70%;
-    margin-left:30%;
+    width:75%;
+    margin-left:25%;
   }
 
   .menu{
-    width:70%;
+    width:75%;
     height:40px;
     padding-top:10px;
   }
@@ -531,19 +536,26 @@ p{
   }
 
 
-  .menu-list>span>li {
-    padding-left: 5px;
-    padding-right: 5px;
+.menu-list-item {
+    padding-left: 4px;
+    padding-right: 4px;
+    font-size:14px;
     margin-left:6px;
     margin-right:6px;
     border-bottom:3px solid transparent;
   }
 
-  .menu-list>span>li:hover {
+.menu-list-item:hover {
     background: none;
     color: var(--primary-v);
     border-bottom:3px solid var(--primary-v);
   }
+
+ .menu-list-selected{
+   background: none;
+   color: var(--primary-v);
+   border-bottom:3px solid var(--primary-v);
+ }
 }
 
 /*

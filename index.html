@@ -68,7 +68,7 @@
         </div>
         <ul class="menu-list" id="menuList">
           <span v-if="render" class="menu-list-span">
-            <li v-for="menu in data.menu" v-if="menu.active" :onclick="`showSection('` + menu.title + `')`">
+            <li v-for="menu in data.menu" v-if="menu.active" :onclick="`showSection('` + menu.title + `')`" :id="menu.title + 'Btn'" class="menu-list-item">
               <i :class="menu.icon" v-if="menuIconAllow" ></i>
               {{ menu.title }}
             </li>

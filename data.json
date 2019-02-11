@@ -148,7 +148,7 @@
     "icon": "fas fa-microphone"
   }, {
     "title": "links",
-    "active": false,
+    "active": true,
     "icon": "fa fa-link"
   }],
   "work": [{

@@ -5,6 +5,8 @@
  * Date of Creation: 12/02/2019
  */
 
+var maxBreakPoint = 1200;
+
 //
 // Card Tempate
 //
@@ -64,13 +66,17 @@ function init() {
 }
 
 function menuToggle(){
-  $("#menuList").slideToggle();
-  $("#menuTitle").toggle();
+  if($(document).width() <= maxBreakPoint) {
+    $("#menuList").slideToggle();
+    $("#menuTitle").toggle();
+  }
 }
 
 function showSection(section){
   $(".hidden").hide();
   $("#" + section).show();
+  $(".menu-list-item").removeClass("menu-list-selected");
+  $("#" + section + "Btn").addClass("menu-list-selected");
   $("#menuTitle").html(section);
   menuToggle();
 }
@@ -91,14 +97,14 @@ $(document).ready(function() {
 
 
   // To allow menu icon only when screen size is small
-  if ($(document).width() > 1200) {
+  if ($(document).width() >= maxBreakPoint) {
     app.menuIconAllow = false
   } else {
     app.menuIconAllow = true;
   }
 
   window.onresize = function(event) {
-    if ($(document).width() > 1200) {
+    if ($(document).width() >= maxBreakPoint) {
       app.menuIconAllow = false
     } else {
       app.menuIconAllow = true;
