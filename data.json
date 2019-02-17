@@ -152,10 +152,10 @@
     "icon": "fa fa-link"
   }],
   "work": [{
-    "name": "Udacity",
+    "id":5,
+    "title": "Udacity",
     "url": "https://www.Udacity.com/",
-    "role": "Software Engineer Intern",
-    "location": "Delhi, India",
+    "subTitle": "Software Engineer Intern, Delhi, India",
     "timeline": "09/2018 - 11/2018",
     "tag": [
       "JavaScript/TypeScript",
@@ -163,10 +163,10 @@
     ],
     "about": "TBD"
   }, {
-    "name": "Knowlarity",
+    "id":4,
+    "title": "Knowlarity",
     "url": "https://www.knowlarity.com/",
-    "role": "Software Engineer Intern",
-    "location": "Gurgaon, India",
+    "subTitle": "Software Engineer Intern, Gurgaon, India",
     "timeline": "06/2018 - 08/2018",
     "tag": [
       "JavaScript/TypeScript",
@@ -176,10 +176,10 @@
     ],
     "about": "Worked on optimizing the current app, decrease O(n) to O(1) by making asynchronous functions, upgraded from angularJs to angular 5, wrote module to debug the app."
   }, {
-    "name": "Cashfog",
+    "id":3,
+    "title": "Cashfog",
     "url": "https://github.com/ramantehlan/Cashfog",
-    "role": "Founder & CEO",
-    "location": "Delhi, India",
+    "subTitle": "Founder & CEO, Delhi, India",
     "timeline": "10/2016 - 09/2017",
     "tag": [
       "10+ First Month Business Users",
@@ -189,10 +189,10 @@
     ],
     "about": "An easy and smart service to maintain business transactions and documents online with analytics tools which provide more clear vision on cash flow. <ul> <li>Worked on powerful analytics tools to visualize all the business data.</li><li>Drag and drop document upload for all the important documents and files.</li><li>Beautiful UI/UX, with different modes for day and night.</li></ul>"
   }, {
-    "name": "AlvisAi",
+    "id":2,
+    "title": "AlvisAi",
     "url": "https://github.com/ramantehlan/AlvisAI",
-    "role": "Founder & CEO",
-    "location": "Delhi, India",
+    "subTitle": "Founder & CEO, Delhi, India",
     "timeline": "07/2015 - 09/2016",
     "tag": [
       "170+ First Month Users",
@@ -202,10 +202,10 @@
     ],
     "about": "A social network app with a built-in bot and AI. This AI can understand user 's feelings by processing their online posts and behavior. <ul><li> Anonymous update with features to include emotions. </li><li> Ranking system for users which increase as a user do more activities. </li> <li > Beautiful UI / UX with many features like add background image or a solid colour. </li></ul>"
   }, {
-    "name": "MS Printing & Packaging CO",
+    "id":1,
+    "title": "MS Printing & Packaging CO",
     "url": "http://www.msprintpack.in/",
-    "role": "Consultant",
-    "location": "Rai, Haryana",
+    "subTitle": "Consultant, Rai, Haryana",
     "timeline": "05/2013 - 05/2015",
     "tag": [
       "30+ Business Clients Served",
@@ -217,11 +217,11 @@
     "about": "I was responsible for branding and online presence, also for creating formats of various documents like ledgers, purchase order etc.<ul><li> Created ledgers in Excel sheets to decrease the use of paper. </li><li> Worked on company 's website and displayed business on the Google search.</li><li> Created formats for various documents like purchase orders,quotations etc.</li></ul>"
   }],
   "projects": [{
-      "projectTitle": "NASA International Space App Challenge Final - 2018",
-      "projectUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "id":11,
       "title": "Supernova",
       "url": "https://github.com/yogaan/Supernova-2",
-      "location": "91Spring Board, Noida",
+      "subTitle": "NASA International Space App Challenge Final - 2018, 91Spring Board, Noida",
+      "subTitleUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
       "timeline": "19/10/2018 - 21/10/2018",
       "tag": [
         "3 people team",
@@ -230,11 +230,11 @@
       ],
       "about": ""
     }, {
-      "projectTitle": "Techstars Startup Weekend",
-      "projectUrl": "http://startupweekend.org/",
+      "id":10,
       "title": "LegalAI",
       "url": "https://github.com/ramantehlan/Supernova",
-      "location": "Delhi Technological University, Delhi",
+      "subTitle": "Techstars Startup Weekend, Delhi Technological University, Delhi",
+      "subTitleUrl": "http://startupweekend.org/",
       "timeline": "07/09/2018 - 09/09/2018",
       "tag": [
         "3rd in 64 teams",
@@ -243,11 +243,11 @@
       ],
       "about": "Platform for lawyers and legal firms to leverage ML/NLP to identify, extract, and analyze litigation cases, and manage them privately on cloud."
     }, {
-      "projectTitle": "NASA International Space App Challenge Pre-Hackathon - 2018",
-      "projectUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "id":9,
       "title": "Supernova",
       "url": "https://github.com/ramantehlan/Supernova",
-      "location": "Rohini, Delhi",
+      "subTitle": "NASA International Space App Challenge Pre-Hackathon - 2018, Rohini, Delhi",
+      "subTitleUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
       "timeline": "31/08/2018 - 01/09/2018",
       "tag": [
         "4th in 70 teams",
@@ -258,9 +258,10 @@
       "about": "Smart AI to keep people safe on beaches from all the dangers. It uses ML and real time data to inform people about UV Index, Weather forecasts, Tsunamis, Harmful Algal Blooms (HABs), Animal Attacks and RIP currents(Using Optical Flow Analysis) etc, all through just one app. <ul >  <li> Using current location fetch all the environmental factors, like UV Index, Pressure, Air Quality. </li> <li > Camera can take a short video of ocean to do Optical Flow Analysis, to detect RIP Currents. </li></ul>"
     },
     {
-      "name": "JTLog",
+      "id":8,
+      "title": "JTLog",
       "url": "https://github.com/ramantehlan/JTLog",
-      "type": "NPM Module",
+      "subTitle": "NPM Module",
       "timeline": "14/06/2018 - 28/08/2018",
       "tag": [
         "600+ Downloads/First Month",
@@ -271,21 +272,21 @@
       "about": "JavascriptTypescriptLog (JTLog) is Log library. <ul><li>Record/Store console logs for a particular session, return it in an array.</li><li>2 Modes for development and production (Won't be visible to users).</li><li>Switch between consoling and recording, or choose both.</li></ul>"
     },
     {
-      "projectTitle": "Hackathon - HACKRUPT",
-      "projectUrl": "https://www.hackerearth.com/sprints/hackrupt-18/",
+      "id":7,
       "title": "Finojo",
       "url": "https://github.com/ramantehlan/Finojo",
-      "location": "NSIT, Delhi",
+      "subTitle": "Hackathon - HACKRUPT, NSIT, Delhi",
+      "subTitleUrl": "https://www.hackerearth.com/sprints/hackrupt-18/",
       "timeline": "03/02/2018 - 04/02/2018",
       "tag": ["Top 10 Finalist", "NodeJS", "IPFS"],
       "about": "Finojo is a decentralized tracking application of financial assets. It uses IPFS and Blockchain to allow corporate users to store there user files, documents, contracts, records etc on a decentralized network. Each Corporation and the user is provided with a unique finojo code, this code is used as a digital stamp for generating financial assets, later this code can be used to retrieve any file from the decentralized network."
     },
     {
-      "projectTitle": "World Virtual Govhack",
-      "projectUrl": "http://hackathon.govtechprize.ae/",
+      "id":6,
       "title": "Spero",
       "url": "https://github.com/ramantehlan/Spero",
-      "location": "Online",
+      "subTitle": "World Virtual Govhack",
+      "subTitleUrl": "http://hackathon.govtechprize.ae/",
       "timeline": "12/2017",
       "tag": [
         "Blockchain",
@@ -294,28 +295,24 @@
       "about": "Spero is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world. This project was created in December 2017 for the biggest Global Virtual GovHack hackathon organized by UAE Government in 2017."
     },
     {
-      "name": "Genetic-Tetris-Ai",
+      "id":5,
+      "title": "Genetic-Tetris-Ai",
       "url": "https://github.com/ramantehlan/Genetic-Tetris-Ai",
-      "type": "Webapp",
+      "subTitle": "Webapp",
       "timeline": "Ongoing",
       "tag": [
         "JavaScript",
         "Genetic Algorithms",
         "AI"
       ],
-      "about": "An implementation of Genetic Algorithms to create evolving/mutating AI to play Tetris. Genetic Algorithms follow the principles first laid down by Charles Darwin of 'survival of the fittest.'",
-      "points": [
-        "It uses matrix to create the game of Tetris.",
-        "Multiple speeds and ranking system for gameplay.",
-        "Simple yet beautiful UI / UX with user driven actions."
-      ]
+      "about": "An implementation of Genetic Algorithms to create evolving/mutating AI to play Tetris. Genetic Algorithms follow the principles first laid down by Charles Darwin of 'survival of the fittest.' <ul><li>It uses matrix to create the game of Tetris.</li><li>Multiple speeds and ranking system for gameplay.</li><li>Simple yet beautiful UI / UX with user driven actions.</li></ul>"
     },
     {
-      "projectTitle": "Techstars Startup Weekend",
-      "projectUrl": "http://startupweekend.org/",
+      "id":4,
       "title": "Celer",
       "url": "https://github.com/ramantehlan/Celer",
-      "location": "Delhi Technological University, Delhi, India",
+      "subTitle": "Techstars Startup Weekend, Delhi Technological University, Delhi, India",
+      "subTitleUrl": "http://startupweekend.org/",
       "timeline": "08/09/2017 - 10/09/2017",
       "tag": [
         "Grid computing",
@@ -325,9 +322,10 @@
       "about": "Celer helps businesses to distribute their processing across the devices connected to the Internet. <ul><li> Web app to get the processing from business users and API for app developers to integrate in there app. </li> <li> API use 20 % -30 % of total available processing power. </li> <li> Web app for app developers to see the processing they provided from there user base and get compensated for it(They are asked to remove ads or make there app freemium if they earn above a certain limit from us.) </li></ul>"
     },
     {
-      "name": "DataStructures-CPP",
+      "id":3,
+      "title": "DataStructures-CPP",
       "url": "https://github.com/ramantehlan/DataStructures-CPP",
-      "type": "Application",
+      "subTitle": "Application",
       "timeline": "Ongoing",
       "tag": [
         "C++",
@@ -337,9 +335,10 @@
       "about": "DataStructures-CPP is an application to implement data structures and algorithms in C++ using a menu-driven interface.<ul><li> Created Source file for all the popular data structures. </li> <li> Neat application structure for beginners and professionals to understand. </li> <li> The program can be easily converted into other programming languages. </li></ul>"
     },
     {
-      "name": "Alexandrite",
+      "id":2,
+      "title": "Alexandrite",
       "url": "https://github.com/ramantehlan/Alexandrite",
-      "type": "Android App",
+      "subTitle": "Android App",
       "timeline": "O4/2017",
       "tag": [
         "Java",
@@ -349,11 +348,11 @@
       "about": "Alexandrite is an android app, which saves data on a device, whether it's temporary files, downloaded app assets, user media, structured data, or something else .<ul><li> Worked on data storage provided by a device on Android. </li> <li> Automated multiple processes. </li> <li> Beautiful UI / UX with a smooth design. </li></ul>"
     },
     {
-      "projectTitle": "AbinBev Hackathon",
-      "projectUrl": "http://www.hackathon.io/abinbev-hacktheworld-bangalore/schedules",
+      "id":1,
       "title": "Optimus",
       "url": "https://github.com/ramantehlan/Optimus",
-      "location": "Bengaluru, India",
+      "subTitle": "AbinBev Hackathon, Bengaluru, India",
+      "subTitleUrl": "http://www.hackathon.io/abinbev-hacktheworld-bangalore/schedules",
       "timeline": "03/02/2017 - 05/02/2017",
       "tag": [
         "Artificial Intelligence",
@@ -364,7 +363,7 @@
     }
   ],
   "achievements": [{
-    "key": 1,
+    "key": 2,
     "title": "Google India Challenge Scholarship Recipient - 2018",
     "url": "https://s3-us-west-2.amazonaws.com/udacity-email/Scholarships/Google-Scholarship-India-Badge.png?utm_medium=email&utm_campaign=sch_600_auto_ndxxx_accepted-google-india&utm_source=blueshift&utm_content=sch_600_auto_ndxxx_accepted-google-india&bsft_eid=d8fd1fe3-6ebc-4fc5-b432-3ecfb97e17fb&bsft_clkid=1f4e2ac6-f62e-4f32-a82a-27b0f5926b02&bsft_uid=b77c40e0-be86-4cd4-8c73-dccd0d216cb3&bsft_mid=de0f7d62-2fe1-4706-8f5b-513755cbd83b&bsft_txnid=a28d2161-4b97-4972-af3a-33dad6e86704",
     "location": "Udacity - Google",
@@ -376,7 +375,7 @@
     ],
     "about": "Recipient of Google India Challenge Scholarship for the Android Developer track."
   }, {
-    "key": 2,
+    "key": 1,
     "title": "2nd | International Robotic Competition (IRC)",
     "url": "http://www.ircleague.com/past-IRCs.php",
     "location": "Husky Union Building, University of Washington, Seattle, USA",
@@ -403,6 +402,7 @@
     "about": "Innovation and creative problem solving are forces designing the world today, flowing us towards a better future, and Design thinking is at the heart of this innovation and change, like a secret power."
   }],
   "education": [{
+    "id":5,
     "institute": "SRM University",
     "url": "#",
     "level": "Bachelor of technology in computer science",
@@ -416,6 +416,7 @@
     "awards": [],
     "activities": []
   }, {
+    "id":4,
     "institute": "Sachdeva Global School",
     "url": "http://sachdevaglobal.in/",
     "level": "High school",
@@ -450,6 +451,7 @@
       "The green olympiad | 2012"
     ]
   }, {
+    "id":3,
     "institute": "Apollo International School",
     "url": "http://aischool.in/index.php",
     "level": "Schooling",
@@ -462,6 +464,7 @@
       "Art/Declamation competition | Vidya Devi Jindal School | 07/08/2011"
     ]
   }, {
+    "id":2,
     "institute": "Swarnprastha Public School",
     "url": "http://www.swarnprastha.com/",
     "level": "Schooling",
@@ -475,6 +478,7 @@
       "National science olympiad | 19/11/2010"
     ]
   }, {
+    "id":1,
     "institute": "Ganga Iinternational School",
     "url": "http://www.gangainternationalschool.com/",
     "level": "Schooling",
@@ -493,6 +497,7 @@
     ]
   }],
   "courses": [{
+    "id":5,
     "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
     "url": "https://www.coursera.org/learn/algorithms-divide-conquer",
     "from": "Coursera - Stanford University",
@@ -500,6 +505,7 @@
     "about": "",
     "complete": false
   }, {
+    "id":4,
     "name": "Fundamentals of Graphic Design",
     "url": "https://www.coursera.org/learn/fundamentals-of-graphic-design",
     "from": "Coursera - California Institute of the Arts",
@@ -507,6 +513,7 @@
     "about": "",
     "complete": false
   }, {
+    "id":3,
     "name": "Software Testing",
     "url": "https://in.udacity.com/course/software-testing--cs258",
     "from": "Udacity",
@@ -514,6 +521,7 @@
     "about": "",
     "complete": false
   }, {
+    "id":2,
     "name": "Writing READMEs",
     "url": "https://in.udacity.com/course/writing-readmes--ud777",
     "from": "Udacity",
@@ -521,6 +529,7 @@
     "about": "<ul> <li > READMEs are underrated but they are really important for the development of a product. </li> <li> They help in making the code more approachable to the humans. </li> <li > They connect everyone on the team more easily and visually to the code. </li></ul>",
     "complete": true
   }, {
+    "id":1,
     "name": "Design Thinking for Innovation",
     "url": "https://www.coursera.org/learn/uva-darden-design-thinking-innovation",
     "from": "Coursera - University of Virginia",

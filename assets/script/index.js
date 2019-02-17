@@ -19,17 +19,19 @@ var card = Vue.component('card', {
     <div class="decoration" v-if="decoration">
       {{ info.title }}
     </div>
-    <div class="title">
-      <a :href="info.url">{{ info.title }}</a>
+    <div class="card-title title">
+      <a :href="info.url">
+      {{ info.title }}
+      </a>
+
     </div>
     <div class="subtitle-2">
       <div class="fas fa-location-arrow icon"></div>
-      <a :href="info.projectUrl">
-        {{ info.projectTitle }}
-      </a>,
-      {{ info.location }}
+      <a :href="info.subTitleUrl">
+        {{ info.subTitle }}
+      </a>
     </div>
-    <div class="subtitle-2 date">
+    <div class="subtitle-2 ">
       <div class="fas fa-clock icon"></div>
       {{ info.timeline }}
     </div>
@@ -37,10 +39,14 @@ var card = Vue.component('card', {
       <div class="fas fa-tags icon"></div>
       <div class="badge" v-for="tag in info.tag">{{tag}}</div>
     </div>
-
   </div>
-  <div class="card-body body-2">
-      {{ info.about }}
+  <div class="card-body body-2" >
+      <p v-html="info.about"></p>
+  </div>
+  <div class="card-footer">
+    <div class="card-number">
+        #{{info.id}}
+    </div>
   </div>
 </div>
 `

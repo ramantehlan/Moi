@@ -84,7 +84,7 @@
           <div id="home" class="hidden">
             <span v-if="render">
               <h1 class="home-h1"> {{ data.home.title }} </h1>
-              <p> {{ data.home.body }} </p>
+              <p v-html="data.home.body"> </p>
             </span>
           </div>
 

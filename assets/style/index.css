@@ -34,7 +34,7 @@
   --h4-spacing: 0.015625rem;
   --h5-spacing: 0rem;
   --h6-spacing: 0.009375rem;
-  --title-size: 1.45rem;
+  --title-size: 1.65rem;
   --subtitle-1-size: 1rem;
   --subtitle-2-size: 0.875rem;
   --body-1-size: 1.1rem;
@@ -111,7 +111,7 @@ caption {
 .title {
   font-size: var(--title-size);
   letter-spacing: var(--title-spacing);
-  font-family: roboto_m;
+  font-family: roboto_r;
   margin-bottom: 10px;
 }
 
@@ -208,19 +208,29 @@ h6 {
 }
 
 
-
+ 
 .card {
   background-color: var(--card);
   color: var(--card-text);
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  margin: 0.8rem auto;
+  margin: 2rem auto;
   border: 1px solid transparent;
 }
 
+
+
+.card:first-child{
+  margin-top:0px;
+}
+
 .card-header {
-  padding: var(--header-padding);
+  padding: 0.9rem;
+  padding-bottom:0rem;
   border-radius: 2.6px 2.6px 0px 0px;
+}
+
+.card-title {
 }
 
 .decoration {
@@ -239,15 +249,23 @@ h6 {
 }
 
 .card-body {
-  padding: var(--body-padding);
-  padding-top: 0rem;
+  padding: 0.9rem;
+  padding-top: 0.2rem;
+  padding-bottom:0rem;
   border-radius: 0px 0px 2.6px 2.6px;
   text-align: justify;
 }
 
 .card-footer {
-  padding: var(--footer-padding);
+  padding: 0.35rem;
+  padding-left: 0.9rem;
   border-radius: 0px 0px 2.6px 2.6px;
+}
+
+.card-number {
+  text-align: left;
+  color:rgba(0,0,0,0.3);
+  font-style: italic;
 }
 
 #view {
@@ -437,13 +455,12 @@ h6 {
 .content{
   display: flex;
   flex-direction: column;
-  margin-top:30px;
+  margin-top:40px;
 }
 
 .content-body{
   width:80%;
   margin:0px auto;
-  margin-top:30px;
   margin-bottom:30px;
 }
 
