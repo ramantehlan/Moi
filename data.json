@@ -126,11 +126,11 @@
     "title": "contribution",
     "display": true,
     "icon": "fas fa-people-carry"
-  },{
+  }, {
     "title": "education",
     "display": true,
     "icon": "fa fa-graduation-cap"
-  },  {
+  }, {
     "title": "communities",
     "display": true,
     "icon": "fas fa-hands-helping"
@@ -142,7 +142,7 @@
     "title": "blogs",
     "display": true,
     "icon": "fas fa-star"
-  },{
+  }, {
     "title": "talks",
     "display": true,
     "icon": "fas fa-microphone"
@@ -152,8 +152,8 @@
     "icon": "fa fa-link"
   }],
   "work": [{
-    "id":5,
-    "key":"wo5",
+    "id": 5,
+    "key": "wo5",
     "companyName": "Udacity",
     "companyUrl": "https://www.Udacity.com/",
     "role": "Software Engineer Intern",
@@ -165,8 +165,8 @@
     ],
     "about": "TBD"
   }, {
-    "id":4,
-    "key":"wo4",
+    "id": 4,
+    "key": "wo4",
     "companyName": "Knowlarity",
     "companyUrl": "https://www.knowlarity.com/",
     "role": "Software Engineer Intern",
@@ -180,8 +180,8 @@
     ],
     "about": "Worked on optimizing the current app, decrease O(n) to O(1) by making asynchronous functions, upgraded from angularJs to angular 5, wrote module to debug the app."
   }, {
-    "id":3,
-    "key":"wo3",
+    "id": 3,
+    "key": "wo3",
     "companyName": "Cashfog",
     "companyUrl": "https://github.com/ramantehlan/Cashfog",
     "role": "Founder & CEO",
@@ -195,8 +195,8 @@
     ],
     "about": "An easy and smart service to maintain business transactions and documents online with analytics tools which provide more clear vision on cash flow. <ul> <li>Worked on powerful analytics tools to visualize all the business data.</li><li>Drag and drop document upload for all the important documents and files.</li><li>Beautiful UI/UX, with different modes for day and night.</li></ul>"
   }, {
-    "id":2,
-    "key":"wo2",
+    "id": 2,
+    "key": "wo2",
     "companyName": "AlvisAi",
     "companyUrl": "https://github.com/ramantehlan/AlvisAI",
     "role": "Founder & CEO",
@@ -210,8 +210,8 @@
     ],
     "about": "A social network app with a built-in bot and AI. This AI can understand user 's feelings by processing their online posts and behavior. <ul><li> Anonymous update with features to include emotions. </li><li> Ranking system for users which increase as a user do more activities. </li> <li > Beautiful UI / UX with many features like add background image or a solid colour. </li></ul>"
   }, {
-    "id":1,
-    "key":"wo1",
+    "id": 1,
+    "key": "wo1",
     "companyName": "MS Printing & Packaging CO",
     "companyUrl": "http://www.msprintpack.in/",
     "role": "Consultant",
@@ -227,8 +227,8 @@
     "about": "I was responsible for branding and online presence, also for creating formats of various documents like ledgers, purchase order etc.<ul><li> Created ledgers in Excel sheets to decrease the use of paper. </li><li> Worked on company 's website and displayed business on the Google search.</li><li> Created formats for various documents like purchase orders,quotations etc.</li></ul>"
   }],
   "projects": [{
-      "id":11,
-      "key":"pr11",
+      "id": 11,
+      "key": "pr11",
       "title": "Supernova",
       "url": "https://github.com/yogaan/Supernova-2",
       "event": "NASA International Space App Challenge Final - 2018, 91Spring Board, Noida",
@@ -242,8 +242,8 @@
       ],
       "about": ""
     }, {
-      "id":10,
-      "key":"pr10",
+      "id": 10,
+      "key": "pr10",
       "title": "LegalAI",
       "url": "https://github.com/ramantehlan/Supernova",
       "event": "Techstars Startup Weekend, Delhi Technological University, Delhi",
@@ -257,8 +257,8 @@
       ],
       "about": "Platform for lawyers and legal firms to leverage ML/NLP to identify, extract, and analyze litigation cases, and manage them privately on cloud."
     }, {
-      "id":9,
-      "key":"pr9",
+      "id": 9,
+      "key": "pr9",
       "title": "Supernova",
       "url": "https://github.com/ramantehlan/Supernova",
       "event": "NASA International Space App Challenge Pre-Hackathon - 2018, Rohini, Delhi",
@@ -274,8 +274,8 @@
       "about": "Smart AI to keep people safe on beaches from all the dangers. It uses ML and real time data to inform people about UV Index, Weather forecasts, Tsunamis, Harmful Algal Blooms (HABs), Animal Attacks and RIP currents(Using Optical Flow Analysis) etc, all through just one app. <ul >  <li> Using current location fetch all the environmental factors, like UV Index, Pressure, Air Quality. </li> <li > Camera can take a short video of ocean to do Optical Flow Analysis, to detect RIP Currents. </li></ul>"
     },
     {
-      "id":8,
-      "key":"pr8",
+      "id": 8,
+      "key": "pr8",
       "title": "JTLog",
       "url": "https://github.com/ramantehlan/JTLog",
       "productType": "NPM Module/Package",
@@ -289,8 +289,8 @@
       "about": "JavascriptTypescriptLog (JTLog) is Log library. <ul><li>Record/Store console logs for a particular session, return it in an array.</li><li>2 Modes for development and production (Won't be visible to users).</li><li>Switch between consoling and recording, or choose both.</li></ul>"
     },
     {
-      "id":7,
-      "key":"pr7",
+      "id": 7,
+      "key": "pr7",
       "title": "Finojo",
       "url": "https://github.com/ramantehlan/Finojo",
       "event": "Hackathon - HACKRUPT, NSIT, Delhi",
@@ -301,8 +301,8 @@
       "about": "Finojo is a decentralized tracking application of financial assets. It uses IPFS and Blockchain to allow corporate users to store there user files, documents, contracts, records etc on a decentralized network. Each Corporation and the user is provided with a unique finojo code, this code is used as a digital stamp for generating financial assets, later this code can be used to retrieve any file from the decentralized network."
     },
     {
-      "id":6,
-      "key":"pr6",
+      "id": 6,
+      "key": "pr6",
       "title": "Spero",
       "url": "https://github.com/ramantehlan/Spero",
       "event": "World Virtual Govhack",
@@ -316,8 +316,8 @@
       "about": "Spero is an open source decentralized job marketplace for refugees, asylums, NGOs and governments. we leverage blockchain and artificial intelligence to connected about 65.6 million refugees to jobs around the world. This project was created in December 2017 for the biggest Global Virtual GovHack hackathon organized by UAE Government in 2017."
     },
     {
-      "id":5,
-      "key":"pr5",
+      "id": 5,
+      "key": "pr5",
       "title": "Genetic-Tetris-Ai",
       "url": "https://github.com/ramantehlan/Genetic-Tetris-Ai",
       "productType": "Webapp",
@@ -330,8 +330,8 @@
       "about": "An implementation of Genetic Algorithms to create evolving/mutating AI to play Tetris. Genetic Algorithms follow the principles first laid down by Charles Darwin of 'survival of the fittest.' <ul><li>It uses matrix to create the game of Tetris.</li><li>Multiple speeds and ranking system for gameplay.</li><li>Simple yet beautiful UI / UX with user driven actions.</li></ul>"
     },
     {
-      "id":4,
-      "key":"pr4",
+      "id": 4,
+      "key": "pr4",
       "title": "Celer",
       "url": "https://github.com/ramantehlan/Celer",
       "event": "Techstars Startup Weekend, Delhi Technological University, Delhi, India",
@@ -346,8 +346,8 @@
       "about": "Celer helps businesses to distribute their processing across the devices connected to the Internet. <ul><li> Web app to get the processing from business users and API for app developers to integrate in there app. </li> <li> API use 20 % -30 % of total available processing power. </li> <li> Web app for app developers to see the processing they provided from there user base and get compensated for it(They are asked to remove ads or make there app freemium if they earn above a certain limit from us.) </li></ul>"
     },
     {
-      "id":3,
-      "key":"pr3",
+      "id": 3,
+      "key": "pr3",
       "title": "DataStructures-CPP",
       "url": "https://github.com/ramantehlan/DataStructures-CPP",
       "productType": "Terminal Application",
@@ -360,8 +360,8 @@
       "about": "DataStructures-CPP is an application to implement data structures and algorithms in C++ using a menu-driven interface.<ul><li> Created Source file for all the popular data structures. </li> <li> Neat application structure for beginners and professionals to understand. </li> <li> The program can be easily converted into other programming languages. </li></ul>"
     },
     {
-      "id":2,
-      "key":"pr2",
+      "id": 2,
+      "key": "pr2",
       "title": "Alexandrite",
       "url": "https://github.com/ramantehlan/Alexandrite",
       "productType": "Android App",
@@ -374,8 +374,8 @@
       "about": "Alexandrite is an android app, which saves data on a device, whether it's temporary files, downloaded app assets, user media, structured data, or something else .<ul><li> Worked on data storage provided by a device on Android. </li> <li> Automated multiple processes. </li> <li> Beautiful UI / UX with a smooth design. </li></ul>"
     },
     {
-      "id":1,
-      "key":"pr1",
+      "id": 1,
+      "key": "pr1",
       "title": "Optimus",
       "url": "https://github.com/ramantehlan/Optimus",
       "event": "AbinBev Hackathon, Bengaluru, India",
@@ -392,7 +392,7 @@
   ],
   "achievements": [{
     "id": 2,
-    "key":"ac2",
+    "key": "ac2",
     "title": "Google India Challenge Scholarship Recipient - 2018",
     "url": "https://s3-us-west-2.amazonaws.com/udacity-email/Scholarships/Google-Scholarship-India-Badge.png?utm_medium=email&utm_campaign=sch_600_auto_ndxxx_accepted-google-india&utm_source=blueshift&utm_content=sch_600_auto_ndxxx_accepted-google-india&bsft_eid=d8fd1fe3-6ebc-4fc5-b432-3ecfb97e17fb&bsft_clkid=1f4e2ac6-f62e-4f32-a82a-27b0f5926b02&bsft_uid=b77c40e0-be86-4cd4-8c73-dccd0d216cb3&bsft_mid=de0f7d62-2fe1-4706-8f5b-513755cbd83b&bsft_txnid=a28d2161-4b97-4972-af3a-33dad6e86704",
     "location": "Udacity - Google",
@@ -405,7 +405,7 @@
     "about": "Recipient of Google India Challenge Scholarship for the Android Developer track."
   }, {
     "id": 1,
-    "key":"ac1",
+    "key": "ac1",
     "title": "2nd | International Robotic Competition (IRC)",
     "url": "http://www.ircleague.com/past-IRCs.php",
     "location": "Husky Union Building, University of Washington, Seattle, USA",
@@ -432,104 +432,147 @@
     "about": "Innovation and creative problem solving are forces designing the world today, flowing us towards a better future, and Design thinking is at the heart of this innovation and change, like a secret power."
   }],
   "education": [{
-    "id":5,
-    "key":"ed5",
+    "id": 5,
+    "key": "ed5",
     "institute": "SRM University",
     "url": "#",
     "level": "Bachelor of technology in computer science",
     "timeline": "05/2016 - Present",
-    "coursework": [
-      "Design and Analysis of Algorithm",
-      "Computer System",
-      "Data Structures"
-    ]
+    "coursework": {
+      "Semester 1": [
+        "Basic Engineering - I",
+        "Biology for Engineers",
+        "Principles of Environmental Sciences",
+        "Mathematics - I",
+        "Material Science"
+      ],
+      "Semester 2": [
+        "Digital Computer Fundamentals",
+        "Programming in C",
+        "Chemistry",
+        "Basic Engineering - II",
+        "Mathematics II",
+        "Engineering Graphics",
+        "Physics"
+      ],
+      "Semester 3": [
+        "Data Structures Using C++",
+        "Design And Analysis Of Algorithms",
+        "Microprocessor And Interfacing",
+        "Computer Organization And Architecture",
+        "French language – I",
+        "Mathematics III"
+      ],
+      "Semester 4": [
+        "Principles of Programming languages",
+        "Theory Of Computation",
+        "Operating Systems",
+        "Java Programming",
+        "Probability And Queuing Theory"
+      ],
+      "Semester 5": [
+        "Compliler Design",
+        "Computer Networks",
+        "Operations Research Techniques",
+        "Soft Computing",
+        "Principles of Communication"
+      ],
+      "Semester 6": [
+        "Artificial Intelligence & Expert Systems",
+        "Advance Database",
+        "Database Management Systems",
+        "Logic For Computer Science",
+        "Object Oriented Analysis & Design"
+      ]
+    }
   }, {
-    "id":4,
-    "key":"ed4",
+    "id": 4,
+    "key": "ed4",
     "institute": "Sachdeva Global School",
     "url": "http://sachdevaglobal.in/",
     "level": "High school",
     "timeline": "04/2012 - 04/2016",
-    "achievements": [
-      "2nd | Web Designing | Shree Venkateshwar Internation School | 29/08/2013",
-      "2nd | Digiwitz | Inter school festival | 2013"
-    ],
-    "awards": [
-      "Excellence in Dramatics | 2014-2015"
-    ],
-    "activities": [
-      "Ballet - 'Apna Bharat Apna Gourav' | Annual Day | 30/01/2015",
-      "The great India Story Conference | ISBF (University of London Affliate Center) | 06/12/2014",
-      "International Robotics Competition (IRC) League | 05/11/2014",
-      "Creative Event | rukmini devi public school | 30/08/2014",
-      "Green-o-tisement | Delhi public school | 25/04/2014",
-      "Ballet - 'Jai janani, jai Bharati' | Annual Day | 28/01/2014",
-      "Commercial Art | Mount Carmel School | 22/08/2013",
-      "Street play | maxfort school | 12/08/2013",
-      "Netting the web | Indraprastha international School | 30/07/2013",
-      "Ballet - 'Sabrang-Ek-sang' | Annual Day | 2013-2014",
-      "Inter-house quiz competition | 2013-2014",
-      "Inter-house table tennis tournament | 2013-2014",
-      "Rendejuous: vis-a-vis-street Play | Queen's valley school | 2013",
-      "Recycle Raja | Horlicks Wizkids by Krayon | 2013",
-      "Rendejuous: vis-a-vis-street Play | Queen's valley school | 2013",
-      "Recycle Raja | Horlicks Wizkids by Krayon | 2013",
-      "Math Olympiad | rukmini devi public school | 30/11/2012",
-      "Core5 - Web Desigining | Delhi public School | 09/11/2012",
-      "The green olympiad | 2012"
-    ]
+    "coursework": {
+      "activities": [
+        "30/01/2015 | Ballet - 'Apna Bharat Apna Gourav' | Annual Day",
+        "06/12/2014 | The great India Story Conference | ISBF",
+        "05/11/2014 | International Robotics Competition (IRC)",
+        "30/08/2014 | Creative Event | rukmini devi public school",
+        "25/04/2014 | Green-o-tisement | Delhi public school",
+        "28/01/2014 | Ballet - 'Jai janani, jai Bharati' | Annual Day",
+        "2013-2014 | Ballet - 'Sabrang-Ek-sang' | Annual Day",
+        "2013-2014 | Inter-house quiz competition",
+        "2013-2014 | Inter-house table tennis tournament",
+        "22/08/2013 | Commercial Art | Mount Carmel School",
+        "12/08/2013 | Street play | maxfort school",
+        "30/07/2013 | Netting the web | Indraprastha international School",
+        "2013 | Rendejuous: vis-a-vis-street Play | Queen's valley school",
+        "2013 | Recycle Raja | Horlicks Wizkids by Krayon",
+        "2013 | Rendejuous: vis-a-vis-street Play | Queen's valley school",
+        "2013 | Recycle Raja | Horlicks Wizkids by Krayon",
+        "30/11/2012 | Math Olympiad | rukmini devi public school",
+        "09/11/2012 | Core5 - Web Desigining | Delhi public School",
+        "2012 | The green olympiad"
+      ],
+      "achievements": [
+        "2nd | 29/08/2013 | Web Designing | Shree Venkateshwar Internation School",
+        "2nd | 2013 | Digiwitz | Inter school festival"
+      ],
+      "awards": [
+        "2014-2015 | Excellence in Dramatics"
+      ]
+    }
   }, {
-    "id":3,
-    "key":"ed3",
+    "id": 3,
+    "key": "ed3",
     "institute": "Apollo International School",
     "url": "http://aischool.in/index.php",
     "level": "Schooling",
     "timeline": "04/2011 - 03/2012",
-    "coursework": [],
-    "achievements": [],
-    "awards": [],
-    "activities": [
-      "Children's preliminary round | The little art Gallery | 15/08/2011",
-      "Art/Declamation competition | Vidya Devi Jindal School | 07/08/2011"
-    ]
+    "coursework": {
+      "activities": [
+        "Children's preliminary round | The little art Gallery | 15/08/2011",
+        "Art/Declamation competition | Vidya Devi Jindal School | 07/08/2011"
+      ]
+    }
   }, {
-    "id":2,
-    "key":"ed2",
+    "id": 2,
+    "key": "ed2",
     "institute": "Swarnprastha Public School",
     "url": "http://www.swarnprastha.com/",
     "level": "Schooling",
     "timeline": "04/2010 - 03/2011",
-    "coursework": [],
-    "achievements": [
-      "1st | Inter-house group singing competition | 29/8/2010"
-    ],
-    "awards": [],
-    "activities": [
-      "National science olympiad | 19/11/2010"
-    ]
+    "coursework": {
+      "achievements": [
+        "1st | Inter-house group singing competition | 29/8/2010"
+      ],
+      "activities": [
+        "National science olympiad | 19/11/2010"
+      ]
+    }
   }, {
-    "id":1,
-    "key":"ed1",
+    "id": 1,
+    "key": "ed1",
     "institute": "Ganga Iinternational School",
     "url": "http://www.gangainternationalschool.com/",
     "level": "Schooling",
     "timeline": "Initial - 03/2010",
-    "coursework": [],
-    "achievements": [
-      "1st | Rakhi making competition | 2009-2010",
-      "3rd | Inter-house presentation competition | 2009-2010",
-      "3rd | Poster making competition | 2009-2010"
-    ],
-    "awards": [],
-    "activities": [
-      "Science exhibition | 30/10/2009",
-      "Pentasoft quiz | 02/03/2009",
-      "Inter-house hindi group song competition | 10/11/2008"
-    ]
+    "coursework": {
+      "achievements": [
+        "1st | Rakhi making competition | 2009-2010",
+        "3rd | Inter-house presentation competition | 2009-2010",
+        "3rd | Poster making competition | 2009-2010"
+      ],
+      "activities": [
+        "Science exhibition | 30/10/2009",
+        "Pentasoft quiz | 02/03/2009",
+        "Inter-house hindi group song competition | 10/11/2008"
+      ]
+    }
   }],
   "courses": [{
-    "id":5,
-    "key":"co5",
+    "id": 5,
+    "key": "co5",
     "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
     "url": "https://www.coursera.org/learn/algorithms-divide-conquer",
     "from": "Coursera - Stanford University",
@@ -537,8 +580,8 @@
     "about": "",
     "complete": false
   }, {
-    "id":4,
-    "key":"co4",
+    "id": 4,
+    "key": "co4",
     "name": "Fundamentals of Graphic Design",
     "url": "https://www.coursera.org/learn/fundamentals-of-graphic-design",
     "from": "Coursera - California Institute of the Arts",
@@ -546,8 +589,8 @@
     "about": "",
     "complete": false
   }, {
-    "id":3,
-    "key":"co3",
+    "id": 3,
+    "key": "co3",
     "name": "Software Testing",
     "url": "https://in.udacity.com/course/software-testing--cs258",
     "from": "Udacity",
@@ -555,8 +598,8 @@
     "about": "",
     "complete": false
   }, {
-    "id":2,
-    "key":"co2",
+    "id": 2,
+    "key": "co2",
     "name": "Writing READMEs",
     "url": "https://in.udacity.com/course/writing-readmes--ud777",
     "from": "Udacity",
@@ -564,8 +607,8 @@
     "about": "<ul> <li > READMEs are underrated but they are really important for the development of a product. </li> <li> They help in making the code more approachable to the humans. </li> <li > They connect everyone on the team more easily and visually to the code. </li></ul>",
     "complete": true
   }, {
-    "id":1,
-    "key":"co1",
+    "id": 1,
+    "key": "co1",
     "name": "Design Thinking for Innovation",
     "url": "https://www.coursera.org/learn/uva-darden-design-thinking-innovation",
     "from": "Coursera - University of Virginia",

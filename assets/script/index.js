@@ -16,11 +16,11 @@ var card = Vue.component('card', {
   template: `
 <div class="card">
   <div class="card-header">
-    
+
     <div class="decoration" v-if="info.decoration">
       {{ info.title }}
     </div>
-    
+
     <div class="card-title title" v-if="info.title">
       <a :href="info.url" >
       {{ info.title }}
@@ -38,7 +38,7 @@ var card = Vue.component('card', {
       {{ info.institute }}
       </a>
     </div>
-    
+
     <div class="subtitle-2" v-if="info.level">
       <div class="fas fa-user-graduate icon"></div>
       {{ info.level }}
@@ -65,12 +65,12 @@ var card = Vue.component('card', {
       <div class="fas fa-tools icon"></div>
         {{ info.productType }}
     </div>
-    
+
     <div class="subtitle-2 ">
       <div class="fas fa-clock icon"></div>
       {{ info.timeline }}
     </div>
-    
+
     <div class="subtitle-2 badge-container" v-if="info.tag">
       <div class="fas fa-tags icon"></div>
       <div class="badge" v-for="tag in info.tag">{{tag}}</div>
@@ -78,10 +78,20 @@ var card = Vue.component('card', {
   </div>
   <div class="card-body body-2" >
       <p v-html="info.about"></p>
+      <p v-if="info.coursework">
+      <div class="card-body-grid">
+          <div class="card-body-grid-box" v-for="(value, key) in info.coursework">
+              <b>{{ key }}</b>
+              <ul>
+                <li v-for="item in value">- {{item}}</li>
+              </ul>
+          </div>
+      </div>
+      </p>
   </div>
   <div class="card-footer">
     <div class="card-number">
-        #{{info.idid}}
+        #{{info.id}}
     </div>
   </div>
 </div>
@@ -103,7 +113,7 @@ var app = new Vue({
 
 function init() {
   $(".hidden").hide();
-  $("#home").show();
+  $("#education").show();
   $("#menuIcon").click(menuToggle);
 }
 
