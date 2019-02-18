@@ -16,26 +16,62 @@ var card = Vue.component('card', {
   template: `
 <div class="card">
   <div class="card-header">
-    <div class="decoration" v-if="decoration">
+    
+    <div class="decoration" v-if="info.decoration">
       {{ info.title }}
     </div>
-    <div class="card-title title">
-      <a :href="info.url">
+    
+    <div class="card-title title" v-if="info.title">
+      <a :href="info.url" >
       {{ info.title }}
       </a>
+    </div>
 
-    </div>
-    <div class="subtitle-2">
-      <div class="fas fa-location-arrow icon"></div>
-      <a :href="info.subTitleUrl">
-        {{ info.subTitle }}
+    <div class="card-title title" v-if="info.companyName">
+      <a :href="info.companyUrl" >
+      {{ info.companyName }}
       </a>
     </div>
+
+    <div class="card-title title" v-if="info.institute">
+      <a :href="info.url" >
+      {{ info.institute }}
+      </a>
+    </div>
+    
+    <div class="subtitle-2" v-if="info.level">
+      <div class="fas fa-user-graduate icon"></div>
+      {{ info.level }}
+    </div>
+
+    <div class="subtitle-2" v-if="info.role">
+      <div class="fas fa-user icon"></div>
+        {{ info.role }}
+    </div>
+
+    <div class="subtitle-2" v-if="info.location">
+      <div class="fas fa-map-marker icon"></div>
+        {{ info.location }}
+    </div>
+
+    <div class="subtitle-2" v-if="info.event">
+      <div class="fas fa-location-arrow icon"></div>
+      <a :href="info.eventUrl">
+        {{ info.event }}
+      </a>
+    </div>
+
+    <div class="subtitle-2" v-if="info.productType">
+      <div class="fas fa-tools icon"></div>
+        {{ info.productType }}
+    </div>
+    
     <div class="subtitle-2 ">
       <div class="fas fa-clock icon"></div>
       {{ info.timeline }}
     </div>
-    <div class="subtitle-2 badge-container">
+    
+    <div class="subtitle-2 badge-container" v-if="info.tag">
       <div class="fas fa-tags icon"></div>
       <div class="badge" v-for="tag in info.tag">{{tag}}</div>
     </div>
@@ -45,7 +81,7 @@ var card = Vue.component('card', {
   </div>
   <div class="card-footer">
     <div class="card-number">
-        #{{info.id}}
+        #{{info.idid}}
     </div>
   </div>
 </div>
@@ -96,6 +132,18 @@ $(document).ready(function() {
     console.log("Json Loaded");
     app.data = data;
     app.render = true;
+
+     // Update the document details.
+  $(document).attr("title", app.data.document.title);
+  $("meta[name='author']").attr("content", app.data.document.author);
+  $("meta[name='title']").attr("content", app.data.document.title);
+  $("meta[name='keywords']").attr("content", app.data.document.keywords);
+  $("meta[name='description']").attr("content", app.data.document.description);
+  $("meta[name='language']").attr("content", app.data.document.language);
+  $("meta[name='charset']").attr("content", app.data.document.charset);
+  $("meta[name='robots']").attr("content", app.data.document.robots);
+  $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
+
     init();
   }).catch(function(error) {
     console.log(error);

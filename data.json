@@ -23,139 +23,141 @@
       "url": "https://drive.google.com/open?id=1dloQ-o82YjmJbMkPU1feTpSxIv--5Jfp",
       "icon": "fas fa-user",
       "label": "Résumé",
-      "active": true
+      "display": true
     }, {
       "name": "email",
       "url": "",
       "icon": "fas fa-paper-plane",
       "label": "Ramantehlan[at]gmail",
-      "active": true
+      "display": true
     }, {
       "name": "github",
       "url": "https://github.com/ramantehlan",
       "icon": "fab fa-github",
       "label": "github/ramantehlan",
-      "active": true
+      "display": true
     }, {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/ramantehlan/",
       "icon": "fab fa-linkedin-in",
       "label": "linkedin/in/ramantehlan",
-      "active": true
+      "display": true
     }, {
       "name": "twitter",
       "url": "https://twitter.com/ramantehlan",
       "icon": "assets/images/icons/twitter-logo-silhouette (1).png",
       "label": "twitter/ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "hackerrank",
       "url": "https://hackerrank.com/ramantehlan",
       "icon": "assets/images/icons/hackerrank.png",
       "label": "hackerrank/ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "reddit",
       "url": "https://www.reddit.com/user/ramantehlan/",
       "icon": "assets/images/icons/reddit-alien-head-logo.png",
       "label": "reddit.com/user/ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "hackerearth",
       "url": "https://www.hackerearth.com/@ramantehlan",
       "icon": "assets/images/icons/hackerearth.png",
       "label": "hackerearth/@ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "y_combinator",
       "url": "https://news.ycombinator.com/user?id=ramantehlan",
       "icon": "assets/images/icons/y_combinator.png",
       "label": "news.ycombinator.com/user?id=ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "facebook",
       "url": "https://facebook.com/ramantehlan",
       "icon": "assets/images/icons/facebook-logo (1).png",
       "label": "facebook/ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "instagram",
       "url": "https://www.instagram.com/ramantehlan/",
       "icon": "assets/images/icons/instagram-social-network-logo-of-photo-camera.png",
       "label": "Instagram/@ramantehlan",
-      "active": false
+      "display": false
     }, {
       "name": "youtube",
       "url": "",
       "icon": "assets/images/icons/youtube.png",
       "label": "",
-      "active": false
+      "display": false
     }, {
       "name": "medium",
       "url": "https://medium.com/@ramantehlan",
       "icon": "assets/images/icons/linkedin-logo.png",
       "label": "medium.com/@ramantehlan",
-      "active": false
+      "display": false
     }]
   },
   "menu": [{
     "title": "home",
-    "active": true,
+    "display": true,
     "icon": "fas fa-home"
   }, {
     "title": "about",
-    "active": true,
+    "display": true,
     "icon": "fas fa-user"
   }, {
     "title": "work",
-    "active": true,
+    "display": true,
     "icon": "fas fa-briefcase"
   }, {
     "title": "skills",
-    "active": true,
+    "display": true,
     "icon": "fas fa-tools"
   }, {
     "title": "projects",
-    "active": true,
+    "display": true,
     "icon": "fas fa-project-diagram"
   }, {
     "title": "achievements",
-    "active": true,
+    "display": true,
     "icon": "fas fa-award"
   }, {
     "title": "contribution",
-    "active": true,
+    "display": true,
     "icon": "fas fa-people-carry"
   },{
     "title": "education",
-    "active": true,
+    "display": true,
     "icon": "fa fa-graduation-cap"
   },  {
     "title": "communities",
-    "active": true,
+    "display": true,
     "icon": "fas fa-hands-helping"
   }, {
     "title": "publications",
-    "active": false,
+    "display": false,
     "icon": "fas fa-globe-asia"
   }, {
     "title": "blogs",
-    "active": true,
+    "display": true,
     "icon": "fas fa-star"
   },{
     "title": "talks",
-    "active": true,
+    "display": true,
     "icon": "fas fa-microphone"
   }, {
     "title": "links",
-    "active": true,
+    "display": true,
     "icon": "fa fa-link"
   }],
   "work": [{
     "id":5,
-    "title": "Udacity",
-    "url": "https://www.Udacity.com/",
-    "subTitle": "Software Engineer Intern, Delhi, India",
+    "key":"wo5",
+    "companyName": "Udacity",
+    "companyUrl": "https://www.Udacity.com/",
+    "role": "Software Engineer Intern",
+    "location": "Delhi, India",
     "timeline": "09/2018 - 11/2018",
     "tag": [
       "JavaScript/TypeScript",
@@ -164,9 +166,11 @@
     "about": "TBD"
   }, {
     "id":4,
-    "title": "Knowlarity",
-    "url": "https://www.knowlarity.com/",
-    "subTitle": "Software Engineer Intern, Gurgaon, India",
+    "key":"wo4",
+    "companyName": "Knowlarity",
+    "companyUrl": "https://www.knowlarity.com/",
+    "role": "Software Engineer Intern",
+    "location": "Gurgaon, India",
     "timeline": "06/2018 - 08/2018",
     "tag": [
       "JavaScript/TypeScript",
@@ -177,9 +181,11 @@
     "about": "Worked on optimizing the current app, decrease O(n) to O(1) by making asynchronous functions, upgraded from angularJs to angular 5, wrote module to debug the app."
   }, {
     "id":3,
-    "title": "Cashfog",
-    "url": "https://github.com/ramantehlan/Cashfog",
-    "subTitle": "Founder & CEO, Delhi, India",
+    "key":"wo3",
+    "companyName": "Cashfog",
+    "companyUrl": "https://github.com/ramantehlan/Cashfog",
+    "role": "Founder & CEO",
+    "location": "Delhi, India",
     "timeline": "10/2016 - 09/2017",
     "tag": [
       "10+ First Month Business Users",
@@ -190,9 +196,11 @@
     "about": "An easy and smart service to maintain business transactions and documents online with analytics tools which provide more clear vision on cash flow. <ul> <li>Worked on powerful analytics tools to visualize all the business data.</li><li>Drag and drop document upload for all the important documents and files.</li><li>Beautiful UI/UX, with different modes for day and night.</li></ul>"
   }, {
     "id":2,
-    "title": "AlvisAi",
-    "url": "https://github.com/ramantehlan/AlvisAI",
-    "subTitle": "Founder & CEO, Delhi, India",
+    "key":"wo2",
+    "companyName": "AlvisAi",
+    "companyUrl": "https://github.com/ramantehlan/AlvisAI",
+    "role": "Founder & CEO",
+    "location": "Delhi, India",
     "timeline": "07/2015 - 09/2016",
     "tag": [
       "170+ First Month Users",
@@ -203,9 +211,11 @@
     "about": "A social network app with a built-in bot and AI. This AI can understand user 's feelings by processing their online posts and behavior. <ul><li> Anonymous update with features to include emotions. </li><li> Ranking system for users which increase as a user do more activities. </li> <li > Beautiful UI / UX with many features like add background image or a solid colour. </li></ul>"
   }, {
     "id":1,
-    "title": "MS Printing & Packaging CO",
-    "url": "http://www.msprintpack.in/",
-    "subTitle": "Consultant, Rai, Haryana",
+    "key":"wo1",
+    "companyName": "MS Printing & Packaging CO",
+    "companyUrl": "http://www.msprintpack.in/",
+    "role": "Consultant",
+    "location": "Rai, Haryana",
     "timeline": "05/2013 - 05/2015",
     "tag": [
       "30+ Business Clients Served",
@@ -218,10 +228,12 @@
   }],
   "projects": [{
       "id":11,
+      "key":"pr11",
       "title": "Supernova",
       "url": "https://github.com/yogaan/Supernova-2",
-      "subTitle": "NASA International Space App Challenge Final - 2018, 91Spring Board, Noida",
-      "subTitleUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "event": "NASA International Space App Challenge Final - 2018, 91Spring Board, Noida",
+      "eventUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "productType": "Android/IOS App",
       "timeline": "19/10/2018 - 21/10/2018",
       "tag": [
         "3 people team",
@@ -231,10 +243,12 @@
       "about": ""
     }, {
       "id":10,
+      "key":"pr10",
       "title": "LegalAI",
       "url": "https://github.com/ramantehlan/Supernova",
-      "subTitle": "Techstars Startup Weekend, Delhi Technological University, Delhi",
-      "subTitleUrl": "http://startupweekend.org/",
+      "event": "Techstars Startup Weekend, Delhi Technological University, Delhi",
+      "eventUrl": "http://startupweekend.org/",
+      "productType": "Webapp",
       "timeline": "07/09/2018 - 09/09/2018",
       "tag": [
         "3rd in 64 teams",
@@ -244,10 +258,12 @@
       "about": "Platform for lawyers and legal firms to leverage ML/NLP to identify, extract, and analyze litigation cases, and manage them privately on cloud."
     }, {
       "id":9,
+      "key":"pr9",
       "title": "Supernova",
       "url": "https://github.com/ramantehlan/Supernova",
-      "subTitle": "NASA International Space App Challenge Pre-Hackathon - 2018, Rohini, Delhi",
-      "subTitleUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "event": "NASA International Space App Challenge Pre-Hackathon - 2018, Rohini, Delhi",
+      "eventUrl": "https://www.nasa.gov/content/the-international-space-apps-challenge/",
+      "productType": "Android/IOS App",
       "timeline": "31/08/2018 - 01/09/2018",
       "tag": [
         "4th in 70 teams",
@@ -259,9 +275,10 @@
     },
     {
       "id":8,
+      "key":"pr8",
       "title": "JTLog",
       "url": "https://github.com/ramantehlan/JTLog",
-      "subTitle": "NPM Module",
+      "productType": "NPM Module/Package",
       "timeline": "14/06/2018 - 28/08/2018",
       "tag": [
         "600+ Downloads/First Month",
@@ -273,20 +290,24 @@
     },
     {
       "id":7,
+      "key":"pr7",
       "title": "Finojo",
       "url": "https://github.com/ramantehlan/Finojo",
-      "subTitle": "Hackathon - HACKRUPT, NSIT, Delhi",
-      "subTitleUrl": "https://www.hackerearth.com/sprints/hackrupt-18/",
+      "event": "Hackathon - HACKRUPT, NSIT, Delhi",
+      "eventUrl": "https://www.hackerearth.com/sprints/hackrupt-18/",
+      "productType": "NPM Module/Package",
       "timeline": "03/02/2018 - 04/02/2018",
       "tag": ["Top 10 Finalist", "NodeJS", "IPFS"],
       "about": "Finojo is a decentralized tracking application of financial assets. It uses IPFS and Blockchain to allow corporate users to store there user files, documents, contracts, records etc on a decentralized network. Each Corporation and the user is provided with a unique finojo code, this code is used as a digital stamp for generating financial assets, later this code can be used to retrieve any file from the decentralized network."
     },
     {
       "id":6,
+      "key":"pr6",
       "title": "Spero",
       "url": "https://github.com/ramantehlan/Spero",
-      "subTitle": "World Virtual Govhack",
-      "subTitleUrl": "http://hackathon.govtechprize.ae/",
+      "event": "World Virtual Govhack",
+      "eventUrl": "http://hackathon.govtechprize.ae/",
+      "productType": "Decentralized Webapp",
       "timeline": "12/2017",
       "tag": [
         "Blockchain",
@@ -296,9 +317,10 @@
     },
     {
       "id":5,
+      "key":"pr5",
       "title": "Genetic-Tetris-Ai",
       "url": "https://github.com/ramantehlan/Genetic-Tetris-Ai",
-      "subTitle": "Webapp",
+      "productType": "Webapp",
       "timeline": "Ongoing",
       "tag": [
         "JavaScript",
@@ -309,10 +331,12 @@
     },
     {
       "id":4,
+      "key":"pr4",
       "title": "Celer",
       "url": "https://github.com/ramantehlan/Celer",
-      "subTitle": "Techstars Startup Weekend, Delhi Technological University, Delhi, India",
-      "subTitleUrl": "http://startupweekend.org/",
+      "event": "Techstars Startup Weekend, Delhi Technological University, Delhi, India",
+      "eventUrl": "http://startupweekend.org/",
+      "productType": "Webapp/Android App",
       "timeline": "08/09/2017 - 10/09/2017",
       "tag": [
         "Grid computing",
@@ -323,9 +347,10 @@
     },
     {
       "id":3,
+      "key":"pr3",
       "title": "DataStructures-CPP",
       "url": "https://github.com/ramantehlan/DataStructures-CPP",
-      "subTitle": "Application",
+      "productType": "Terminal Application",
       "timeline": "Ongoing",
       "tag": [
         "C++",
@@ -336,9 +361,10 @@
     },
     {
       "id":2,
+      "key":"pr2",
       "title": "Alexandrite",
       "url": "https://github.com/ramantehlan/Alexandrite",
-      "subTitle": "Android App",
+      "productType": "Android App",
       "timeline": "O4/2017",
       "tag": [
         "Java",
@@ -349,10 +375,12 @@
     },
     {
       "id":1,
+      "key":"pr1",
       "title": "Optimus",
       "url": "https://github.com/ramantehlan/Optimus",
-      "subTitle": "AbinBev Hackathon, Bengaluru, India",
-      "subTitleUrl": "http://www.hackathon.io/abinbev-hacktheworld-bangalore/schedules",
+      "event": "AbinBev Hackathon, Bengaluru, India",
+      "eventUrl": "http://www.hackathon.io/abinbev-hacktheworld-bangalore/schedules",
+      "productType": "Webapp",
       "timeline": "03/02/2017 - 05/02/2017",
       "tag": [
         "Artificial Intelligence",
@@ -363,7 +391,8 @@
     }
   ],
   "achievements": [{
-    "key": 2,
+    "id": 2,
+    "key":"ac2",
     "title": "Google India Challenge Scholarship Recipient - 2018",
     "url": "https://s3-us-west-2.amazonaws.com/udacity-email/Scholarships/Google-Scholarship-India-Badge.png?utm_medium=email&utm_campaign=sch_600_auto_ndxxx_accepted-google-india&utm_source=blueshift&utm_content=sch_600_auto_ndxxx_accepted-google-india&bsft_eid=d8fd1fe3-6ebc-4fc5-b432-3ecfb97e17fb&bsft_clkid=1f4e2ac6-f62e-4f32-a82a-27b0f5926b02&bsft_uid=b77c40e0-be86-4cd4-8c73-dccd0d216cb3&bsft_mid=de0f7d62-2fe1-4706-8f5b-513755cbd83b&bsft_txnid=a28d2161-4b97-4972-af3a-33dad6e86704",
     "location": "Udacity - Google",
@@ -375,7 +404,8 @@
     ],
     "about": "Recipient of Google India Challenge Scholarship for the Android Developer track."
   }, {
-    "key": 1,
+    "id": 1,
+    "key":"ac1",
     "title": "2nd | International Robotic Competition (IRC)",
     "url": "http://www.ircleague.com/past-IRCs.php",
     "location": "Husky Union Building, University of Washington, Seattle, USA",
@@ -403,6 +433,7 @@
   }],
   "education": [{
     "id":5,
+    "key":"ed5",
     "institute": "SRM University",
     "url": "#",
     "level": "Bachelor of technology in computer science",
@@ -411,17 +442,14 @@
       "Design and Analysis of Algorithm",
       "Computer System",
       "Data Structures"
-    ],
-    "achievements": [],
-    "awards": [],
-    "activities": []
+    ]
   }, {
     "id":4,
+    "key":"ed4",
     "institute": "Sachdeva Global School",
     "url": "http://sachdevaglobal.in/",
     "level": "High school",
     "timeline": "04/2012 - 04/2016",
-    "coursework": [],
     "achievements": [
       "2nd | Web Designing | Shree Venkateshwar Internation School | 29/08/2013",
       "2nd | Digiwitz | Inter school festival | 2013"
@@ -452,6 +480,7 @@
     ]
   }, {
     "id":3,
+    "key":"ed3",
     "institute": "Apollo International School",
     "url": "http://aischool.in/index.php",
     "level": "Schooling",
@@ -465,6 +494,7 @@
     ]
   }, {
     "id":2,
+    "key":"ed2",
     "institute": "Swarnprastha Public School",
     "url": "http://www.swarnprastha.com/",
     "level": "Schooling",
@@ -479,6 +509,7 @@
     ]
   }, {
     "id":1,
+    "key":"ed1",
     "institute": "Ganga Iinternational School",
     "url": "http://www.gangainternationalschool.com/",
     "level": "Schooling",
@@ -498,6 +529,7 @@
   }],
   "courses": [{
     "id":5,
+    "key":"co5",
     "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
     "url": "https://www.coursera.org/learn/algorithms-divide-conquer",
     "from": "Coursera - Stanford University",
@@ -506,6 +538,7 @@
     "complete": false
   }, {
     "id":4,
+    "key":"co4",
     "name": "Fundamentals of Graphic Design",
     "url": "https://www.coursera.org/learn/fundamentals-of-graphic-design",
     "from": "Coursera - California Institute of the Arts",
@@ -514,6 +547,7 @@
     "complete": false
   }, {
     "id":3,
+    "key":"co3",
     "name": "Software Testing",
     "url": "https://in.udacity.com/course/software-testing--cs258",
     "from": "Udacity",
@@ -522,6 +556,7 @@
     "complete": false
   }, {
     "id":2,
+    "key":"co2",
     "name": "Writing READMEs",
     "url": "https://in.udacity.com/course/writing-readmes--ud777",
     "from": "Udacity",
@@ -530,6 +565,7 @@
     "complete": true
   }, {
     "id":1,
+    "key":"co1",
     "name": "Design Thinking for Innovation",
     "url": "https://www.coursera.org/learn/uva-darden-design-thinking-innovation",
     "from": "Coursera - University of Virginia",

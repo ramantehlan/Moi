@@ -17,7 +17,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="language" content="English">
-  <meta charset="utf-8">
+  <meta name="charset" charset="utf-8">
   <meta name="robots" content="INDEX , FOLLOW">
   <meta name="google-site-verification" content="" />
   <!-- View point -->
@@ -46,7 +46,7 @@
           {{ data.profile.vision }}
         </div>
         <ul class="profile-footer">
-          <a v-for="link in data.profile.link" v-if="link.active" :href="link.url">
+          <a v-for="link in data.profile.link" v-if="link.display" :href="link.url">
             <li>
               <i :class="'profile-icon ' + link.icon"></i>
               {{ link.label }}
@@ -68,7 +68,7 @@
         </div>
         <ul class="menu-list" id="menuList">
           <span v-if="render" class="menu-list-span">
-            <li v-for="menu in data.menu" v-if="menu.active" :onclick="`showSection('` + menu.title + `')`" :id="menu.title + 'Btn'" class="menu-list-item">
+            <li v-for="menu in data.menu" v-if="menu.display" :onclick="`showSection('` + menu.title + `')`" :id="menu.title + 'Btn'" class="menu-list-item">
               <i :class="menu.icon" v-if="menuIconAllow" ></i>
               {{ menu.title }}
             </li>
@@ -89,9 +89,6 @@
           </div>
 
           <div id="about" class="hidden">
-            <span v-if="render">
-              Hello, The about section is this</p>
-            </span>
           </div>
 
           <div id="work" class="hidden">
@@ -101,8 +98,6 @@
           </div>
 
           <div id="skills" class="hidden">
-            <span v-if="render">
-            </span>
           </div>
 
           <div id="projects" class="hidden">
@@ -113,50 +108,35 @@
 
           <div id="achievements" class="hidden">
             <span v-if="render">
-              <card v-for="info in data.achievement" v-bind:info="info" v-bind:key="info.key"></card>
+              <card v-for="info in data.achievements" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="contributions" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
           </div>
 
           <div id="education" class="hidden">
             <span v-if="render">
               <card v-for="info in data.education" v-bind:info="info" v-bind:key="info.key"></card>
+              <h3>Online Cources</h3>
+              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="communities" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
           </div>
 
           <div id="publications" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
           </div>
 
           <div id="blogs" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.blogs" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
           </div>
 
           <div id="talks" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
           </div>
 
           <div id="links" class="hidden">
-            <span v-if="render">
-              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key"></card>
-            </span>
+
           </div>
 
 
@@ -167,7 +147,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        Made with <i class="fas fa-heart"></i> by Raman Tehlan
+        All Right Reserved - Made with <i class="fas fa-heart"></i> by Raman Tehlan - https://ramantehlan.github.io/Personal-Site-Template
       </div>
 
     </div>
