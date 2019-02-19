@@ -6,6 +6,7 @@
   --background: #efefef;
   --card: #ffffff;
   --background-text: #000000;
+  --background-text-2: rgba(0,0,0,0.6);
   --card-text: #000000;
   /* Text */
   --title-size: 24px;
@@ -88,7 +89,6 @@ p {
   font-size: var(--subtitle-size);
   letter-spacing: var(--subtitle-spacing);
   font-family: roboto_m;
-  margin-top: 6px;
   text-transform: capitalize;
 }
 
@@ -112,7 +112,7 @@ p {
 .content {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .content-body {
@@ -224,6 +224,11 @@ p {
   padding-bottom: 0rem;
   border-radius: var(--border-radius) var(--border-radius) 0px 0px;
 
+}
+
+.card-header > .subtitle{
+  margin-top:6px;
+  color:rgba(0,0,0,0.8);
 }
 
 .card-body {
@@ -377,9 +382,11 @@ p {
 }
 
 .break-heading {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: roboto_r;
+  color: var(--background-text-2);
+  text-transform:capitalize;
 }
 
 .skill-group:not(:first-child) {
@@ -405,6 +412,26 @@ p {
   padding-left: 6px;
   padding-right: 6px;
 }
+
+.small-card-holder{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:flex-start;
+}
+
+.small-card{
+  background-color: var(--card);
+  color: var(--card-text);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-left:10px;
+  margin-right:10px;
+  margin-top:20px;
+  padding:15px;
+  min-width: 30%;
+  cursor: pointer;
+}
+
 
 @media only screen and (min-width: 800px) and (min-height: 450px) {
   .profile {

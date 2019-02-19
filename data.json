@@ -123,7 +123,7 @@
     "display": true,
     "icon": "fas fa-award"
   }, {
-    "title": "contribution",
+    "title": "contributions",
     "display": true,
     "icon": "fas fa-people-carry"
   }, {
@@ -616,10 +616,29 @@
     "about": "<ul> <li > Learned about the application of Design Thinking for Innovation. </li> <li > Explored methods to find out new ideas using current data. </li> <li > Possibility - driven, human - centred and option - focused approach. </li></ul>",
     "complete": true
   }],
-  "contribution":[{
-    
-    }]
-  ,
+  "contributions": [{
+      "title": "phpMyAdmin/phpMyAdmin ",
+      "url": "https://github.com/phpmyadmin/phpmyadmin/commits?author=ramantehlan"
+    }, {
+      "title": "loklak/loklak_artwork",
+      "url": "https://github.com/loklak/loklak_artwork/commits?author=ramantehlan"
+    }, {
+      "title": "Fossasia/Meilix",
+      "url": "https://github.com/fossasia/meilix/commits?author=ramantehlan"
+    }, {
+      "title": "Fossasia/Meilix-artwork",
+      "url": "https://github.com/fossasia/meilix-artwork/commits?author=ramantehlan"
+    }, {
+      "title": "Yogdaan/LinuxSpells",
+      "url": "https://github.com/yogdaan/LinuxSpells/commits?author=ramantehlan"
+    }, {
+      "title": "Yogdaan/Supernova-2",
+      "url": "https://github.com/yogdaan/Supernova-2/commits?author=ramantehlan"
+    },{
+      "title": "chrislgarry/Apollo-11",
+      "url": "https://github.com/chrislgarry/Apollo-11/commits?author=ramantehlan"
+    }
+  ],
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#4288d0;"],
     "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],

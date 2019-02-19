@@ -15,7 +15,7 @@ var skillbar = Vue.component('skillbar', {
   props: ['value', 'index', 'color', 'title'],
   template: `
   <div class="skill-group">
-    <span class="subtitle" :style="'color:' + color[index] ">{{ title[index] }}</span>
+    <span class="break-heading subtitle" :style="'color:' + color[index] ">{{ title[index] }}</span>
     <div class="skill-group-body">
       <div v-for="data in value" class="skill-name subtitle" :style="'background-color:' + color[index] ">
           {{ data.name }}
@@ -130,7 +130,7 @@ var app = new Vue({
 function init() {
   $(".hidden").hide();
   $("#homeBtn").addClass("menu-list-selected");
-  $("#skills").show();
+  $("#contributions").show();
   $("#menuIcon").click(menuToggle);
 }
 

@@ -83,7 +83,7 @@
 
           <div id="home" class="hidden">
             <span v-if="render">
-              <h1 > {{ data.home.title }} </h1>
+              <h1> {{ data.home.title }} </h1>
               <p v-html="data.home.body"> </p>
             </span>
           </div>
@@ -93,6 +93,7 @@
 
           <div id="work" class="hidden">
             <span v-if="render">
+              <div class="break-heading">Experience</div>
               <card v-for="info in data.work" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
@@ -105,23 +106,36 @@
 
           <div id="projects" class="hidden">
             <span v-if="render">
+              <div class="break-heading">Projects</div>
               <card v-for="info in data.projects" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="achievements" class="hidden">
             <span v-if="render">
+              <div class="break-heading">achievements</div>
               <card v-for="info in data.achievements" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="contributions" class="hidden">
+            <span v-if="render">
+              <div class="break-heading">Open Source Contributions</div>
+              <div class="small-card-holder">
+                <a :href="info.url" v-for="info in data.contributions">
+                  <div class="small-card subtitle">
+                    {{ info.title }}
+                  </div>
+                </a>
+              </div>
+            </span>
           </div>
 
           <div id="education" class="hidden">
             <span v-if="render">
+              <div class="break-heading">Education</div>
               <card v-for="info in data.education" v-bind:info="info" v-bind:key="info.key"></card>
-              <h4 class="break-heading">Online Cources</h4>
+              <div class="break-heading">Online Cources</div>
               <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key" v-if="info.complete"></card>
             </span>
           </div>
@@ -150,7 +164,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        Designed and Developed with <i class="fas fa-heart"></i> by <a href="#">Raman Tehlan</a> | <a href="#">Open Source</a>
+        Designed and Developed with <i class="fas fa-heart"></i> by <a href="#">Raman Tehlan</a> | <i class="fas fa-eye"></i> <a href="#">Open Source</a>
       </div>
 
     </div>
