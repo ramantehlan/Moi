@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Welcome to awsome</title>
+  <title>Personal-Site-Template</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -39,10 +39,10 @@
         <div class="profile-name title">
           {{ data.profile.name }}
         </div>
-        <div class="profile-designation subtitle-2">
+        <div class="profile-designation subtitle">
           {{ data.profile.domains }}
         </div>
-        <div class="profile-about">
+        <div class="profile-about body">
           {{ data.profile.vision }}
         </div>
         <ul class="profile-footer">
@@ -58,7 +58,7 @@
 
     <!-- Body Box -->
 
-    <div class="body">
+    <div class="view-body">
 
       <!-- Menu Box -->
       <div id="menu" class="menu">
@@ -83,7 +83,7 @@
 
           <div id="home" class="hidden">
             <span v-if="render">
-              <h1 class="home-h1"> {{ data.home.title }} </h1>
+              <h1 > {{ data.home.title }} </h1>
               <p v-html="data.home.body"> </p>
             </span>
           </div>
@@ -150,7 +150,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        All Right Reserved - Made with <i class="fas fa-heart"></i> by Raman Tehlan - https://ramantehlan.github.io/Personal-Site-Template
+        Designed and Developed with <i class="fas fa-heart"></i> by <a href="#">Raman Tehlan</a> | <a href="#">Open Source</a>
       </div>
 
     </div>

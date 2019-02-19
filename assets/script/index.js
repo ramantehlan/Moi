@@ -15,9 +15,9 @@ var skillbar = Vue.component('skillbar', {
   props: ['value', 'index', 'color', 'title'],
   template: `
   <div class="skill-group">
-    <b :style="'color:' + color[index] ">{{ title[index] }}</b>
+    <span class="subtitle" :style="'color:' + color[index] ">{{ title[index] }}</span>
     <div class="skill-group-body">
-      <div v-for="data in value" class="skill-name" :style="'background-color:' + color[index] ">
+      <div v-for="data in value" class="skill-name subtitle" :style="'background-color:' + color[index] ">
           {{ data.name }}
       </div>
     </div>
@@ -31,72 +31,68 @@ var card = Vue.component('card', {
 <div class="card">
   <div class="card-header">
 
-    <div class="decoration" v-if="info.decoration">
-      {{ info.title }}
-    </div>
-
-    <div class="card-title title" v-if="info.title">
+    <div class="title" v-if="info.title">
       <a :href="info.url" >
       {{ info.title }}
       </a>
     </div>
 
-    <div class="card-title title" v-if="info.companyName">
+    <div class="title" v-if="info.companyName">
       <a :href="info.companyUrl" >
       {{ info.companyName }}
       </a>
     </div>
 
-    <div class="card-title title" v-if="info.institute">
+    <div class="title" v-if="info.institute">
       <a :href="info.url" >
       {{ info.institute }}
       </a>
     </div>
 
-    <div class="subtitle-2" v-if="info.level">
+    <div class="subtitle" v-if="info.level">
       <i class="fas fa-user-graduate icon"></i>
       {{ info.level }}
     </div>
 
-    <div class="subtitle-2" v-if="info.from">
+    <div class="subtitle" v-if="info.from">
       <i class="fa fa-university icon"></i>
       {{ info.from }}
     </div>
 
-    <div class="subtitle-2" v-if="info.role">
+    <div class="subtitle" v-if="info.role">
       <i class="fas fa-user icon"></i>
         {{ info.role }}
     </div>
 
-    <div class="subtitle-2" v-if="info.location">
+    <div class="subtitle" v-if="info.location">
       <i class="fas fa-map-marker icon"></i>
         {{ info.location }}
     </div>
 
-    <div class="subtitle-2" v-if="info.event">
+    <div class="subtitle" v-if="info.event">
       <i class="fas fa-location-arrow icon"></i>
       <a :href="info.eventUrl">
         {{ info.event }}
       </a>
     </div>
 
-    <div class="subtitle-2" v-if="info.productType">
+    <div class="subtitle" v-if="info.productType">
       <i class="fas fa-tools icon"></i>
         {{ info.productType }}
     </div>
 
-    <div class="subtitle-2 ">
+    <div class="subtitle ">
       <i class="fas fa-clock icon"></i>
       {{ info.timeline }}
     </div>
 
-    <div class="subtitle-2 badge-container" v-if="info.tag">
+    <div class="subtitle badge-container" v-if="info.tag">
       <i class="fas fa-tags icon"></i>
       <div class="badge" v-for="tag in info.tag">{{tag}}</div>
     </div>
   </div>
-  <div class="card-body body-2" >
-      <p v-html="info.about"></p>
+  <div class="card-body body" >
+      <p v-if="info.about" v-html="info.about"></p>
       <p v-if="info.coursework">
       <div class="card-body-grid">
           <div class="card-body-grid-box" v-for="(value, key) in info.coursework">
@@ -133,7 +129,7 @@ var app = new Vue({
 
 function init() {
   $(".hidden").hide();
-  $("#skillsBtn").addClass("menu-list-selected");
+  $("#homeBtn").addClass("menu-list-selected");
   $("#skills").show();
   $("#menuIcon").click(menuToggle);
 }
@@ -184,6 +180,7 @@ $(document).ready(function() {
   // To allow menu icon only when screen size is small
   if ($(document).width() >= maxBreakPoint) {
     app.menuIconAllow = false
+    $("#menuList").show();
   } else {
     app.menuIconAllow = true;
   }
@@ -191,6 +188,7 @@ $(document).ready(function() {
   window.onresize = function(event) {
     if ($(document).width() >= maxBreakPoint) {
       app.menuIconAllow = false
+      $("#menuList").show();
     } else {
       app.menuIconAllow = true;
     }

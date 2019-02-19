@@ -1,9 +1,5 @@
 :root {
-  /*
-///
-/// Color
-///
-*/
+  /* Color */
   --primary: #791e94;
   --primary-v: #3a0e47;
   --primary-text: #FFFFFF;
@@ -11,69 +7,45 @@
   --card: #ffffff;
   --background-text: #000000;
   --card-text: #000000;
-  --success: #7cb518;
-  --info: #fce72d;
-  --warning: #ff4828;
-  --danger: #e71d21;
-  --subtitle-text: rgba(0, 0, 0, 0.7);
-  --date-text: rgba(30, 50, 50, 0.3);
-  /*
-///
-/// Text
-///
-*/
-  --h1-size: 4em;
-  --h2-size: 3.4rem;
-  --h3-size: 2.75rem;
-  --h4-size: 2.125rem;
-  --h5-size: 1.5rem;
-  --h6-size: 1.15rem;
-  --h1-spacing: -0.09375rem;
-  --h2-spacing: -0.03125rem;
-  --h3-spacing: 0rem;
-  --h4-spacing: 0.015625rem;
-  --h5-spacing: 0rem;
-  --h6-spacing: 0.009375rem;
-  --title-size: 1.65rem;
-  --subtitle-1-size: 1rem;
-  --subtitle-2-size: 0.875rem;
-  --body-1-size: 1.1rem;
-  --body-2-size: 0.875rem;
-  --title-1-spacing: 0.875rem;
-  --subtitle-1-spacing: 0.009375rem;
-  --subtitle-2-spacing: 0.00625rem;
-  --body-1-spacing: 0.03125em;
-  --body-2-spacing: 0.015625rem;
-  --button-size: 0.875rem;
-  --caption-size: 0.75rem;
-  --overline-size: 0.625rem;
-  --button-spacing: 0.078125rem;
-  --caption-spacing: 0.025rem;
-  --overline-spacing: 0.09375rem;
-  --icon-size: 0.875rem;
-  /*
-///
-/// Other
-///
-*/
-  --header-padding: 0.75rem;
-  --body-padding: 0.9rem;
-  --footer-padding: 0.75rem;
-  --icon-padding: 0.5rem;
-  --badge-padding: 0.5rem;
+  /* Text */
+  --title-size: 24px;
+  --subtitle-size: 12px;
+  --body-size: 14px;
+  --title-spacing: 0.075rem;
+  --subtitle-spacing: 0.00625rem;
+  --body-spacing: 0.015625rem;
+  /* Other */
+  --border-radius: 2.5px;
 }
 
-/*
-///
-/// Design
-///
-*/
+/* Fonts */
+@font-face {
+  font-family: roboto_m;
+  src: url("../font/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: roboto_r;
+  src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: roboto_t;
+  src: url("../font/Roboto-Thin.ttf");
+}
+
+@font-face {
+  font-family: rock;
+  src: url("../font/ROCK.TTF");
+}
+
+/* Basic */
 html {
   margin: 0px;
   padding: 0px;
   background-color: var(--background);
   color: var(--background-text);
-  font-size: var(--body-2-size);
+  font-size: var(--body-size);
   font-family: roboto_r;
 }
 
@@ -87,25 +59,22 @@ a {
   text-decoration: none;
 }
 
-button {
-  font-size: var(--button-size);
-  font-family: roboto_m;
-  letter-spacing: var(--button-spacing);
-  text-transform: uppercase;
-  cursor: pointer;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
 }
 
-caption {
-  font-size: var(--caption-size);
+p {
+  font-size: var(--body-size);
+  letter-spacing: var(--body-spacing);
   font-family: roboto_r;
-  letter-spacing: var(--caption-spacing);
+  margin:0px;
+  padding:0px;
 }
 
-.overline {
-  font-size: var(--overline-size);
-  font-family: roboto_r;
-  letter-spacing: var(--overline-spacing);
-  text-transform: uppercase;
+#view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap
 }
 
 .title {
@@ -115,161 +84,53 @@ caption {
   margin-bottom: 10px;
 }
 
-.subtitle-1 {
-  font-size: var(--subtitle-1-size);
-  letter-spacing: var(--subtitle-1-spacing);
-  font-family: roboto_r;
-  color: var(--subtitle-text);
-  text-transform: capitalize;
-}
-
-.subtitle-2 {
-  font-size: var(--subtitle-2-size);
-  letter-spacing: var(--subtitle-2-spacing);
+.subtitle {
+  font-size: var(--subtitle-size);
+  letter-spacing: var(--subtitle-spacing);
   font-family: roboto_m;
-  color: var(--subtitle-text);
   margin-top: 6px;
   text-transform: capitalize;
 }
 
-.body-1 {
-  font-size: var(--body-1-size);
-  letter-spacing: var(--body-1-spacing);
+.body {
+  font-size: var(--body-size);
+  letter-spacing: var(--body-spacing);
   font-family: roboto_r;
 }
 
-.body-2 {
-  font-size: var(--body-2-size);
-  letter-spacing: var(--body-2-spacing);
-  font-family: roboto_r;
+.view-body{}
+
+.footer {
+  margin-top: 30px;
+  padding: 20px;
+  /*background: #dbdbdb;*/
+  color: #7f7f7f;
+  text-align: center;
+  font-size: 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.content-body {
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 30px;
 }
 
 .icon {
-  margin-right: var(--icon-padding);
+  margin-right: 0.5rem;
   width: var(--icon-size);
   height: var(--icon-size);
-  font-size: var(--icon-size);
   color: var(--primary)
 }
 
-.badge-container {
-  display: flex;
-  flex-flow: row wrap;
-}
 
-.badge {
-  padding-left: var(--badge-padding);
-  padding-right: var(--badge-padding);
-  margin-left: var(--badge-padding);
-  margin-bottom: var(--badge-padding);
-  border-radius: 2.5px;
-  background-color: var(--primary);
-  opacity: 0.7;
-  color: var(--primary-text);
-  font-size: var(--caption-size);
-}
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0px;
-}
-
-h1 {
-  font-size: var(--h1-size);
-  font-family: roboto_t;
-  letter-spacing: var(--h1-spacing);
-}
-
-h2 {
-  font-size: var(--h2-size);
-  letter-spacing: var(--h2-spacing);
-  font-family: roboto_t;
-}
-
-h3 {
-  font-size: var(--h3-size);
-  letter-spacing: var(--h3-spacing);
-  font-family: roboto_r;
-}
-
-h4 {
-  font-size: var(--h4-size);
-  letter-spacing: var(--h4-spacing);
-  font-family: roboto_r;
-}
-
-h5 {
-  font-size: var(--h5-size);
-  letter-spacing: var(--h5-spacing);
-  font-family: roboto_r;
-}
-
-h6 {
-  font-size: var(--h6-size);
-  letter-spacing: var(--h6-spacing);
-  font-family: roboto_r;
-}
-
-.card {
-  background-color: var(--card);
-  color: var(--card-text);
-  border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  margin: 2rem auto;
-  border: 1px solid transparent;
-}
-
-.card:first-child {
-  margin-top: 0px;
-}
-
-.card-header {
-  padding: 0.9rem;
-  padding-bottom: 0rem;
-  border-radius: 2.6px 2.6px 0px 0px;
-}
-
-.card-title {}
-
-.decoration {
-  float: right;
-  background: green;
-  color: white;
-  margin-right: -20px;
-  margin-top: -20px;
-  height: 22px;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: center;
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 5px;
-}
-
-.card-body {
-  padding: 0.9rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0rem;
-  border-radius: 0px 0px 2.6px 2.6px;
-  text-align: justify;
-}
-
-.card-footer {
-  padding: 0.35rem;
-  padding-left: 0.9rem;
-  border-radius: 0px 0px 2.6px 2.6px;
-}
-
-.card-number {
-  text-align: left;
-  color: rgba(0, 0, 0, 0.3);
-  font-style: italic;
-}
-
-#view {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap
-}
+/* Profile */
 
 .profile {
   width: 100%;
@@ -310,7 +171,7 @@ h6 {
 
 .profile-designation {
   text-align: center;
-  font-size: var(--body-1-size);
+  font-size: var(--body-size);
 }
 
 .profile-about {
@@ -343,10 +204,92 @@ h6 {
   margin-right: 10px;
 }
 
-.body {
-  width: 100%;
-  min-height: 100%;
+/* Card */
+
+.card {
+  background-color: var(--card);
+  color: var(--card-text);
+  border-radius: var(--border-radius);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin: 2rem auto;
+  border: 1px solid transparent;
 }
+
+.card:first-child {
+  margin-top: 0px;
+}
+
+.card-header {
+  padding: 0.9rem;
+  padding-bottom: 0rem;
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+
+}
+
+.card-body {
+  padding-left:34px;
+  padding-right:34px;
+  padding-top: 16px;
+  padding-bottom: 16px;;
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+  text-align: justify;
+}
+
+.badge-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.badge {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  border-radius: var(--border-radius);
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
+.badge:nth-child(2) {
+  margin-left:0px;
+}
+
+.card-footer {
+  padding: 0.35rem;
+  padding-left: 0.9rem;
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+
+.card-number {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
+}
+
+.card-body-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.card-body-grid-box {
+  min-width: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+
+.card-body-grid-box>ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+
+/* Menu */
+
 
 .menu {
   width: 100%;
@@ -433,91 +376,35 @@ h6 {
   color: white;
 }
 
-.footer {
-  margin-top: 30px;
-  padding: 20px;
-  /*background: #dbdbdb;*/
-  color: #7f7f7f;
-  text-align: center;
-  font-size: 12px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-}
-
-.content-body {
-  width: 80%;
-  margin: 0px auto;
-  margin-bottom: 30px;
-}
-
-.home-h1 {
-  font-size: 2rem;
-}
-
-p {
-  text-align: justify;
-  font-size: var(--body-1-size);
-  letter-spacing: var(--body-1-spacing);
-  font-family: roboto_r;
-}
-
-.card-body-grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.card-body-grid-box {
-  min-width: 40%;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-top: 20px;
-  text-transform: capitalize;
-}
-
-.card-body-grid-box>ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 10px;
-}
-
 .break-heading {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.skill-group:not(:first-child){
-  margin-top:10px;
+.skill-group:not(:first-child) {
+  margin-top: 10px;
 }
 
 .skill-group-body {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  padding:8px;
+  padding: 8px;
 }
 
-.skill-name{
+.skill-name {
   height: 30px;
   line-height: 30px;
-  min-width:10%;
+  min-width: 10%;
   background-color: #f2dfdf;
-  color:white;
-  border-radius: 2.5px;
+  color: var(--primary-text);
+  border-radius: var(--border-radius);
   margin: 8px;
-  font-size:12px;
   text-align: center;
-  padding-left:6px;
-  padding-right:6px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
-
-
 
 @media only screen and (min-width: 800px) and (min-height: 450px) {
   .profile {
@@ -552,7 +439,7 @@ p {
     padding-left: 20px;
   }
 
-  .body {
+  .view-body {
     width: 70%;
     margin-left: 30%;
     margin-top: 60px;
@@ -564,7 +451,7 @@ p {
     width: 25%;
   }
 
-  .body {
+  .view-body {
     width: 75%;
     margin-left: 25%;
   }
@@ -614,29 +501,4 @@ p {
     color: var(--primary-v);
     border-bottom: 3px solid var(--primary-v);
   }
-}
-
-/*
-///
-/// Fonts
-///
-*/
-@font-face {
-  font-family: roboto_m;
-  src: url("../font/Roboto-Medium.ttf");
-}
-
-@font-face {
-  font-family: roboto_r;
-  src: url("../font/Roboto-Regular.ttf");
-}
-
-@font-face {
-  font-family: roboto_t;
-  src: url("../font/Roboto-Thin.ttf");
-}
-
-@font-face {
-  font-family: rock;
-  src: url("../font/ROCK.TTF");
 }
