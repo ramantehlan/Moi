@@ -515,8 +515,8 @@
         "2012 | The green olympiad"
       ],
       "achievements": [
-        "2nd | 29/08/2013 | Web Designing | Shree Venkateshwar Internation School",
-        "2nd | 2013 | Digiwitz | Inter school festival"
+        "29/08/2013 | 2nd  | Web Designing | Shree Venkateshwar Internation School",
+        "2013 | 2nd | Digiwitz | Inter school festival"
       ],
       "awards": [
         "2014-2015 | Excellence in Dramatics"
@@ -544,10 +544,10 @@
     "timeline": "04/2010 - 03/2011",
     "coursework": {
       "achievements": [
-        "1st | Inter-house group singing competition | 29/8/2010"
+        "29/8/2010 | 1st | Inter-house group singing competition"
       ],
       "activities": [
-        "National science olympiad | 19/11/2010"
+        "19/11/2010 | National science olympiad"
       ]
     }
   }, {
@@ -559,21 +559,21 @@
     "timeline": "Initial - 03/2010",
     "coursework": {
       "achievements": [
-        "1st | Rakhi making competition | 2009-2010",
-        "3rd | Inter-house presentation competition | 2009-2010",
-        "3rd | Poster making competition | 2009-2010"
+        "2009-2010 | 1st | Rakhi making competition",
+        "2009-2010 | 3rd | Inter-house presentation competition",
+        "2009-2010 | 3rd | Poster making competition"
       ],
       "activities": [
-        "Science exhibition | 30/10/2009",
-        "Pentasoft quiz | 02/03/2009",
-        "Inter-house hindi group song competition | 10/11/2008"
+        "30/10/2009 | Science exhibition",
+        "02/03/2009 | Pentasoft quiz",
+        "10/11/2008 | Inter-house hindi group song competition"
       ]
     }
   }],
   "courses": [{
     "id": 5,
     "key": "co5",
-    "name": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
+    "title": "Divide and Conquer, Sorting and Searching, and Randomized Algorithms",
     "url": "https://www.coursera.org/learn/algorithms-divide-conquer",
     "from": "Coursera - Stanford University",
     "timeline": "Ongoing",
@@ -582,7 +582,7 @@
   }, {
     "id": 4,
     "key": "co4",
-    "name": "Fundamentals of Graphic Design",
+    "title": "Fundamentals of Graphic Design",
     "url": "https://www.coursera.org/learn/fundamentals-of-graphic-design",
     "from": "Coursera - California Institute of the Arts",
     "timeline": "Ongoing",
@@ -591,7 +591,7 @@
   }, {
     "id": 3,
     "key": "co3",
-    "name": "Software Testing",
+    "title": "Software Testing",
     "url": "https://in.udacity.com/course/software-testing--cs258",
     "from": "Udacity",
     "timeline": "Ongoing",
@@ -600,7 +600,7 @@
   }, {
     "id": 2,
     "key": "co2",
-    "name": "Writing READMEs",
+    "title": "Writing READMEs",
     "url": "https://in.udacity.com/course/writing-readmes--ud777",
     "from": "Udacity",
     "timeline": "05/2017",
@@ -609,7 +609,7 @@
   }, {
     "id": 1,
     "key": "co1",
-    "name": "Design Thinking for Innovation",
+    "title": "Design Thinking for Innovation",
     "url": "https://www.coursera.org/learn/uva-darden-design-thinking-innovation",
     "from": "Coursera - University of Virginia",
     "timeline": "03/2017",
@@ -618,25 +618,9 @@
   }],
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#4288d0;"],
-    "title": ["Backend", "Frontend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],
+    "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],
     "data": {
       "0": [{
-        "name": "Java",
-        "percent": "85"
-      }, {
-        "name": "NodeJs",
-        "percent": "40"
-      }, {
-        "name": "PHP",
-        "percent": "90"
-      }, {
-        "name": "Pyton",
-        "percent": "80"
-      }, {
-        "name": "C/C++",
-        "percent": "75"
-      }],
-      "1": [{
         "name": "JavaScript",
         "percent": "90"
       }, {
@@ -660,6 +644,22 @@
       }, {
         "name": "JSON",
         "percent": "95"
+      }],
+      "1": [{
+        "name": "Java",
+        "percent": "85"
+      }, {
+        "name": "NodeJs",
+        "percent": "40"
+      }, {
+        "name": "PHP",
+        "percent": "90"
+      }, {
+        "name": "Pyton",
+        "percent": "80"
+      }, {
+        "name": "C/C++",
+        "percent": "75"
       }],
       "2": [{
         "name": "Linux",
@@ -709,7 +709,7 @@
         "name": "Design Thinker",
         "percent": "100"
       }, {
-        "name": "Problem Solver And Finder",
+        "name": "Problem Solver",
         "percent": "100"
       }, {
         "name": "Leader",

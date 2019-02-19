@@ -11,6 +11,20 @@ var maxBreakPoint = 1200;
 // Card Tempate
 //
 
+var skillbar = Vue.component('skillbar', {
+  props: ['value', 'index', 'color', 'title'],
+  template: `
+  <div class="skill-group">
+    <b :style="'color:' + color[index] ">{{ title[index] }}</b>
+    <div class="skill-group-body">
+      <div v-for="data in value" class="skill-name" :style="'background-color:' + color[index] ">
+          {{ data.name }}
+      </div>
+    </div>
+  </div>
+  `
+});
+
 var card = Vue.component('card', {
   props: ['info'],
   template: `
@@ -40,39 +54,44 @@ var card = Vue.component('card', {
     </div>
 
     <div class="subtitle-2" v-if="info.level">
-      <div class="fas fa-user-graduate icon"></div>
+      <i class="fas fa-user-graduate icon"></i>
       {{ info.level }}
     </div>
 
+    <div class="subtitle-2" v-if="info.from">
+      <i class="fa fa-university icon"></i>
+      {{ info.from }}
+    </div>
+
     <div class="subtitle-2" v-if="info.role">
-      <div class="fas fa-user icon"></div>
+      <i class="fas fa-user icon"></i>
         {{ info.role }}
     </div>
 
     <div class="subtitle-2" v-if="info.location">
-      <div class="fas fa-map-marker icon"></div>
+      <i class="fas fa-map-marker icon"></i>
         {{ info.location }}
     </div>
 
     <div class="subtitle-2" v-if="info.event">
-      <div class="fas fa-location-arrow icon"></div>
+      <i class="fas fa-location-arrow icon"></i>
       <a :href="info.eventUrl">
         {{ info.event }}
       </a>
     </div>
 
     <div class="subtitle-2" v-if="info.productType">
-      <div class="fas fa-tools icon"></div>
+      <i class="fas fa-tools icon"></i>
         {{ info.productType }}
     </div>
 
     <div class="subtitle-2 ">
-      <div class="fas fa-clock icon"></div>
+      <i class="fas fa-clock icon"></i>
       {{ info.timeline }}
     </div>
 
     <div class="subtitle-2 badge-container" v-if="info.tag">
-      <div class="fas fa-tags icon"></div>
+      <i class="fas fa-tags icon"></i>
       <div class="badge" v-for="tag in info.tag">{{tag}}</div>
     </div>
   </div>
@@ -96,7 +115,7 @@ var card = Vue.component('card', {
   </div>
 </div>
 `
-})
+});
 
 // Vue app lives in #view
 var app = new Vue({
@@ -107,24 +126,26 @@ var app = new Vue({
     menuIconAllow: true
   },
   components: {
-    card: card
+    card: card,
+    skillbar: skillbar
   }
 })
 
 function init() {
   $(".hidden").hide();
-  $("#education").show();
+  $("#skillsBtn").addClass("menu-list-selected");
+  $("#skills").show();
   $("#menuIcon").click(menuToggle);
 }
 
-function menuToggle(){
-  if($(document).width() <= maxBreakPoint) {
+function menuToggle() {
+  if ($(document).width() <= maxBreakPoint) {
     $("#menuList").slideToggle();
     $("#menuTitle").toggle();
   }
 }
 
-function showSection(section){
+function showSection(section) {
   $(".hidden").hide();
   $("#" + section).show();
   $(".menu-list-item").removeClass("menu-list-selected");
@@ -143,16 +164,16 @@ $(document).ready(function() {
     app.data = data;
     app.render = true;
 
-     // Update the document details.
-  $(document).attr("title", app.data.document.title);
-  $("meta[name='author']").attr("content", app.data.document.author);
-  $("meta[name='title']").attr("content", app.data.document.title);
-  $("meta[name='keywords']").attr("content", app.data.document.keywords);
-  $("meta[name='description']").attr("content", app.data.document.description);
-  $("meta[name='language']").attr("content", app.data.document.language);
-  $("meta[name='charset']").attr("content", app.data.document.charset);
-  $("meta[name='robots']").attr("content", app.data.document.robots);
-  $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
+    // Update the document details.
+    $(document).attr("title", app.data.document.title);
+    $("meta[name='author']").attr("content", app.data.document.author);
+    $("meta[name='title']").attr("content", app.data.document.title);
+    $("meta[name='keywords']").attr("content", app.data.document.keywords);
+    $("meta[name='description']").attr("content", app.data.document.description);
+    $("meta[name='language']").attr("content", app.data.document.language);
+    $("meta[name='charset']").attr("content", app.data.document.charset);
+    $("meta[name='robots']").attr("content", app.data.document.robots);
+    $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
 
     init();
   }).catch(function(error) {
