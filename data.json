@@ -22,80 +22,22 @@
       "name": "resume",
       "url": "https://drive.google.com/open?id=1dloQ-o82YjmJbMkPU1feTpSxIv--5Jfp",
       "icon": "fas fa-user",
-      "label": "Résumé",
-      "display": true
+      "label": "Résumé"
     }, {
       "name": "email",
       "url": "",
       "icon": "fas fa-paper-plane",
-      "label": "Ramantehlan[at]gmail",
-      "display": true
+      "label": "Ramantehlan[at]gmail"
     }, {
       "name": "github",
       "url": "https://github.com/ramantehlan",
       "icon": "fab fa-github",
-      "label": "github/ramantehlan",
-      "display": true
+      "label": "github/ramantehlan"
     }, {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/ramantehlan/",
       "icon": "fab fa-linkedin-in",
-      "label": "linkedin/in/ramantehlan",
-      "display": true
-    }, {
-      "name": "twitter",
-      "url": "https://twitter.com/ramantehlan",
-      "icon": "assets/images/icons/twitter-logo-silhouette (1).png",
-      "label": "twitter/ramantehlan",
-      "display": false
-    }, {
-      "name": "hackerrank",
-      "url": "https://hackerrank.com/ramantehlan",
-      "icon": "assets/images/icons/hackerrank.png",
-      "label": "hackerrank/ramantehlan",
-      "display": false
-    }, {
-      "name": "reddit",
-      "url": "https://www.reddit.com/user/ramantehlan/",
-      "icon": "assets/images/icons/reddit-alien-head-logo.png",
-      "label": "reddit.com/user/ramantehlan",
-      "display": false
-    }, {
-      "name": "hackerearth",
-      "url": "https://www.hackerearth.com/@ramantehlan",
-      "icon": "assets/images/icons/hackerearth.png",
-      "label": "hackerearth/@ramantehlan",
-      "display": false
-    }, {
-      "name": "y_combinator",
-      "url": "https://news.ycombinator.com/user?id=ramantehlan",
-      "icon": "assets/images/icons/y_combinator.png",
-      "label": "news.ycombinator.com/user?id=ramantehlan",
-      "display": false
-    }, {
-      "name": "facebook",
-      "url": "https://facebook.com/ramantehlan",
-      "icon": "assets/images/icons/facebook-logo (1).png",
-      "label": "facebook/ramantehlan",
-      "display": false
-    }, {
-      "name": "instagram",
-      "url": "https://www.instagram.com/ramantehlan/",
-      "icon": "assets/images/icons/instagram-social-network-logo-of-photo-camera.png",
-      "label": "Instagram/@ramantehlan",
-      "display": false
-    }, {
-      "name": "youtube",
-      "url": "",
-      "icon": "assets/images/icons/youtube.png",
-      "label": "",
-      "display": false
-    }, {
-      "name": "medium",
-      "url": "https://medium.com/@ramantehlan",
-      "icon": "assets/images/icons/linkedin-logo.png",
-      "label": "medium.com/@ramantehlan",
-      "display": false
+      "label": "linkedin/in/ramantehlan"
     }]
   },
   "menu": [{
@@ -420,15 +362,15 @@
     "url": "https://medium.com/@ramantehlan/design-thinking-miracle-of-innovation-2ddb22f865f3",
     "subtitle": "Preparing your mind for the birth of innovation.",
     "timeline": "05/06/2018"
-    }],
-    "talks": [{
-      "id": 1,
-      "key": "ta1",
-      "title": "Everything you should know about Genetic Algorithms",
-      "url": "https://youtu.be/GBD_fTbvVjQ",
-      "subtitle": "Pydata Delhi - 2019",
-      "timeline": "19/01/2019"
-      }],
+  }],
+  "talks": [{
+    "id": 1,
+    "key": "ta1",
+    "title": "Everything you should know about Genetic Algorithms",
+    "url": "https://youtu.be/GBD_fTbvVjQ",
+    "subtitle": "Pydata Delhi - 2019",
+    "timeline": "19/01/2019"
+  }],
   "education": [{
     "id": 5,
     "key": "ed5",
@@ -615,34 +557,33 @@
     "complete": true
   }],
   "contributions": [{
-      "title": "phpMyAdmin/phpMyAdmin ",
-      "url": "https://github.com/phpmyadmin/phpmyadmin/commits?author=ramantehlan"
-    }, {
-      "title": "Fossasia/Meilix",
-      "url": "https://github.com/fossasia/meilix/commits?author=ramantehlan"
-    },{
-      "title": "Fossasia/Meilix-artwork",
-      "url": "https://github.com/fossasia/meilix-artwork/commits?author=ramantehlan"
-    },{
-      "title": "Yogdaan/LinuxSpells",
-      "url": "https://github.com/yogdaan/LinuxSpells/commits?author=ramantehlan"
-    }, {
-      "title": "Yogdaan/Supernova-2",
-      "url": "https://github.com/yogdaan/Supernova-2/commits?author=ramantehlan"
-    },{
-      "title": "loklak/loklak_artwork",
-      "url": "https://github.com/loklak/loklak_artwork/commits?author=ramantehlan"
-    } ,{
-      "title": "chrislgarry/Apollo-11",
-      "url": "https://github.com/chrislgarry/Apollo-11/commits?author=ramantehlan"
-    }
-  ],
-  "communities":[{
-    "id": 1,
-    "key": "cm1",
-    "title": "PyData - Delhi",
-    "url": "#",
-    "timeline": "2017 - Present"
+    "title": "phpMyAdmin/phpMyAdmin ",
+    "url": "https://github.com/phpmyadmin/phpmyadmin/commits?author=ramantehlan"
+  }, {
+    "title": "Fossasia/Meilix",
+    "url": "https://github.com/fossasia/meilix/commits?author=ramantehlan"
+  }, {
+    "title": "Fossasia/Meilix-artwork",
+    "url": "https://github.com/fossasia/meilix-artwork/commits?author=ramantehlan"
+  }, {
+    "title": "Yogdaan/LinuxSpells",
+    "url": "https://github.com/yogdaan/LinuxSpells/commits?author=ramantehlan"
+  }, {
+    "title": "Yogdaan/Supernova-2",
+    "url": "https://github.com/yogdaan/Supernova-2/commits?author=ramantehlan"
+  }, {
+    "title": "loklak/loklak_artwork",
+    "url": "https://github.com/loklak/loklak_artwork/commits?author=ramantehlan"
+  }, {
+    "title": "chrislgarry/Apollo-11",
+    "url": "https://github.com/chrislgarry/Apollo-11/commits?author=ramantehlan"
+  }],
+  "communities": [{
+      "id": 1,
+      "key": "cm1",
+      "title": "PyData - Delhi",
+      "url": "#",
+      "timeline": "2017 - Present"
     },
     {
       "id": 2,
@@ -672,8 +613,105 @@
       "url": "#",
       "timeline": "2017 - 2018"
     }
-  ]
-  ,
+  ],
+  "links": [{
+    "key": "li11",
+    "url": "https://github.com/ramantehlan",
+    "icon": "fab fa-github",
+    "title": "github/ramantehlan"
+  }, {
+    "key": "li10",
+    "url": "https://www.linkedin.com/in/ramantehlan/",
+    "icon": "fab fa-linkedin-in",
+    "title": "linkedin/in/ramantehlan"
+  }, {
+    "key": "li9",
+    "url": "https://twitter.com/ramantehlan",
+    "icon": "fab fa-twitter",
+    "title": "twitter/ramantehlan"
+  }, {
+    "key": "li8",
+    "url": "https://hackerrank.com/ramantehlan",
+    "icon": "fab fa-hackerrank",
+    "title": "hackerrank/ramantehlan"
+  }, {
+    "key": "li7",
+    "name": "reddit",
+    "url": "https://www.reddit.com/user/ramantehlan/",
+    "icon": "fab fa-reddit-alien",
+    "title": "reddit/user/ramantehlan"
+  }, {
+    "key": "li6",
+    "name": "hackerearth",
+    "url": "https://www.hackerearth.com/@ramantehlan",
+    "icon": "fas fa-h-square",
+    "title": "hackerearth/@ramantehlan"
+  }, {
+    "key": "li5",
+    "name": "y_combinator",
+    "url": "https://news.ycombinator.com/user?id=ramantehlan",
+    "icon": "fab fa-hacker-news",
+    "title": "news.ycombinator/user?id=ramantehlan"
+  }, {
+    "key": "li4",
+    "name": "facebook",
+    "url": "https://facebook.com/ramantehlan",
+    "icon": "fab fa-facebook",
+    "title": "facebook/ramantehlan"
+  }, {
+    "key": "li3",
+    "name": "instagram",
+    "url": "https://www.instagram.com/ramantehlan/",
+    "icon": "fab fa-instagram",
+    "title": "Instagram/@ramantehlan"
+  }, {
+    "key": "li2",
+    "name": "youtube",
+    "url": "https://www.youtube.com/channel/UC-OkynkFXO05Wuxd-zsJfQQ?view_as=subscriber",
+    "icon": "fab fa-youtube",
+    "title": "youtube/channel/UC-OkynkFXO05Wuxd-zsJfQQ"
+  }, {
+    "key": "li1",
+    "name": "medium",
+    "url": "https://medium.com/@ramantehlan",
+    "icon": "fab fa-medium-m",
+    "title": "medium/@ramantehlan"
+  }, {
+    "key": "li12",
+    "title": "trello/ramantehlan",
+    "url": "https://trello.com/ramantehlan",
+    "icon": "fab fa-trello"
+  }, {
+    "key": "li13",
+    "title": "stackoverflow/cv/ramantehlan",
+    "url": "https://stackoverflow.com/cv/ramantehlan",
+    "icon": "fab fa-stack-overflow"
+  }, {
+    "key": "li14",
+    "title": "f6s/ramantehlan",
+    "url": "https://www.f6s.com/ramantehlan/",
+    "icon": "far fa-circle"
+  }, {
+    "key": "li15",
+    "title": "npmjs/~ramantehlan",
+    "url": "https://www.npmjs.com/~ramantehlan",
+    "icon": "fab fa-npm"
+  }, {
+    "key": "li16",
+    "title": "slides/ramantehlan",
+    "url": "https://slides.com/ramantehlan",
+    "icon": "far fa-circle"
+  }, {
+    "key": "li17",
+    "title": "meetup/members/238959535/",
+    "url": "https://www.meetup.com/members/238959535/",
+    "icon": "fab fa-meetup"
+  },{
+    "key": "li18",
+    "title": "goodreads/ramantehlan",
+    "url": "https://www.goodreads.com/ramantehlan",
+    "icon": "fab fa-goodreads"
+    }],
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#4288d0;"],
     "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],
@@ -783,19 +821,5 @@
         "percent": "100"
       }]
     }
-  },
-  "interests": [
-    "Mathematics",
-    "Philanthropy",
-    "Painting",
-    "Playing Piano",
-    "Music",
-    "Table Tennis",
-    "Chess",
-    "Swimming"
-  ],
-  "language": [
-    "English",
-    "Hindi"
-  ]
+  }
 }

@@ -417,7 +417,6 @@ p {
   text-transform: capitalize;
 }
 
-
 .skill-group:not(:first-child) {
   margin-top: 10px;
 }
@@ -462,6 +461,12 @@ p {
   min-width: 20%;
   cursor: pointer;
   text-transform: capitalize;
+}
+
+.linkLogo{
+  font-size:16px;
+  margin-right:10px;
+  color: var(--primary)
 }
 
 .light {

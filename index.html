@@ -46,7 +46,7 @@
           {{ data.profile.vision }}
         </div>
         <ul class="profile-footer">
-          <a v-for="link in data.profile.link" v-if="link.display" :href="link.url">
+          <a v-for="link in data.profile.link" :href="link.url">
             <li>
               <i :class="'profile-icon ' + link.icon"></i>
               {{ link.label }}
@@ -120,16 +120,19 @@
 
           <div id="contributions" class="hidden">
             <span v-if="render">
-              <div class="break-heading">OpenSource Contributions [{{ data.contributions.length }}]</div>
-              <div class="small-card-holder">
-                <smallcard v-for="info in data.contributions" v-bind:info="info" v-bind:key="info.key"> </smallcard>
-              </div>
+              <span v-if="data.contributions">
+                <div class="break-heading">OpenSource Contributions [{{ data.contributions.length }}]</div>
+                <div class="small-card-holder">
+                  <smallcard v-for="info in data.contributions" v-bind:info="info" v-bind:key="info.key"> </smallcard>
+                </div>
+              </span>
 
-
-              <div class="break-heading">Communities [{{ data.communities.length }}]</div>
-              <div class="small-card-holder">
-                <smallcard v-for="info in data.communities" v-bind:info="info" v-bind:key="info.key"> </smallcard>
-              </div>
+              <span v-if="data.communities">
+                <div class="break-heading">Communities [{{ data.communities.length }}]</div>
+                <div class="small-card-holder">
+                  <smallcard v-for="info in data.communities" v-bind:info="info" v-bind:key="info.key"> </smallcard>
+                </div>
+              </span>
             </span>
           </div>
 
@@ -175,7 +178,16 @@
           </div>
 
           <div id="links" class="hidden">
-
+            <span v-if="render">
+              <span v-if="data.links">
+                <div class="break-heading">Links [{{ data.links.length }}]</div>
+                
+                <div class="small-card-holder">
+                  <smallcard v-for="info in data.links" v-bind:info="info" v-bind:key="info.key"> </smallcard>
+                </div>
+              </span>
+            </span>
+            </span>
           </div>
 
 
