@@ -11,7 +11,10 @@
   },
   "home": {
     "title": "Hello World!",
-    "body": "Welcome to the official page of <i>Raman Tehlan</i>, here you can get all the information about me, use above menu to get details of a particular domain and if you are looking for a summary then you can check out my resume.<br><br> Regards,<br><b>Raman Tehlan</b>"
+    "body": ""
+  },
+  "about": {
+
   },
   "profile": {
     "name": "Raman Tehlan",

@@ -17,7 +17,7 @@ var smallCard = Vue.component('smallCard', {
   <a :href="info.url" >
     <div class="small-card subtitle">
       <div class="subtitle" v-if="info.title">
-        <i :class="info.icon + ' linkLogo'" v-if="info.icon"></i>
+        <i :class="info.icon + ' link-logo'" v-if="info.icon"></i>
         {{ info.title }}
       </div>
       <div class="subtitle light" v-if="info.timeline">
@@ -157,7 +157,7 @@ var app = new Vue({
 function init() {
   $(".hidden").hide();
   $("#homeBtn").addClass("menu-list-selected");
-  $("#links").show();
+  $("#home").show();
   $("#menuIcon").click(menuToggle);
 }
 

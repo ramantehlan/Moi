@@ -84,7 +84,7 @@
           <div id="home" class="hidden">
             <span v-if="render">
               <h1> {{ data.home.title }} </h1>
-              <p v-html="data.home.body"> </p>
+              <p v-html="data.home.body" class="body"> </p>
             </span>
           </div>
 
@@ -181,7 +181,6 @@
             <span v-if="render">
               <span v-if="data.links">
                 <div class="break-heading">Links [{{ data.links.length }}]</div>
-                
                 <div class="small-card-holder">
                   <smallcard v-for="info in data.links" v-bind:info="info" v-bind:key="info.key"> </smallcard>
                 </div>
