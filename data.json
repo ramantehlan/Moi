@@ -131,10 +131,6 @@
     "display": true,
     "icon": "fa fa-graduation-cap"
   }, {
-    "title": "communities",
-    "display": true,
-    "icon": "fas fa-hands-helping"
-  }, {
     "title": "publications",
     "display": false,
     "icon": "fas fa-globe-asia"
@@ -417,20 +413,22 @@
     ],
     "about": "My team `Real Steel` designed a rocket assembly process for IRC International 2014 held at Seattle, USA in 2015. <ul><li> Robot aim was to assemble a rocket. </li> <li> Created a black line follower robot which could remove obstacles. </li> <li> The robot picked objects to place them at a launchpad. </li></ul>"
   }],
-  "blog": [{
-    "name": "Design Thinking - Miracle of innovation.",
+  "blogs": [{
+    "id": 1,
+    "key": "bg1",
+    "title": "Design Thinking - Miracle of innovation.",
     "url": "https://medium.com/@ramantehlan/design-thinking-miracle-of-innovation-2ddb22f865f3",
-    "location": "Preparing your mind for the birth of innovation. | Medium",
-    "timeline": "05/06/2018",
-    "tag": [
-      "Design Thinking",
-      "Innovation",
-      "Start up",
-      "Mind Mapping",
-      "Brainstorming"
-    ],
-    "about": "Innovation and creative problem solving are forces designing the world today, flowing us towards a better future, and Design thinking is at the heart of this innovation and change, like a secret power."
-  }],
+    "subtitle": "Preparing your mind for the birth of innovation.",
+    "timeline": "05/06/2018"
+    }],
+    "talks": [{
+      "id": 1,
+      "key": "ta1",
+      "title": "Everything you should know about Genetic Algorithms",
+      "url": "https://youtu.be/GBD_fTbvVjQ",
+      "subtitle": "Pydata Delhi - 2019",
+      "timeline": "19/01/2019"
+      }],
   "education": [{
     "id": 5,
     "key": "ed5",
@@ -578,7 +576,7 @@
     "from": "Coursera - Stanford University",
     "timeline": "Ongoing",
     "about": "",
-    "complete": false
+    "complete": true
   }, {
     "id": 4,
     "key": "co4",
@@ -587,7 +585,7 @@
     "from": "Coursera - California Institute of the Arts",
     "timeline": "Ongoing",
     "about": "",
-    "complete": false
+    "complete": true
   }, {
     "id": 3,
     "key": "co3",
@@ -596,7 +594,7 @@
     "from": "Udacity",
     "timeline": "Ongoing",
     "about": "",
-    "complete": false
+    "complete": true
   }, {
     "id": 2,
     "key": "co2",
@@ -620,25 +618,62 @@
       "title": "phpMyAdmin/phpMyAdmin ",
       "url": "https://github.com/phpmyadmin/phpmyadmin/commits?author=ramantehlan"
     }, {
-      "title": "loklak/loklak_artwork",
-      "url": "https://github.com/loklak/loklak_artwork/commits?author=ramantehlan"
-    }, {
       "title": "Fossasia/Meilix",
       "url": "https://github.com/fossasia/meilix/commits?author=ramantehlan"
-    }, {
+    },{
       "title": "Fossasia/Meilix-artwork",
       "url": "https://github.com/fossasia/meilix-artwork/commits?author=ramantehlan"
-    }, {
+    },{
       "title": "Yogdaan/LinuxSpells",
       "url": "https://github.com/yogdaan/LinuxSpells/commits?author=ramantehlan"
     }, {
       "title": "Yogdaan/Supernova-2",
       "url": "https://github.com/yogdaan/Supernova-2/commits?author=ramantehlan"
     },{
+      "title": "loklak/loklak_artwork",
+      "url": "https://github.com/loklak/loklak_artwork/commits?author=ramantehlan"
+    } ,{
       "title": "chrislgarry/Apollo-11",
       "url": "https://github.com/chrislgarry/Apollo-11/commits?author=ramantehlan"
     }
   ],
+  "communities":[{
+    "id": 1,
+    "key": "cm1",
+    "title": "PyData - Delhi",
+    "url": "#",
+    "timeline": "2017 - Present"
+    },
+    {
+      "id": 2,
+      "key": "cm2",
+      "title": "PyLadies - Delhi",
+      "url": "#",
+      "timeline": "2018 - Present"
+    },
+    {
+      "id": 3,
+      "key": "cm3",
+      "title": "LinuxChix - India",
+      "url": "#",
+      "timeline": "2018 - Present"
+    },
+    {
+      "id": 4,
+      "key": "cm4",
+      "title": "India Linux User Group - Delhi",
+      "url": "#",
+      "timeline": "2018 - Present"
+    },
+    {
+      "id": 5,
+      "key": "cm5",
+      "title": "PyDelhi",
+      "url": "#",
+      "timeline": "2017 - 2018"
+    }
+  ]
+  ,
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#4288d0;"],
     "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],

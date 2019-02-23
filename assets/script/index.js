@@ -11,11 +11,27 @@ var maxBreakPoint = 1200;
 // Card Tempate
 //
 
+var smallCard = Vue.component('smallCard', {
+  props: ['info'],
+  template: `
+  <a :href="info.url" >
+    <div class="small-card subtitle">
+      <div class="subtitle" v-if="info.title">
+        {{ info.title }}
+      </div>
+      <div class="subtitle light" v-if="info.timeline">
+          {{ info.timeline }}
+      </div>
+    </div>
+  </a>
+  `
+})
+
 var skillbar = Vue.component('skillbar', {
   props: ['value', 'index', 'color', 'title'],
   template: `
   <div class="skill-group">
-    <span class="break-heading subtitle" :style="'color:' + color[index] ">{{ title[index] }}</span>
+    <span class="break-heading subtitle" :style="'color:' + color[index] ">{{ title[index] }} [{{ value.length }}] </span>
     <div class="skill-group-body">
       <div v-for="data in value" class="skill-name subtitle" :style="'background-color:' + color[index] ">
           {{ data.name }}
@@ -28,88 +44,97 @@ var skillbar = Vue.component('skillbar', {
 var card = Vue.component('card', {
   props: ['info'],
   template: `
-<div class="card">
-  <div class="card-header">
+  <div class="card">
+    <div class="card-header" >
+      <i :id="info.key" class="fa fa-arrow-down card-arrow" onclick="cardDown(this.id)"></i>
 
-    <div class="title" v-if="info.title">
-      <a :href="info.url" >
-      {{ info.title }}
-      </a>
-    </div>
-
-    <div class="title" v-if="info.companyName">
-      <a :href="info.companyUrl" >
-      {{ info.companyName }}
-      </a>
-    </div>
-
-    <div class="title" v-if="info.institute">
-      <a :href="info.url" >
-      {{ info.institute }}
-      </a>
-    </div>
-
-    <div class="subtitle" v-if="info.level">
-      <i class="fas fa-user-graduate icon"></i>
-      {{ info.level }}
-    </div>
-
-    <div class="subtitle" v-if="info.from">
-      <i class="fa fa-university icon"></i>
-      {{ info.from }}
-    </div>
-
-    <div class="subtitle" v-if="info.role">
-      <i class="fas fa-user icon"></i>
-        {{ info.role }}
-    </div>
-
-    <div class="subtitle" v-if="info.location">
-      <i class="fas fa-map-marker icon"></i>
-        {{ info.location }}
-    </div>
-
-    <div class="subtitle" v-if="info.event">
-      <i class="fas fa-location-arrow icon"></i>
-      <a :href="info.eventUrl">
-        {{ info.event }}
-      </a>
-    </div>
-
-    <div class="subtitle" v-if="info.productType">
-      <i class="fas fa-tools icon"></i>
-        {{ info.productType }}
-    </div>
-
-    <div class="subtitle ">
-      <i class="fas fa-clock icon"></i>
-      {{ info.timeline }}
-    </div>
-
-    <div class="subtitle badge-container" v-if="info.tag">
-      <i class="fas fa-tags icon"></i>
-      <div class="badge" v-for="tag in info.tag">{{tag}}</div>
-    </div>
-  </div>
-  <div class="card-body body" >
-      <p v-if="info.about" v-html="info.about"></p>
-      <p v-if="info.coursework">
-      <div class="card-body-grid">
-          <div class="card-body-grid-box" v-for="(value, key) in info.coursework">
-              <b>{{ key }}</b>
-              <ul>
-                <li v-for="item in value">- {{item}}</li>
-              </ul>
-          </div>
+      <div class="title" v-if="info.title">
+        <a :href="info.url">
+          {{ info.title }}
+        </a>
       </div>
-      </p>
-  </div>
-  <div class="card-footer">
-    <div class="card-number">
-        #{{info.id}}
+
+      <div class="title" v-if="info.companyName">
+        <a :href="info.companyUrl">
+          {{ info.companyName }}
+        </a>
+      </div>
+
+      <div class="title" v-if="info.institute">
+        <a :href="info.url">
+          {{ info.institute }}
+        </a>
+      </div>
+      <div class="card-hidden-section" :id="info.key + 'Details'">
+        <div class="subtitle" v-if="info.subtitle">
+          {{ info.subtitle }}
+        </div>
+
+        <div class="subtitle" v-if="info.level">
+          <i class="fas fa-user-graduate icon"></i>
+          {{ info.level }}
+        </div>
+
+        <div class="subtitle" v-if="info.from">
+          <i class="fa fa-university icon"></i>
+          {{ info.from }}
+        </div>
+
+        <div class="subtitle" v-if="info.role">
+          <i class="fas fa-user icon"></i>
+          {{ info.role }}
+        </div>
+
+        <div class="subtitle" v-if="info.location">
+          <i class="fas fa-map-marker icon"></i>
+          {{ info.location }}
+        </div>
+
+        <div class="subtitle" v-if="info.event">
+          <i class="fas fa-location-arrow icon"></i>
+          <a :href="info.eventUrl">
+            {{ info.event }}
+          </a>
+        </div>
+
+        <div class="subtitle" v-if="info.productType">
+          <i class="fas fa-tools icon"></i>
+          {{ info.productType }}
+        </div>
+
+        <div class="subtitle ">
+          <i class="fas fa-clock icon"></i>
+          {{ info.timeline }}
+        </div>
+
+        <div class="subtitle badge-container" v-if="info.tag">
+          <i class="fas fa-tags icon"></i>
+          <div class="badge" v-for="tag in info.tag">{{tag}}</div>
+        </div>
+
+
+
+      <div class="card-body body" v-if="info.about" v-html="info.about"></div>
+
+      <div class="card-body body" v-if="info.coursework">
+        <div class="card-body-grid">
+          <div class="card-body-grid-box" v-for="(value, key) in info.coursework">
+            <b>{{ key }}</b>
+            <ul>
+              <li v-for="item in value">- {{item}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <div class="card-number">
+          #{{info.id}}
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  </div>
 `
 });
 
@@ -123,14 +148,15 @@ var app = new Vue({
   },
   components: {
     card: card,
-    skillbar: skillbar
+    skillbar: skillbar,
+    smallcard: smallCard
   }
 })
 
 function init() {
   $(".hidden").hide();
   $("#homeBtn").addClass("menu-list-selected");
-  $("#contributions").show();
+  $("#work").show();
   $("#menuIcon").click(menuToggle);
 }
 
@@ -148,6 +174,12 @@ function showSection(section) {
   $("#" + section + "Btn").addClass("menu-list-selected");
   $("#menuTitle").html(section);
   menuToggle();
+}
+
+function cardDown(id) {
+    $("#" + id + "Details").slideToggle();
+    $("#" + id).toggleClass("fa-arrow-down");
+    $("#" + id).toggleClass("fa-arrow-up");
 }
 
 $(document).ready(function() {

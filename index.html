@@ -93,7 +93,7 @@
 
           <div id="work" class="hidden">
             <span v-if="render">
-              <div class="break-heading">Experience</div>
+              <div class="break-heading">Work Experience [{{ data.work.length }}]</div>
               <card v-for="info in data.work" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
@@ -106,50 +106,72 @@
 
           <div id="projects" class="hidden">
             <span v-if="render">
-              <div class="break-heading">Projects</div>
+              <div class="break-heading">Projects [{{ data.projects.length }}]</div>
               <card v-for="info in data.projects" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="achievements" class="hidden">
             <span v-if="render">
-              <div class="break-heading">achievements</div>
+              <div class="break-heading">Achievements [{{ data.achievements.length }}]</div>
               <card v-for="info in data.achievements" v-bind:info="info" v-bind:key="info.key"></card>
             </span>
           </div>
 
           <div id="contributions" class="hidden">
             <span v-if="render">
-              <div class="break-heading">Open Source Contributions</div>
+              <div class="break-heading">OpenSource Contributions [{{ data.contributions.length }}]</div>
               <div class="small-card-holder">
-                <a :href="info.url" v-for="info in data.contributions">
-                  <div class="small-card subtitle">
-                    {{ info.title }}
-                  </div>
-                </a>
+                <smallcard v-for="info in data.contributions" v-bind:info="info" v-bind:key="info.key"> </smallcard>
+              </div>
+
+
+              <div class="break-heading">Communities [{{ data.communities.length }}]</div>
+              <div class="small-card-holder">
+                <smallcard v-for="info in data.communities" v-bind:info="info" v-bind:key="info.key"> </smallcard>
               </div>
             </span>
           </div>
 
           <div id="education" class="hidden">
             <span v-if="render">
-              <div class="break-heading">Education</div>
-              <card v-for="info in data.education" v-bind:info="info" v-bind:key="info.key"></card>
-              <div class="break-heading">Online Cources</div>
-              <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key" v-if="info.complete"></card>
+              <span v-if="data.education">
+                <div class="break-heading">Education [{{ data.education.length }}]</div>
+                <card v-for="info in data.education" v-bind:info="info" v-bind:key="info.key"></card>
+              </span>
+              <span v-if="data.courses">
+                <div class="break-heading">Online Cources [{{ data.courses.length }}]</div>
+                <card v-for="info in data.courses" v-bind:info="info" v-bind:key="info.key" v-if="info.complete"></card>
+              </span>
             </span>
           </div>
 
           <div id="communities" class="hidden">
+            <span v-if="render">
+              <span v-if="data.communities">
+                <div class="break-heading">Communities [{{ data.communities.length }}]</div>
+                <card v-for="info in data.communities" v-bind:info="info" v-bind:key="info.key"></card>
+              </span>
+            </span>
           </div>
 
-          <div id="publications" class="hidden">
-          </div>
 
           <div id="blogs" class="hidden">
+            <span v-if="render">
+              <span v-if="data.blogs">
+                <div class="break-heading">Blogs [{{ data.blogs.length }}]</div>
+                <card v-for="info in data.blogs" v-bind:info="info" v-bind:key="info.key"></card>
+              </span>
+            </span>
           </div>
 
           <div id="talks" class="hidden">
+            <span v-if="render">
+              <span v-if="data.talks">
+                <div class="break-heading">Talks [{{ data.talks.length }}]</div>
+                <card v-for="info in data.talks" v-bind:info="info" v-bind:key="info.key"></card>
+              </span>
+            </span>
           </div>
 
           <div id="links" class="hidden">
@@ -164,7 +186,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        Designed and Developed with <i class="fas fa-heart"></i> by <a href="#">Raman Tehlan</a> | <i class="fas fa-eye"></i> <a href="#">Open Source</a>
+        Designed and Developed </i> by <a href="#">Raman Tehlan</a> | <a href="#">Open Source</a>
       </div>
 
     </div>
