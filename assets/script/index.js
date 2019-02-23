@@ -8,7 +8,7 @@
 var maxBreakPoint = 1200;
 
 //
-// Card Tempate
+// Templates
 //
 
 var smallCard = Vue.component('smallCard', {
@@ -139,7 +139,41 @@ var card = Vue.component('card', {
 `
 });
 
-// Vue app lives in #view
+  // Step-1: Fetch the user data 
+  fetch('data.json').then((response) => {
+    return response.json();
+  }).then((data) => {
+    // Assign data to view
+    app.data = data;
+    // Allow data to render
+    app.render = true;
+
+    // Update the document details.
+    $(document).attr("title", app.data.document.title);
+    $("meta[name='author']").attr("content", app.data.document.author);
+    $("meta[name='title']").attr("content", app.data.document.title);
+    $("meta[name='keywords']").attr("content", app.data.document.keywords);
+    $("meta[name='description']").attr("content", app.data.document.description);
+    $("meta[name='language']").attr("content", app.data.document.language);
+    $("meta[name='charset']").attr("content", app.data.document.charset);
+    $("meta[name='robots']").attr("content", app.data.document.robots);
+    $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
+
+
+    // To select the section from GET page
+    // var url = new URL(window.location.href);
+    // showSection(url.searchParams.get("page"));
+
+    Vue.nextTick(function () {
+      // Step-3
+      init();
+    })
+
+  }).catch(function(error) {
+    console.log(error);
+  });
+
+// Step-2: Create a view, Vue app lives in #view
 var app = new Vue({
   el: '#view',
   data: {
@@ -154,13 +188,20 @@ var app = new Vue({
   }
 })
 
+
+// First function to run when document is loaded
 function init() {
+  // To hide all the sections
   $(".hidden").hide();
-  $("#homeBtn").addClass("menu-list-selected");
-  $("#home").show();
+  // To allow menu icon only when screen size is small
+  defaultSection("about");
+  // Display menu on the basis of display size
+  menuDisplay();
+  // To add the toggle function to menu
   $("#menuIcon").click(menuToggle);
 }
 
+// To display menu when on mobile
 function menuToggle() {
   if ($(document).width() <= maxBreakPoint) {
     $("#menuList").slideToggle();
@@ -168,6 +209,7 @@ function menuToggle() {
   }
 }
 
+// To display any section
 function showSection(section) {
   $(".hidden").hide();
   $("#" + section).show();
@@ -177,56 +219,32 @@ function showSection(section) {
   menuToggle();
 }
 
+// To display card details
 function cardDown(id) {
     $("#" + id + "Details").slideToggle();
     $("#" + id).toggleClass("fa-arrow-down");
     $("#" + id).toggleClass("fa-arrow-up");
 }
 
-$(document).ready(function() {
-
-  // Fetch the user data
-  fetch('data.json').then((response) => {
-    return response.json();
-  }).then((data) => {
-    console.log("Json Loaded");
-    app.data = data;
-    app.render = true;
-
-    // Update the document details.
-    $(document).attr("title", app.data.document.title);
-    $("meta[name='author']").attr("content", app.data.document.author);
-    $("meta[name='title']").attr("content", app.data.document.title);
-    $("meta[name='keywords']").attr("content", app.data.document.keywords);
-    $("meta[name='description']").attr("content", app.data.document.description);
-    $("meta[name='language']").attr("content", app.data.document.language);
-    $("meta[name='charset']").attr("content", app.data.document.charset);
-    $("meta[name='robots']").attr("content", app.data.document.robots);
-    $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
-
-    init();
-  }).catch(function(error) {
-    console.log(error);
-  });
-
-
-  // To allow menu icon only when screen size is small
+// To check things on resize
+function menuDisplay(){
   if ($(document).width() >= maxBreakPoint) {
     app.menuIconAllow = false
     $("#menuList").show();
   } else {
     app.menuIconAllow = true;
+    $("#menuList").hide();
   }
+}
 
-  window.onresize = function(event) {
-    if ($(document).width() >= maxBreakPoint) {
-      app.menuIconAllow = false
-      $("#menuList").show();
-    } else {
-      app.menuIconAllow = true;
-    }
-  };
+// To set default section 
+function defaultSection(section){
+   // To select and show the default section
+  $("#" + section + "Btn").addClass("menu-list-selected");
+  $("#" + section).show();
+}
 
+window.onresize = function(event) {
+  menuDisplay()
+};
 
-
-})

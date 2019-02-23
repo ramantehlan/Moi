@@ -63,15 +63,17 @@
       <!-- Menu Box -->
       <div id="menu" class="menu">
         <div class="menu-control">
-          <div class="menu-title" id="menuTitle">Home</div>
+          <div class="menu-title" id="menuTitle">About</div>
           <div id="menuIcon" class="fas fa-bars menu-icon"></div>
         </div>
         <ul class="menu-list" id="menuList">
           <span v-if="render" class="menu-list-span">
-            <li v-for="menu in data.menu" v-if="menu.display" :onclick="`showSection('` + menu.title + `')`" :id="menu.title + 'Btn'" class="menu-list-item">
+            <a v-for="menu in data.menu" v-if="menu.display" :onclick="`showSection('` + menu.title + `')`" :href="'#' + menu.title">
+              <li :id="menu.title + 'Btn'" class="menu-list-item">
               <i :class="menu.icon" v-if="menuIconAllow"></i>
               {{ menu.title }}
             </li>
+          </a>
           </span>
         </ul>
       </div>
@@ -81,14 +83,12 @@
 
         <div class="content-body">
 
-          <div id="home" class="hidden">
+          <div id="about" class="hidden small-content-body">
             <span v-if="render">
-              <h1> {{ data.home.title }} </h1>
-              <p v-html="data.home.body" class="body"> </p>
-            </span>
-          </div>
+              <h1> {{ data.about.title }} </h1>
+              <p v-html="data.about.body" class="home-p"> </p>
 
-          <div id="about" class="hidden">
+            </span>
           </div>
 
           <div id="work" class="hidden">
@@ -197,7 +197,7 @@
 
       <!-- Footer -->
       <div class="footer">
-        Designed and Developed </i> by <a href="#">Raman Tehlan</a> | <a href="#">Open Source</a>
+        Designed and Developed by <a href="https://ramantehlan.github.io">Raman Tehlan</a> | <a href="https://github.com/ramantehlan/Personal-Site-Template">Open Source</a>
       </div>
 
     </div>

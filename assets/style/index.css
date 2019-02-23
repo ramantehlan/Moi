@@ -117,9 +117,8 @@ p {
 
 .footer {
   margin-top: 30px;
-  padding: 20px;
-  /*background: #dbdbdb;*/
-  color: #7f7f7f;
+  padding: 8px;
+  color: var(--background-text-2);
   text-align: center;
   font-size: 12px;
 }
@@ -134,6 +133,20 @@ p {
   width: 80%;
   margin: 0px auto;
   margin-bottom: 30px;
+}
+
+.small-content-body{
+  width:100%;
+  margin: 0px auto;
+}
+
+.home-p{
+  margin-top:15px;
+  margin-bottom:15px;
+}
+
+.home-signature{
+  text-align:right;
 }
 
 .icon {
@@ -238,7 +251,7 @@ p {
   float:right;
   font-size:12px;
   color: var(--background-text-3);
-  border-radius:50px;
+  border-radius:100px;
   padding:10px;
   margin-top:-5px;
   margin-right:-5px;
@@ -349,7 +362,6 @@ p {
   width: 100%;
   background-color: white;
   color: var(--primary);
-  display: none;
 }
 
 .menu-list-item {
@@ -365,7 +377,7 @@ p {
 .menu-list-item>i {
   width: 14px;
   height: 14px;
-  font-size: 14p x;
+  font-size: var(--body-size);
   margin-right: 15px;
 }
 
@@ -440,7 +452,7 @@ p {
   background-color: #f2dfdf;
   color: var(--primary-text);
   border-radius: var(--border-radius);
-  margin: 8px;
+  margin: 2px;
   text-align: center;
   padding-left: 6px;
   padding-right: 6px;
@@ -459,9 +471,9 @@ p {
   color: var(--card-text);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  margin-left: 8px;
-  margin-right: 8px;
-  margin-top: 15px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-top: 12px;
   padding: 15px;
   min-width: 20%;
   cursor: pointer;
@@ -532,10 +544,24 @@ p {
     width: 70%;
     margin-left: 30%;
     margin-top: 60px;
+    padding-bottom:50px;
+  }
+
+  .footer{
+      background: var(--background);
+      position:fixed;
+      width:70%;
+      bottom:0%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  :root{
+    --title-size: 21px;
+    --subtitle-size: 13px;
+    --body-size: 15px;
+  }
+
   .profile {
     width: 25%;
   }
@@ -548,6 +574,12 @@ p {
   .content{
     margin-top: 30px;
   }
+
+  .small-content-body{
+      width:80%;
+      margin-top:10px;
+    }
+
 
   .menu {
     width: 75%;
@@ -579,7 +611,7 @@ p {
   .menu-list-item {
     padding-left: 4px;
     padding-right: 4px;
-    font-size: 14px;
+    font-size: var(--body-size);
     margin-left: 6px;
     margin-right: 6px;
     border-bottom: 3px solid transparent;
@@ -595,5 +627,9 @@ p {
     background: none;
     color: var(--primary-v);
     border-bottom: 3px solid var(--primary-v);
+  }
+
+  .footer{
+    width:75%;
   }
 }

@@ -9,12 +9,9 @@
     "robots": "INDEX , FOLLOW",
     "google_site_verificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk"
   },
-  "home": {
-    "title": "Hello World!",
-    "body": ""
-  },
   "about": {
-
+    "title": "Hello There!",
+    "body": "I'm Raman Tehlan, Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you want to know more about me, feel free to use the above menu and checkout out more about me."
   },
   "profile": {
     "name": "Raman Tehlan",
@@ -45,7 +42,7 @@
   },
   "menu": [{
     "title": "home",
-    "display": true,
+    "display": false,
     "icon": "fas fa-home"
   }, {
     "title": "about",
@@ -709,15 +706,20 @@
     "title": "meetup/members/238959535/",
     "url": "https://www.meetup.com/members/238959535/",
     "icon": "fab fa-meetup"
-  },{
+  }, {
     "key": "li18",
     "title": "goodreads/ramantehlan",
     "url": "https://www.goodreads.com/ramantehlan",
     "icon": "fab fa-goodreads"
-    }],
+  }, {
+    "key": "li19",
+    "title": "spotify/user/dwciskg3wo1c3owwgehc0jktm",
+    "url": "https://open.spotify.com/user/dwciskg3wo1c3owwgehc0jktm",
+    "icon": "fab fa-spotify"
+  }],
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#4288d0;"],
-    "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Life Skills"],
+    "title": ["Frontend", "Backend", "DevOps", "Database", "Frameworks", "Mobile", "Other Software/tools", "Soft Skills"],
     "data": {
       "0": [{
         "name": "JavaScript",
