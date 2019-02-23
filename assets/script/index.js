@@ -211,12 +211,13 @@ function menuToggle() {
 
 // To display any section
 function showSection(section) {
-  $(".hidden").hide();
-  $("#" + section).show();
+  menuToggle();
   $(".menu-list-item").removeClass("menu-list-selected");
   $("#" + section + "Btn").addClass("menu-list-selected");
+  $(".hidden").hide();
+  $("#" + section).slideDown();
   $("#menuTitle").html(section);
-  menuToggle();
+  
 }
 
 // To display card details
