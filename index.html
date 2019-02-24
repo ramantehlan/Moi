@@ -82,10 +82,10 @@
         <div class="content-body">
 
           <div id="about" class="hidden small-content-body">
-            <span v-if="render">
+            <span v-if="render" v-if="data.about">
               <h1> {{ data.about.title }} </h1>
               <p v-html="data.about.body" class="home-p"> </p>
-
+              <p v-html="data.about.signature" class="home-signature"></p>
             </span>
           </div>
 

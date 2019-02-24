@@ -159,6 +159,11 @@ var card = Vue.component('card', {
     $("meta[name='robots']").attr("content", app.data.document.robots);
     $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
 
+    let themeNumber = app.data.document.theme;
+
+    for(var key in app.data.themes[themeNumber]){
+       document.documentElement.style.setProperty('--' + key, app.data.themes[themeNumber][key]); 
+    }
 
     // To select the section from GET page
     // var url = new URL(window.location.href);

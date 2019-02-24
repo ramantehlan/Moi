@@ -7,11 +7,49 @@
     "language": "English",
     "charset": "utf-8",
     "robots": "INDEX , FOLLOW",
-    "google_site_verificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk"
+    "google_site_verificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk",
+    "theme": 0
   },
+  "themes":[
+    {
+      "primary": "#2708a0",
+      "background": "#efefef",
+      "card": "#ffffff",
+      "primaryText": "#FFFFFF",
+      "backgroundText": "#000000",
+      "backgroundText-1": "rgba(0, 0, 0, 0.8)",
+      "backgroundText-2": "rgba(0, 0, 0, 0.6)",
+      "backgroundText-3": "rgba(0, 0, 0, 0.3)",
+      "cardText": "#000000"
+    },
+     {
+      "primary": "#00e070",
+      "background": "#003e1f",
+      "card": "#004f27",
+      "primaryText": "#FFFFFF",
+      "backgroundText": "#ffffff",
+      "backgroundText1": "rgba(255, 255, 255, 0.9)",
+      "backgroundText2": "rgba(255, 255, 255, 0.7)",
+      "backgroundText3": "rgba(255, 255, 255, 0.5)",
+      "cardText": "#ffffff"
+    },
+    {
+      "primary": "#f252df",
+      "background": "#1b264f",
+      "card": "#233f82",
+      "primaryText": "#FFFFFF",
+      "backgroundText": "#ffffff",
+      "backgroundText1": "rgba(255, 255, 255, 0.9)",
+      "backgroundText2": "rgba(255, 255, 255, 0.7)",
+      "backgroundText3": "rgba(255, 255, 255, 0.5)",
+      "cardText": "#ffffff"
+    }
+  ]
+  ,
   "about": {
     "title": "Hello There!",
-    "body": "I'm Raman Tehlan, Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you want to know more about me, feel free to use the above menu and checkout out more about me."
+    "body": "I'm Raman Tehlan, Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you want to know more about me, feel free to use the above menu and checkout out more about me.",
+    "signature": "Regards <br> <b>Raman Tehlan</b>"
   },
   "profile": {
     "name": "Raman Tehlan",

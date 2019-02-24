@@ -1,15 +1,14 @@
 :root {
   /* Color */
   --primary: #2708a0;
-  --primary-v: #3a0e47;
-  --primary-text: #FFFFFF;
+  --primaryText: #FFFFFF;
   --background: #efefef;
   --card: #ffffff;
-  --background-text: #000000;
-  --background-text-1: rgba(0, 0, 0, 0.8);
-  --background-text-2: rgba(0, 0, 0, 0.6);
-  --background-text-3: rgba(0, 0, 0, 0.3);
-  --card-text: #000000;
+  --backgroundText: #000000;
+  --backgroundText1: rgba(0, 0, 0, 0.8);
+  --backgroundText2: rgba(0, 0, 0, 0.6);
+  --backgroundText3: rgba(0, 0, 0, 0.3);
+  --cardText: #000000;
   /* Text */
   --title-size: 20px;
   --subtitle-size: 12px;
@@ -47,7 +46,7 @@ html {
   margin: 0px;
   padding: 0px;
   background-color: var(--background);
-  color: var(--background-text);
+  color: var(--backgroundText);
   font-size: var(--body-size);
   font-family: roboto_r;
 }
@@ -118,7 +117,7 @@ p {
 .footer {
   margin-top: 30px;
   padding: 8px;
-  color: var(--background-text-2);
+  color: var(--backgroundText2);
   text-align: center;
   font-size: 12px;
 }
@@ -153,7 +152,7 @@ p {
   margin-right: 0.5rem;
   width: var(--icon-size);
   height: var(--icon-size);
-  color: var(--primary)
+  color:var(--primary);
 }
 
 /* Profile */
@@ -225,14 +224,14 @@ p {
   width: 16px;
   height: 16px;
   font-size: 16px;
-  color: var(--primary);
   margin-right: 10px;
+  color: var(--primary);
 }
 
 /* Card */
 .card {
   background-color: var(--card);
-  color: var(--card-text);
+  color: var(--cardText);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin: 12px auto;
@@ -250,7 +249,7 @@ p {
 .card-arrow{
   float:right;
   font-size:12px;
-  color: var(--background-text-3);
+  color: var(--backgroundText3);
   border-radius:100px;
   padding:10px;
   margin-top:-5px;
@@ -260,7 +259,7 @@ p {
 
 .card-arrow:hover{
   background-color: var(--primary);
-  color: var(--primary-text);
+  color: var(--primaryText);
 }
 
 .card-header {
@@ -271,12 +270,12 @@ p {
 
 .card-hidden-section > .subtitle {
   margin-top: 6px;
-  color: var(--background-text-1);
+  color: var(--backgroundText1);
 }
 
 .card-hidden-section > .subtitle:first-child{
   margin-top:0px;
-  color: var(--background-text-1);
+  color: var(--backgroundText1);
 }
 
 
@@ -297,11 +296,15 @@ p {
 .badge {
   padding-left: 8px;
   padding-right: 8px;
-  margin-bottom: 8px;
-  margin-left: 8px;
+  padding-top:2px;
+  padding-bottom:2px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-top:-2px;
   border-radius: var(--border-radius);
-  background-color: var(--primary);
-  color: var(--primary-text);
+  background-color: var(--background);
+  color: var(--backgroundText1);
+  font-family: roboto_r;
 }
 
 .badge:nth-child(2) {
@@ -316,7 +319,7 @@ p {
 
 .card-number {
   text-align: left;
-  color: var(--background-text-2);
+  color: var(--backgroundText2);
   font-style: italic;
 }
 
@@ -348,7 +351,7 @@ p {
   min-height: 40px;
   margin: 0px;
   margin-bottom: 20px;
-  background-color: white;
+  background-color: var(--card);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
   z-index: 100;
 }
@@ -360,8 +363,8 @@ p {
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
-  background-color: white;
-  color: var(--primary);
+  background-color: var(--card);
+  color: var(--cardText);
 }
 
 .menu-list-item {
@@ -372,6 +375,7 @@ p {
   font-family: roboto_m;
   width: auto;
   text-transform: capitalize;
+  color: var(--primary);
 }
 
 .menu-list-item>i {
@@ -386,6 +390,8 @@ p {
   color: white;
   cursor: pointer;
 }
+
+
 
 .menu-list-selected {
   background-color: var(--primary);
@@ -411,26 +417,24 @@ p {
 .menu-icon {
   position: absolute;
   right: 0px;
-  color: white;
   text-align: center;
   line-height: 40px;
   width: 40px;
   height: 40px;
   font-size: 20px;
   cursor: pointer;
-  color: black;
 }
 
 .menu-icon:hover {
   background-color: var(--primary);
-  color: white;
+  color: var(--primaryText);
 }
 
 .break-heading {
   text-align: left;
   font-size: 18px;
   font-family: roboto_r;
-  color: var(--background-text-2);
+  color: var(--backgroundText2);
   text-transform: capitalize;
 }
 
@@ -450,7 +454,7 @@ p {
   line-height: 30px;
   min-width: 10%;
   background-color: #f2dfdf;
-  color: var(--primary-text);
+  color: var(--primaryText);
   border-radius: var(--border-radius);
   margin: 2px;
   text-align: center;
@@ -468,7 +472,7 @@ p {
 
 .small-card {
   background-color: var(--card);
-  color: var(--card-text);
+  color: var(--cardText);
   border-radius: var(--border-radius);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-left: 6px;
@@ -482,25 +486,25 @@ p {
 
 .small-card:hover{
   background-color: var(--primary);
-  color: var(--primary-text);
+  color: var(--primaryText);
 }
 
 .small-card:hover > .subtitle > .link-logo{
-  color: var(--primary-text);
+  color: var(--primaryText);
 }
 
 .small-card:hover > .light{
-  color: var(--primary-text);
+  color: var(--primaryText);
 }
 
 .link-logo{
   font-size:16px;
   margin-right:10px;
-  color: var(--primary)
+  color: var(--primary);
 }
 
 .light {
-  color: var(--background-text-2);
+  color: var(--backgroundText2);
 }
 
 @media only screen and (min-width: 800px) and (min-height: 450px) {
@@ -528,7 +532,7 @@ p {
   }
 
   .menu-icon:hover {
-    color: #7dc4c1;
+    color: var(--primaryText);
   }
 
   .menu-down {
@@ -586,7 +590,6 @@ p {
     height: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
-    border-bottom: 1px solid #ecd7d7;
   }
 
   .menu-control {
@@ -596,7 +599,6 @@ p {
   .menu-list {
     margin: 0px;
     padding: 0px;
-    color: var(--primary);
     display: block;
     box-shadow: none;
     background: none;
@@ -619,14 +621,14 @@ p {
 
   .menu-list-item:hover {
     background: none;
-    color: var(--primary-v);
-    border-bottom: 3px solid var(--primary-v);
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
   }
 
   .menu-list-selected {
     background: none;
-    color: var(--primary-v);
-    border-bottom: 3px solid var(--primary-v);
+    color: var(--primary);
+    border-bottom: 3px solid var(--primary);
   }
 
   .footer{
