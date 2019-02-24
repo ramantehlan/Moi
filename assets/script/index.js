@@ -205,7 +205,6 @@ function init() {
 function menuToggle() {
   if ($(document).width() <= maxBreakPoint) {
     $("#menuList").slideToggle();
-    $("#menuTitle").toggle();
   }
 }
 
@@ -215,7 +214,7 @@ function showSection(section) {
   $(".menu-list-item").removeClass("menu-list-selected");
   $("#" + section + "Btn").addClass("menu-list-selected");
   $(".hidden").hide();
-  $("#" + section).slideDown();
+  $("#" + section).show();
   $("#menuTitle").html(section);
   
 }
