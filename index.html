@@ -68,12 +68,10 @@
         </div>
         <ul class="menu-list" id="menuList">
           <span v-if="render" class="menu-list-span">
-            <a v-for="menu in data.menu" v-if="menu.display" :onclick="`showSection('` + menu.title + `')`" :href="'#' + menu.title">
-              <li :id="menu.title + 'Btn'" class="menu-list-item">
+              <li :id="menu.title + 'Btn'" class="menu-list-item" v-for="menu in data.menu" v-if="menu.display" :onclick="`showSection('` + menu.title + `')`">
               <i :class="menu.icon" v-if="menuIconAllow"></i>
               {{ menu.title }}
             </li>
-          </a>
           </span>
         </ul>
       </div>

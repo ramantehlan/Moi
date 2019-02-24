@@ -194,11 +194,13 @@ function init() {
   // To hide all the sections
   $(".hidden").hide();
   // To allow menu icon only when screen size is small
-  defaultSection("about");
-  // Display menu on the basis of display size
-  menuDisplay();
+  $("#aboutBtn").addClass("menu-list-selected");
+  $("#about").show();
   // To add the toggle function to menu
   $("#menuIcon").click(menuToggle);
+  // Display menu on the basis of display size
+  menuDisplay();
+
 }
 
 // To display menu when on mobile
@@ -237,12 +239,6 @@ function menuDisplay(){
   }
 }
 
-// To set default section 
-function defaultSection(section){
-   // To select and show the default section
-  $("#" + section + "Btn").addClass("menu-list-selected");
-  $("#" + section).show();
-}
 
 window.onresize = function(event) {
   menuDisplay()
