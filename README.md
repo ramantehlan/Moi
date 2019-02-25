@@ -1,31 +1,31 @@
-# Personal Site Template
+# Moi
 A simple, light and highly customizable personal site template.
 
 # Index
 
+1. [About](#about)
+2. [Usage](#usage)
+	- [Json Design](#json-design)
+	- [Adding A New Section](#adding-a-new-section)
+3. [Development](#development)
+ 	- [Requirement](#requirement)
+	- [Installation](#installation)
+	- [File Hierarchy](#file-hierarchy)
+4. [Contribution](#Contribution)
+5. [Resources](#resources)
+6. [License](#license)
+7. [Back Story](#back-story)
+
 ## About
-This is a single-page personal site template created using vue.js. It is created for anyone who wishes to have a personal site, without going through the trouble of creating it. Following are the 3 key factors kept in mind while creating this template.
+Moi is a single-page personal site template, created to reduce the trouble of designing, developing and maintaining your own personal site while keeping it light, customizable and simple. It is free and opensource, so you still have the freedom to add your own changes and features. Moi uses a single json file to fetch data and render it, which makes it extremely simple to make changes.
 
-- **Simplicity**: Beauty don't lie in making things complex, but making them
-simple
-
-- **Light Weight**: Development should be easy, and rendering should be cheap.
-
-- **Highly Customizable**: We all have different taste and design sense, so
-
-## Initial Design
-
-
-- Follow Material desing
-- Own fast view and animation library
-- SEO Friendly
-- Open Source
 
 ## Usage
 
-## Json Design
 
-## Adding a new section
+### Json Design
+
+### Adding A New Section
 
 ## Development
 
@@ -35,8 +35,8 @@ simple
 
 ### File Hierarchy
 
-### Contribution
-	
+## Contribution
+
 ##### Spread the word
 
 ##### Help in the development
