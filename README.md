@@ -122,11 +122,26 @@ To add a new section, steps are given below.
 
 ## Development
 
-To add more features to this project, you need to make sure you have all the requirements checked, this project installed, and a little understanding of this project. 
+To add more features to this project, you need to make sure you have all the requirements checked, this project installed, and a little understanding of this project.
 
 ### Requirement
 
+You need to be at least familiar with the following tools and languages:
+
+- HTML/CSS 3/JavaScript
+- Vue.js
+- JQuery
+- Json
+
 ### Installation
+
+Once you have all the requirements, you can now install the project and start developing. Just follow these steps:
+
+1. Fork this project.
+2. Clone your fork `git clone https://github.com/YOURUSERNAME/moi` OR `git clone https://github.com/YOURUSERNAME/YOURUSERNAME.github.io`
+3. Branch out `git branch -b NEW-BRANCH`
+4. Make your changes.
+5. Create a pull request.
 
 ### File Hierarchy
 
@@ -155,14 +170,21 @@ To add more features to this project, you need to make sure you have all the req
 
 ## Contribution
 
-##### Spread the word
+You can contribute to this project in multiple way. Here are some of them mentioned below
 
-##### Help in the development
+### Help in Development
 
-##### Adding a new logo
+This project can be improved so much more, with new features and design. If you
+are willing and intrested, feel free to help develop it for yourself and others.  
 
-## Resources
+### Report the issues and features
+
+If you feel a feature is missing, or you have encounter a bug, report it in the
+issues section. It will really help any one working on the development.
+
+### Spread the words
+
+Star this project, use it, or tell your friends about it. It will really help.
 
 ## License
-
-## Back Story
+GNU General Public License v3.0
