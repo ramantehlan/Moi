@@ -5,16 +5,14 @@ A simple, light and highly customizable personal site template.
 
 1. [About](#about)
 2. [Usage](#usage)
-	- [Json Design](#data.json-design)
+	- [Json Design](#json-design)
 	- [Adding A New Section](#adding-a-new-section)
 3. [Development](#development)
  	- [Requirement](#requirement)
 	- [Installation](#installation)
 	- [File Hierarchy](#file-hierarchy)
 4. [Contribution](#Contribution)
-5. [Resources](#resources)
-6. [License](#license)
-7. [Back Story](#back-story)
+5. [License](#license)
 
 ## About
 Moi is a single-page personal site template created to reduce the trouble of designing, developing and maintaining your own personal site while keeping it light, customizable and simple. It is free and opensource, so you still have the freedom to add your own changes and features.
@@ -32,7 +30,7 @@ To use this template for your own personal site, you can follow steps given belo
 3. Update `data.json` file with your information.
 
 
-### data.json Design
+### Json Design
 
 `data.json` is the most important file in this project, as it is responsible for providing all the data. It is designed in a way the JS script could understand it. Right now, the file is already populated with sample data, but the following are the rules used:
 
