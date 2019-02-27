@@ -45,39 +45,7 @@
       "cardText": "#ffffff"
     }
   ]
-  ,
-  "about": {
-    "title": "Hello There!",
-    "body": "I'm Raman Tehlan, Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you want to know more about me, feel free to use the above menu and checkout out more about me.",
-    "signature": "Regards <br> <b>Raman Tehlan</b>"
-  },
-  "profile": {
-    "name": "Raman Tehlan",
-    "image": "https://drive.google.com/uc?export=view&id=1qlBcPkxg9usJxJaMZe2y5YYyhGBu6tEh",
-    "domains": "Engineer | Developer | Designer",
-    "vision": "FOSS enthusiast, Just show me the code, love to attend hackathons and startup weekends, Fan of GNU/Linux, UI/UX and good Engineering, Also a visionary.",
-    "link": [{
-      "name": "resume",
-      "url": "https://drive.google.com/open?id=1dloQ-o82YjmJbMkPU1feTpSxIv--5Jfp",
-      "icon": "fas fa-user",
-      "label": "Résumé"
-    }, {
-      "name": "email",
-      "url": "",
-      "icon": "fas fa-paper-plane",
-      "label": "Ramantehlan[at]gmail"
-    }, {
-      "name": "github",
-      "url": "https://github.com/ramantehlan",
-      "icon": "fab fa-github",
-      "label": "github/ramantehlan"
-    }, {
-      "name": "linkedin",
-      "url": "https://www.linkedin.com/in/ramantehlan/",
-      "icon": "fab fa-linkedin-in",
-      "label": "linkedin/in/ramantehlan"
-    }]
-  },
+  ,  
   "menu": [{
     "title": "home",
     "display": false,
@@ -127,6 +95,38 @@
     "display": true,
     "icon": "fa fa-link"
   }],
+  "about": {
+    "title": "Hello There!",
+    "body": "I'm Raman Tehlan, Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you want to know more about me, feel free to use the above menu and checkout out more about me.",
+    "signature": "Regards <br> <b>Raman Tehlan</b>"
+  },
+  "profile": {
+    "name": "Raman Tehlan",
+    "image": "https://drive.google.com/uc?export=view&id=1qlBcPkxg9usJxJaMZe2y5YYyhGBu6tEh",
+    "domains": "Engineer | Developer | Designer",
+    "vision": "FOSS enthusiast, Just show me the code, love to attend hackathons and startup weekends, Fan of GNU/Linux, UI/UX and good Engineering, Also a visionary.",
+    "link": [{
+      "name": "resume",
+      "url": "https://drive.google.com/open?id=1dloQ-o82YjmJbMkPU1feTpSxIv--5Jfp",
+      "icon": "fas fa-user",
+      "label": "Résumé"
+    }, {
+      "name": "email",
+      "url": "",
+      "icon": "fas fa-paper-plane",
+      "label": "Ramantehlan[at]gmail"
+    }, {
+      "name": "github",
+      "url": "https://github.com/ramantehlan",
+      "icon": "fab fa-github",
+      "label": "github/ramantehlan"
+    }, {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/ramantehlan/",
+      "icon": "fab fa-linkedin-in",
+      "label": "linkedin/in/ramantehlan"
+    }]
+  },
   "work": [{
     "id": 5,
     "key": "wo5",
