@@ -45,12 +45,8 @@
       "cardText": "#ffffff"
     }
   ]
-  ,  
+  ,
   "menu": [{
-    "title": "home",
-    "display": false,
-    "icon": "fas fa-home"
-  }, {
     "title": "about",
     "display": true,
     "icon": "fas fa-user"
@@ -78,11 +74,7 @@
     "title": "education",
     "display": true,
     "icon": "fa fa-graduation-cap"
-  }, {
-    "title": "publications",
-    "display": false,
-    "icon": "fas fa-globe-asia"
-  }, {
+  },{
     "title": "blogs",
     "display": true,
     "icon": "fas fa-star"

@@ -55,11 +55,11 @@ Every first level key is considered as a section, while their value is considere
 > Note: Every key should be in lower caps.
 
 
-**Pre-defined Sections**
+**Pre-defined sections**
 
 As a personal site, there are some sections which are common, and therefore they are pre-defined in the HTML and JS Script, so in no case, they should be removed, following are the fixed sections:
 
-No | Name | Type |Information
+No | Section Name | Type |Information
 ---|------|------|-----------
  1 | `document` | *object* | Document information, like meta tags, default theme, first section.
  2 | `themes` | *array[object]* | Css root data, to set themes.
@@ -75,9 +75,54 @@ No | Name | Type |Information
 12 | `talks` | *array[object]* | Your talks in any community or a show.
 13 | `links` | *array[object]* | All your links on the internet.
 
+**Pre-defined keys**
+
+Sections also have an array of objects, which can only have pre-defined keys, which are already provided in the default `data.json` file. Just use only those keys, as any other key won't be rendered.
+
 ### Adding A New Section
 
+To add a new section, steps are given below.
+
+1. Add following HTML script to `index.html`. Here *NEW-SECTION* needs to be replaced by the new section name.
+
+```HTML
+<div id="NEW-SECTION" class="hidden">
+	<span v-if="render">
+		<span v-if="data.NEW-SECTION">
+			<div class="break-heading">NEW-SECTION [{{ data.NEW-SECTION.length }}]</div>
+			<card v-for="info in data.NEW-SECTION" v-bind:info="info" v-bind:key="info.key"></card>
+		</span>
+	</span>
+</div>
+```
+
+2. Make a entry of new section in `data.json` inside menu, create a new object. Here *New-SECTION* needs to be replaced by the new section name, make sure it's same in html and *ICON-CLASS* needs to be replaced by [Font Awesome 5](https://fontawesome.com/) only.
+
+```JSON
+"menu": [
+...
+{
+	"title": "NEW-SECTION",
+	"display": true,
+	"icon": "ICON-CLASS"
+}
+...
+]
+```
+
+3. Create a new first level key, which should be a array of object, where each object is single entry of that new section.
+
+```JSON
+	...
+	'NEW-SECTION': [{
+		...
+		}]
+	...
+```
+
 ## Development
+
+To add more features to this project, you need to make sure you have all the requirements checked, this project installed, and a little understanding of this project. 
 
 ### Requirement
 
