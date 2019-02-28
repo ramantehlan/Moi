@@ -69,7 +69,7 @@ No | Section Name | Type |Information
  8 | `achievements` | *array[object]* | Achievements or awards you have.
  9 | `contributions` | *array[object]* | Contribution you have made, or communities you are part of.
 10 | `education` | *array[object]* | Education/Cources information.
-11 | `blogs` | *array[object]* | Blogs you have written.
+11 | `blog` | *array[object]* | Blog, articles you have written.
 12 | `talks` | *array[object]* | Your talks in any community or a show.
 13 | `links` | *array[object]* | All your links on the internet.
 
