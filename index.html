@@ -157,11 +157,11 @@
           </div>
 
 
-          <div id="blogs" class="hidden">
+          <div id="blog" class="hidden">
             <span v-if="render">
-              <span v-if="data.blogs">
-                <div class="break-heading">Blogs [{{ data.blogs.length }}]</div>
-                <card v-for="info in data.blogs" v-bind:info="info" v-bind:key="info.key"></card>
+              <span v-if="data.blog">
+                <div class="break-heading">Blog [{{ data.blog.length }}]</div>
+                <card v-for="info in data.blog" v-bind:info="info" v-bind:key="info.key"></card>
               </span>
             </span>
           </div>

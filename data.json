@@ -75,7 +75,7 @@
     "display": true,
     "icon": "fa fa-graduation-cap"
   },{
-    "title": "blogs",
+    "title": "blog",
     "display": true,
     "icon": "fas fa-star"
   }, {
@@ -385,7 +385,7 @@
     ],
     "about": "My team `Real Steel` designed a rocket assembly process for IRC International 2014 held at Seattle, USA in 2015. <ul><li> Robot aim was to assemble a rocket. </li> <li> Created a black line follower robot which could remove obstacles. </li> <li> The robot picked objects to place them at a launchpad. </li></ul>"
   }],
-  "blogs": [{
+  "blog": [{
     "id": 1,
     "key": "bg1",
     "title": "Design Thinking - Miracle of innovation.",
