@@ -1,5 +1,5 @@
 # Moi
-A simple, light and highly customizable personal site template.
+A simple, light and highly customizable personal site template. [Example](https://ramantehlan.github.io)
 
 # Index
 
