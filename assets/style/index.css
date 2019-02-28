@@ -142,6 +142,11 @@ p {
 .home-p{
   margin-top:15px;
   margin-bottom:15px;
+  text-align: justify;
+}
+
+.home-p > a{
+  color:var(--primary);
 }
 
 .home-signature{
