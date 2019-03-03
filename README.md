@@ -30,10 +30,11 @@ To use this template for your own personal site, you can follow steps given belo
 2. Rename your fork to `YOURUSERNAME.github.io`.
 3. Update `data.json` file with your information.
 
+You also need to go to the *settings*, then *GitHub Pages* section and select *source* as master.
+
 ### About Themes.
 
-To change the theme, you just need to open `data.json` and in *document* section, update the *theme* key, it will accept any numerical value, from 1 to the maximum number of objects in *themes* section. To add more themes, just add a new object in *themes* section.  
-
+To change the theme, you just need to open `data.json` and in *document* section, update the *theme* key, it will accept any numerical value, from 0 to the (maximum number of objects in *themes* section) - 1. To add more themes, just add a new object in *themes* section. Also note, right now the visitor doesn't have this option to change themes, only you can change it from your side.
 
 ### Json Design
 
