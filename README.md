@@ -5,9 +5,7 @@ A simple, light and highly customizable personal site template.
 
 <p>
 
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img1.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img2.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img3.png" width="430">
+
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img4.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img5.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img6.png" width="430">
@@ -15,6 +13,10 @@ A simple, light and highly customizable personal site template.
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img8.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img9.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img10.png" width="430">
+
+<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img1.png" width="430">
+<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img2.png" width="430">
+<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img3.png" width="430">
 </p>
 
  [Live Example](https://ramantehlan.github.io)
