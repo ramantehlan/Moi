@@ -1,5 +1,16 @@
 # Moi
-A simple, light and highly customizable personal site template. [Example](https://ramantehlan.github.io)
+A simple, light and highly customizable personal site template.
+
+# Example
+
+<p>
+
+<img src="./assets/img/ss/img1.JPG" width="200">
+<img src="./assets/img/ss/img2.JPG" width="200">
+<img src="./assets/img/ss/img3.JPG" width="200">
+</p>
+
+ [Live Example](https://ramantehlan.github.io)
 
 # Index
 
