@@ -1,7 +1,7 @@
 # Moi
 A simple, light and highly customizable personal site template.
 
-# Example
+# Screen-shot
 
 <p>
 
@@ -36,7 +36,7 @@ A simple, light and highly customizable personal site template.
 ## About
 Moi is a single-page personal site template created to reduce the trouble of designing, developing and maintaining your own personal site while keeping it light, customizable and simple. It is free and opensource, so you still have the freedom to add your own changes and features.
 
-Moe is responsive and SEO friendly, with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance.
+Moe is responsive and SEO friendly, with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance. 
 
 > Moi means "me" in french.
 
