@@ -7,7 +7,8 @@
     "language": "English",
     "charset": "utf-8",
     "robots": "INDEX , FOLLOW",
-    "google_site_verificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk",
+    "googleSiteVerificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk",
+    "googleAnalyticsId": "UA-135548412-1",
     "theme": 0
   },
   "themes":[
@@ -97,6 +98,30 @@
     "image": "https://drive.google.com/uc?export=view&id=1qlBcPkxg9usJxJaMZe2y5YYyhGBu6tEh",
     "domains": "Engineer | Developer | Designer",
     "vision": "FOSS enthusiast, Just show me the code, love to attend hackathons and startup weekends, Fan of GNU/Linux, UI/UX and good Engineering, Also a visionary.",
+    "url": "https://ramantehlan.github.io",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dwarka",
+        "addressLocality": "Delhi",
+        "addressRegion": "Delhi",
+        "postalCode": "110075",
+        "addressCountry": "India"
+    },
+    "email": "mailto:ramantehlan@gmail.com",
+    "alumniOf": "SRM University",
+    "birthPlace": "New Delhi, India",
+    "birthDate": "1998.05.20",
+    "height": "177cm",
+    "weight": "72kg",
+    "gender": "male",
+    "nationality": "",
+    "sameAs":[
+      "https://www.linkedin.com/in/ramantehlan/",
+      "https://twitter.com/ramantehlan",
+      "https://github.com/ramantehlan",
+      "https://facebook.com/ramantehlan",
+      "https://www.instagram.com/ramantehlan/"
+    ],
     "link": [{
       "name": "resume",
       "url": "https://drive.google.com/open?id=1dloQ-o82YjmJbMkPU1feTpSxIv--5Jfp",

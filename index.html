@@ -12,16 +12,24 @@
   <link rel="stylesheet" type="text/css" href="assets/style/index.css">
 
   <!-- Basic meta tags -->
-  <meta name="author" content="">
-  <meta name="title" content="">
-  <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="author" content="author">
+  <meta name="title" content="title">
+  <meta name="keywords" content="keywords">
+  <meta name="description" content="description">
   <meta name="language" content="English">
   <meta name="charset" charset="utf-8">
   <meta name="robots" content="INDEX , FOLLOW">
-  <meta name="google-site-verification" content="" />
+  <meta name="google-site-verification" content="site-verification" />
   <!-- View point -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script
+  			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js"></script>
 
 </head>
 
@@ -86,6 +94,14 @@
               <h1> {{ data.about.title }} </h1>
               <p v-html="data.about.body" class="home-p"> </p>
               <p v-html="data.about.signature" class="home-signature"></p>
+              <p class="social-media-box">
+                 <a :href="'https://twitter.com/intent/tweet?&text=Hey!%20Check%20this%20profile%20out.&tw_p=tweetbutton&url=' + data.profile.url" target="_blank" class="btn"><i class="fab fa-twitter"></i> Tweet</a>
+
+                 <a :href="'https://www.facebook.com/sharer/sharer.php?u=' + data.profile.url " target="_blank" class="btn"><i class="fab fa-facebook-f"></i> Share </a>
+
+                 <a :href="'http://www.reddit.com/submit?url=' + data.profile.url + '&title=' + data.document.title" class="btn" target="_blank"><i class="fab fa-reddit-alien"> </i> Post</a>
+
+                </p>
             </span>
           </div>
 
@@ -207,9 +223,5 @@
 
 </body>
 
-<script type="text/javascript" src="assets/script/jquery.js"></script>
-<script type="text/javascript" src="assets/script/vue.js"></script>
 <script type="text/javascript" src="assets/script/index.js"></script>
-
-
 </html>

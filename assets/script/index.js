@@ -6,7 +6,6 @@
  */
 
 var maxBreakPoint = 1200;
-
 //
 // Templates
 //
@@ -139,44 +138,79 @@ var card = Vue.component('card', {
 `
 });
 
-  // Step-1: Fetch the user data 
-  fetch('data.json').then((response) => {
-    return response.json();
-  }).then((data) => {
-    // Assign data to view
-    app.data = data;
-    // Allow data to render
-    app.render = true;
+// Step-1: Fetch the user data
+fetch('data.json').then((response) => {
+  return response.json();
+}).then((data) => {
+  // Assign data to view
+  app.data = data;
+  // Allow data to render
+  app.render = true;
 
-    // Update the document details.
-    $(document).attr("title", app.data.document.title);
-    $("meta[name='author']").attr("content", app.data.document.author);
-    $("meta[name='title']").attr("content", app.data.document.title);
-    $("meta[name='keywords']").attr("content", app.data.document.keywords);
-    $("meta[name='description']").attr("content", app.data.document.description);
-    $("meta[name='language']").attr("content", app.data.document.language);
-    $("meta[name='charset']").attr("content", app.data.document.charset);
-    $("meta[name='robots']").attr("content", app.data.document.robots);
-    $("meta[name='google-site-verification']").attr("content", app.data.document.google_site_verificatin);
+  // Update the document details.
+  $(document).attr("title", app.data.document.title);
+  $("meta[name='author']").attr("content", app.data.document.author);
+  $("meta[name='title']").attr("content", app.data.document.title);
+  $("meta[name='keywords']").attr("content", app.data.document.keywords);
+  $("meta[name='description']").attr("content", app.data.document.description);
+  $("meta[name='language']").attr("content", app.data.document.language);
+  $("meta[name='charset']").attr("content", app.data.document.charset);
+  $("meta[name='robots']").attr("content", app.data.document.robots);
+  $("meta[name='google-site-verification']").attr("content", app.data.document.googleSiteVerificatin);
 
-    let themeNumber = app.data.document.theme ;
+  let themeNumber = app.data.document.theme;
 
-    for(var key in app.data.themes[themeNumber]){
-       document.documentElement.style.setProperty('--' + key, app.data.themes[themeNumber][key]); 
-    }
+  for (var key in app.data.themes[themeNumber]) {
+    document.documentElement.style.setProperty('--' + key, app.data.themes[themeNumber][key]);
+  }
 
-    // To select the section from GET page
-    // var url = new URL(window.location.href);
-    // showSection(url.searchParams.get("page"));
+  // Complete list can be found here
+  // https://schema.org/Person
+  // This is just the most important of all
 
-    Vue.nextTick(function () {
-      // Step-3
-      init();
-    })
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', app.data.document.googleAnalyticsId);
 
-  }).catch(function(error) {
-    console.log(error);
-  });
+  (function() {
+    var data = {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "address": app.data.profile.address,
+      "email": app.data.profile.email,
+      "image": app.data.profile.image,
+      "jobTitle": app.data.profile.domains,
+      "name": app.data.profile.name,
+      "alumniOf": app.data.profile.alumniOf,
+      "birthPlace": app.data.profile.birthPlace,
+      "birthDate": app.data.profile.birthDate,
+      "height": app.data.profile.height,
+      "weight": app.data.profile.weight,
+      "gender": app.data.profile.gender,
+      "nationality": app.data.profile.nationality,
+      "url": app.data.profile.url,
+      "sameAs": app.data.profile.sameAs
+    };
+
+    var script = document.createElement('script');
+    script.type = "application/ld+json";
+    script.innerHTML = JSON.stringify(data);
+    document.getElementsByTagName('head')[0].appendChild(script);
+  })(document);
+
+  // To select the section from GET page
+  // var url = new URL(window.location.href);
+  // showSection(url.searchParams.get("page"));
+
+  Vue.nextTick(function() {
+    // Step-3
+    init();
+  })
+
+}).catch(function(error) {
+  console.log(error);
+});
 
 // Step-2: Create a view, Vue app lives in #view
 var app = new Vue({
@@ -223,18 +257,18 @@ function showSection(section) {
   $(".hidden").hide();
   $("#" + section).show();
   $("#menuTitle").html(section);
-  
+
 }
 
 // To display card details
 function cardDown(id) {
-    $("#" + id + "Details").slideToggle();
-    $("#" + id).toggleClass("fa-arrow-down");
-    $("#" + id).toggleClass("fa-arrow-up");
+  $("#" + id + "Details").slideToggle();
+  $("#" + id).toggleClass("fa-arrow-down");
+  $("#" + id).toggleClass("fa-arrow-up");
 }
 
 // To check things on resize
-function menuDisplay(){
+function menuDisplay() {
   if ($(document).width() >= maxBreakPoint) {
     app.menuIconAllow = false
     $("#menuList").show();
@@ -248,4 +282,3 @@ function menuDisplay(){
 window.onresize = function(event) {
   menuDisplay()
 };
-

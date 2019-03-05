@@ -4,8 +4,6 @@ A simple, light and highly customizable personal site template.
 # Screen-shot
 
 <p>
-
-
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img4.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img5.png" width="430">
 <img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img6.png" width="430">
@@ -26,6 +24,7 @@ A simple, light and highly customizable personal site template.
 	- [About Themes](#about-themes)
 	- [Json Design](#json-design)
 	- [Adding A New Section](#adding-a-new-section)
+	- [SEO](#seo)
 3. [Development](#development)
  	- [Requirement](#requirement)
 	- [Installation](#installation)
@@ -36,7 +35,7 @@ A simple, light and highly customizable personal site template.
 ## About
 Moi is a single-page personal site template created to reduce the trouble of designing, developing and maintaining your own personal site while keeping it light, customizable and simple. It is free and opensource, so you still have the freedom to add your own changes and features.
 
-Moe is responsive and SEO friendly, with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance. 
+Moe is responsive and SEO friendly, with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance.
 
 > Moi means "me" in french.
 
@@ -87,7 +86,7 @@ No | Section Name | Type |Information
  2 | `themes` | *array[object]* | Css root data, to set themes.
  3 | `menu` | *array[object]* | List of items in menu. *Note: they menu title should be same as section name*.
  4 | `about` | *array[object]* | Section about self introduction. This is by default set as first section.
- 5 | `profile` | *array[object]* | Left or top section about the person.
+ 5 | `profile` | *array[object]* | Left or top section about the person, also schema information
  6 | `work` | *array[object]* | Work experience.
  7 | `projects` | *array[object]* | Projects you have created.
  8 | `achievements` | *array[object]* | Achievements or awards you have.
@@ -141,6 +140,16 @@ To add a new section, steps are given below.
 		}]
 	...
 ```
+
+### SEO
+
+Moi is a SEO friendly app, but to you need to take few steps to make it more effective and personalized.
+
+1. Verify your site by Google. Go to [Google Search Console](https://search.google.com/search-console/about) and register your site as your property, generate a *google-site-verificatin* code and add it in your `data.json` file in *document* section.
+
+2. Add Google Analytics to your site. Go to [Google Analytics](https://analytics.google.com/analytics/web/) and register your site as your property, generate a *Tracking Id* and add it in your `data.json` file in *document* section.
+
+
 
 ## Development
 

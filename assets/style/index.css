@@ -4,7 +4,7 @@
   --primaryText: #FFFFFF;
   --background: #efefef;
   --card: #ffffff;
-  --backgroundText: #000000;
+  --backgroundText: #000000;mi
   --backgroundText1: rgba(0, 0, 0, 0.8);
   --backgroundText2: rgba(0, 0, 0, 0.6);
   --backgroundText3: rgba(0, 0, 0, 0.3);
@@ -83,6 +83,43 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap
+}
+
+.social-media-box{
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.btn{
+position: relative;
+height: 20px;
+line-height:20px;
+box-sizing: border-box;
+padding: 1px 8px 1px 6px;
+background-color: var(--primary);
+color: var(--primaryText);
+border-radius: 3px;
+font-weight: 700;
+cursor: pointer;
+font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+display: inline-block;
+vertical-align: top;
+margin-left: 5px;
+margin-top: 5px;
+white-space: nowrap;
+opacity: 0.75;
+}
+
+.btn:first-child{margin-left: 0px;}
+
+.btn:hover{
+  opacity:1;
+}
+
+.btn > i{
+  margin-right:5px;
+
 }
 
 .card-hidden-section{
