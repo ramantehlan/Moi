@@ -35,7 +35,7 @@ A simple, light and highly customizable personal site template.
 ## About
 Moi is a single-page personal site template created to reduce the trouble of designing, developing and maintaining your own personal site while keeping it light, customizable and simple. It is free and opensource, so you still have the freedom to add your own changes and features.
 
-Moe is responsive and SEO friendly, with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance.
+Moe is responsive with multiple themes. It uses a single JSON file to fetch data and render it, which makes it extremely simple to make changes and control the overall performance.
 
 > Moi means "me" in french.
 
@@ -143,7 +143,7 @@ To add a new section, steps are given below.
 
 ### SEO
 
-Moi is a SEO friendly app, but to you need to take few steps to make it more effective and personalized.
+Moi is not a SEO friendly app right now. But here are few steps to make it more effective and personalized.
 
 1. Verify your site by Google. Go to [Google Search Console](https://search.google.com/search-console/about) and register your site as your property, generate a *google-site-verificatin* code and add it in your `data.json` file in *document* section.
 
