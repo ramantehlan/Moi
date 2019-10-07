@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Meta from 'vue-meta'
 
 // Page content
 // import app from '@/routes/app'
@@ -19,46 +18,17 @@ import work from '@/routes/work'
 import PageNotFound from '@/routes/errorPages/404'
 
 Vue.use(Router)
-Vue.use(Meta)
-
-const metaTags = [
-  {
-    name: 'description',
-    content: 'The home page of our example app.'
-  },
-  {
-    property: 'og:description',
-    content: 'The home page of our example app.'
-  }
-]
 
 const routes = [
   {
     path: '/',
     name: 'About',
-    component: about,
-    meta: {
-      title: 'Home Page - Example App',
-      metaTags
-    }
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: about,
-    meta: {
-      title: 'Home Page - Example App',
-      metaTags
-    }
+    component: about
   },
   {
     path: '/achievements',
     name: 'Achievements',
-    component: achievements,
-    meta: {
-      title: 'Home Page - Example App',
-      metaTags
-    }
+    component: achievements
   },
   {
     path: '/blog',

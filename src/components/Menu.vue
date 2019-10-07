@@ -4,7 +4,7 @@
           <div class="menu-title" id="menuTitle">About</div>
           <div id="menuIcon" class="fas fa-bars menu-icon"></div>
         </div>
-        <transition name="fade">
+        
         <ul class="menu-list" v-if="showMenu">
           <span class="menu-list-span">
               
@@ -15,7 +15,6 @@
             </router-link>
           </span>
         </ul>
-        </transition>
 </div>
 </template>
 

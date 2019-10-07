@@ -659,3 +659,54 @@ opacity: 0.75;
     width:75%;
   }
 }
+
+
+.slide-enter-active, .slide-leave-active {
+  transition: all 0.50s ease-out;
+}
+
+.slide-enter, .slide-leave-to {
+  height:0px;
+}
+
+
+@mixin ballb($yaxis: 0) {
+  transform: translate3d(0, $yaxis, 0);
+}
+
+@keyframes bouncein { 
+  1% { @include ballb(-400px); }
+  20%, 40%, 60%, 80%, 95%, 99%, 100% { @include ballb() }
+  30% { @include ballb(-80px); }
+  50% { @include ballb(-40px); }
+  70% { @include ballb(-30px); }
+  90% { @include ballb(-15px); }
+  97% { @include ballb(-10px); }
+}
+
+.bouncein { 
+  animation: bouncein 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.ballmove-enter {
+  @include ballb(-400px);
+}
+
+@keyframes rollout { 
+  0% { transform: translate3d(0, 300px, 0); }
+  100% { transform: translate3d(1000px, 300px, 0); }
+}
+
+@keyframes ballroll {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(1000deg); }
+}
+
+.rollout { 
+  width: 60px;
+  height: 60px;
+  animation: rollout 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; 
+  div {
+    animation: ballroll 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; 
+  }
+}
