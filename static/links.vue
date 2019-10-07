@@ -1,6 +1,6 @@
 <template>
-<div>
-    <div id='intro'>Frontend Boilerpate</div>
+<div >
+    link
 </div>
 </template>
 
@@ -9,9 +9,5 @@
 
 <script>
 export default {
-  name: 'Title',
-  data: () => ({
-
-  })
 }
 </script>
