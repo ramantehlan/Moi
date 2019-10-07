@@ -1,21 +1,7 @@
+![Moi](https://user-images.githubusercontent.com/29037312/66308742-69d2df80-e925-11e9-9f61-c0b97a48b12e.png)
+
 # Moi
 A simple, light and highly customizable personal site template.
-
-# Screen-shot
-
-<p>
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img4.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img5.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img6.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img7.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img9.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img10.png" width="430">
-
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img1.png" width="430">
-<img src="https://raw.githubusercontent.com/ramantehlan/Moi/master/assets/img/ss/img3.png" width="430">
-</p>
-
- [Live Example](https://ramantehlan.github.io)
 
 # Index
 
@@ -28,8 +14,8 @@ A simple, light and highly customizable personal site template.
 3. [Development](#development)
  	- [Requirement](#requirement)
 	- [Installation](#installation)
-	- [File Hierarchy](#file-hierarchy)
 4. [Contribution](#Contribution)
+5. [Gallery](#gallery)
 5. [License](#license)
 
 ## About
@@ -174,30 +160,6 @@ Once you have all the requirements, you can now install the project and start de
 4. Make your changes.
 5. Create a pull request.
 
-### File Hierarchy
-
-```
-.
-├── assets
-│   ├── font
-│   │   ├── Roboto-Medium.ttf
-│   │   ├── Roboto-Regular.ttf
-│   │   ├── Roboto-Thin.ttf
-│   │   └── ROCK.TTF
-│   ├── img
-│   │   └── favicon.ico
-│   ├── script
-│   │   ├── index.js
-│   │   ├── jquery.js
-│   │   └── vue.js
-│   └── style
-│       └── index.css
-├── data.json
-├── index.html
-├── LICENSE
-└── README.md
-
-```
 
 ## Contribution
 
@@ -216,6 +178,22 @@ issues section. It will really help any one working on the development.
 ### Spread the words
 
 Star this project, use it, or tell your friends about it. It will really help.
+
+# Gallery
+
+<p>
+<img src="https://user-images.githubusercontent.com/29037312/66285070-987e9500-e8e8-11e9-8440-f2bed984b190.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285072-99172b80-e8e8-11e9-99af-c2aa78d34ecd.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285073-99172b80-e8e8-11e9-9f44-8e6ae3398fc2.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285074-99afc200-e8e8-11e9-9d60-69f5e89dc011.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285075-99afc200-e8e8-11e9-958e-3cedaa684851.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285077-99afc200-e8e8-11e9-8bfa-747822fb32d8.png" width="430">
+
+<img src="https://user-images.githubusercontent.com/29037312/66285078-9a485880-e8e8-11e9-90e3-9ec8813da708.png" width="430">
+<img src="https://user-images.githubusercontent.com/29037312/66285079-9a485880-e8e8-11e9-8f39-868a7c575a26.png" width="430">
+</p>
+
+ [Live Example](https://ramantehlan.github.io)
 
 ## License
 GNU General Public License v3.0
