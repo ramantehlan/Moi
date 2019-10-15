@@ -60,7 +60,7 @@
     "icon": "fas fa-user"
   }, {
     "title": "work",
-    "to": "/work",
+    "to": "/",
     "display": true,
     "icon": "fas fa-briefcase"
   }, {
@@ -91,7 +91,7 @@
   },{
     "title": "blog",
     "to": "/blog",
-    "display": true,
+    "display": false,
     "icon": "fas fa-star"
   }, {
     "title": "talks",
@@ -141,9 +141,15 @@
     "link": [{
       "name": "resume",
       "url": "https://drive.google.com/file/d/10aVeMguoBKYiHypRoKK-VxfCa1PvVb3d/view?usp=sharing",
-      "icon": "fas fa-user",
+      "icon": "fas fa-file",
       "label": "Résumé"
     }, {
+      "name": "blog",
+      "url": "/blog",
+      "icon": "fas fa-user",
+      "label": "Blog"
+    },
+     {
       "name": "email",
       "url": "#",
       "icon": "fas fa-inbox",

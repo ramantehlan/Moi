@@ -20,6 +20,11 @@ import PageNotFound from '@/routes/errorPages/404'
 Vue.use(Router)
 
 const routes = [
+  /* {
+    path: '/',
+    name: 'Home',
+    component: home
+  }, */
   {
     path: '/',
     name: 'Work',
@@ -65,11 +70,11 @@ const routes = [
     name: 'Talks',
     component: talks
   },
-  {
+  /* {
     path: '/work',
     name: 'Work',
     component: work
-  },
+  }, */
   {
     path: '**',
     name: 'PageNotFound',
