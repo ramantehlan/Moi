@@ -1,7 +1,7 @@
 {
   "document": {
     "author": "Raman Tehlan",
-    "title": "Official Page of Raman Tehlan | Hello World!",
+    "title": "Official Page of Raman Tehlan",
     "keywords": "Raman Tehlan ramantehlan Programmer Developer Designer Entrepreneur Resume CV.",
     "description": "Welcome to my tiny space on the internet, here I share about my work, life and everything in between.",
     "language": "English",
@@ -10,6 +10,12 @@
     "googleSiteVerificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk",
     "googleAnalyticsId": "UA-135548412-1",
     "theme": 2
+  },
+  "og": {
+    "title": "Official Page of Raman Tehlan",
+    "type": "website",
+    "url": "http://ramantehlan.github.io",
+    "image": "https://user-images.githubusercontent.com/29037312/66313311-caffb080-e92f-11e9-8271-386ea0c90fe6.png"
   },
   "themes":[
     {
@@ -48,9 +54,9 @@
   ]
   ,
   "menu": [{
-    "title": "about",
+    "title": "home",
     "to": "/",
-    "display": true,
+    "display": false,
     "icon": "fas fa-user"
   }, {
     "title": "work",
@@ -98,7 +104,7 @@
     "display": true,
     "icon": "fa fa-link"
   }],
-  "about": {
+  "home": {
     "title": "Hello There!",
     "body": "Welcome to my tiny space on the internet, here I share about my work, life and everything in between. If you are just interested in my career, feel free to use the above menu and check out more. To know me more personally you can look at my blog and read the passage given below. <Br><BR> I'm Raman Tehlan, I was first introduced to programming at an age of 11.  The first language I used was BASIC, I used it for calculation and to solve simple math problems. By the age of 14, I was comfortable in programming in multiple languages, like C++, BASIC, PHP, JavaScript etc. At 17, I started my first company (<a href='https://github.com/ramantehlan/AlvisAI'>AlvisAi</a>) and at 19, I started my second company (<a href='https://github.com/ramantehlan/Cashfog'>Cashfog</a>), both are open source now. I love to attend hackathons and startup weekends and create new projects. Most of my projects are open source since I am also a FOSS enthusiast, I have contributed to many projects. Right now, I am learning new stuff, also looking for new opportunities to apply them in the real world. <br><br> I see my life as a tool to improve the lives of souls around me, trying to leave something behind. I use technology as my power to achieve that. ",
     "signature": "Regards <br> <b>Raman Tehlan</b>"
@@ -161,13 +167,13 @@
     "companyUrl": "http://timeless.co/",
     "role":"Software Engineer Intern",
     "location": "Delhi, India",
-    "timeline": "06/2019 - TBD",
+    "timeline": "06/2019 - 9/2019",
     "tag": [
       "Golang",
       "NodeJS",
       "Microservices"
     ],
-    "about": "TBD"
+    "about": "Worked on the architecture of a SAS application from scratch, with full-stack development using Nodejs, Kafka, Redis, React"
   },{
     "id": 5,
     "key": "wo5",
@@ -180,7 +186,7 @@
       "JavaScript/TypeScript",
       "Angular"
     ],
-    "about": "Responsible for creating solutions for regional demands, full stack development of interface and website."
+    "about": "Responsible for developing regional solutions, full-stack development of using Angular, React, Golang. Led multiple campaign launches."
   }, {
     "id": 4,
     "key": "wo4",
@@ -1043,7 +1049,7 @@
   }],
   "skills": {
     "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#b6c649;" ,"#4288d0;"],
-    "title": ["Frontend", "Backend", "DevOps", "Database", "Framework/Library", "Mobile", "Software/tool", "Hardware" ,"Soft Skills"],
+    "title": ["Frontend", "Backend", "Framework/Library", "DevOps", "Database", "Software/tool", "Mobile", "Hardware" ,"Soft Skills"],
     "data": {
       "0": [{
         "name": "JavaScript",
@@ -1085,42 +1091,55 @@
       }, {
         "name": "PHP",
         "percent": "90"
-      }],
-      "2": [{
-        "name": "Linux",
-        "percent": "60"
-      }, {
-        "name": "Heroku",
-        "percent": "45"
-      }, {
-        "name": "Shell Scripting",
-        "percent": "20"
-      }],
-      "3": [{
-        "name": "MySql",
-        "percent": "80"
-      }, {
-        "name": "MongoDB",
-        "percent": "20"
-      }],
-      "4": [{
+      }],"2": [{
         "name": "Ionic",
         "percent": "30"
       }, {
         "name": "Angular",
         "percent": "40"
       },{
-        "name": "vue",
+        "name": "VueJS",
         "percent": "40"
+        },{
+          "name": "React",
+          "percent": "90"
+        },{
+          "name": "Webpack",
+          "percent": "90"
         },{
           "name": "JQuery",
           "percent": "90"
         }],
-      "5": [{
-        "name": "Android",
+      "3": [{
+        "name": "Linux",
+        "percent": "60"
+      }, {
+        "name": "Heroku",
+        "percent": "45"
+      }, {
+        "name": "Docker",
+        "percent": "45"
+      }, {
+        "name": "Shell Scripting",
+        "percent": "20"
+      },{
+        "name": "CircleCI",
         "percent": "20"
       }],
-      "6": [{
+      "4": [{
+        "name": "MySql",
+        "percent": "80"
+      }, {
+        "name": "MongoDB",
+        "percent": "20"
+      }, {
+        "name": "Redis",
+        "percent": "20"
+      }, {
+        "name": "PostgreSQL",
+        "percent": "20"
+      }],
+      "5": [{
         "name": "micro",
         "percent": "30"
         },{
@@ -1133,36 +1152,39 @@
         "name": "Photoshop",
         "percent": "50"
       }],
+      "6": [{
+        "name": "Android",
+        "percent": "20"
+      }],
       "7": [{
           "name": "Raspberry Pi",
           "percent": "30"
       }]
-      ,
-      "8": [{
-        "name": "Self-Motivated",
-        "percent": "100"
-      }, {
-        "name": "Persistent",
-        "percent": "96"
-      }, {
-        "name": "Design Thinker",
-        "percent": "100"
-      }, {
-        "name": "Problem Solver",
-        "percent": "100"
-      }, {
-        "name": "Leader",
-        "percent": "98"
-      }, {
-        "name": "Manager",
-        "percent": "100"
-      }, {
-        "name": "Creative",
-        "percent": "98"
-      }, {
-        "name": "Goal Oriented",
-        "percent": "100"
-      }]
-    }
+    },
+    "//": [{
+      "name": "Self-Motivated",
+      "percent": "100"
+    }, {
+      "name": "Persistent",
+      "percent": "96"
+    }, {
+      "name": "Design Thinker",
+      "percent": "100"
+    }, {
+      "name": "Problem Solver",
+      "percent": "100"
+    }, {
+      "name": "Leader",
+      "percent": "98"
+    }, {
+      "name": "Manager",
+      "percent": "100"
+    }, {
+      "name": "Creative",
+      "percent": "98"
+    }, {
+      "name": "Goal Oriented",
+      "percent": "100"
+    }]
   }
 }

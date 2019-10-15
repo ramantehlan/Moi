@@ -66,7 +66,6 @@ fetch('data.json').then((response) => {
       url: profile.url,
       sameAs: profile.sameAs
     }
-    console.log(data)
     var script = document.createElement('script')
     script.type = 'application/ld+json'
     script.innerHTML = JSON.stringify(data)

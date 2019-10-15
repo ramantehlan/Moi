@@ -18,7 +18,7 @@
     <div class="content">
         <div class="content-body">
             <router-view
-                  :about='data.about' 
+                  :home='data.home' 
                   :profile='data.profile' 
                   :document='data.document' 
                   :work='data.work' 
@@ -57,8 +57,8 @@ export default {
   data: () => ({
      render: false,
      routerView: {
-                  name: 'About',
-                  to: '/about'
+                  name: 'work',
+                  to: '/'
                 }
   }),
   watch: {

@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 // Page content
 // import app from '@/routes/app'
-import about from '@/routes/about'
+import home from '@/routes/home'
 import achievements from '@/routes/achievements'
 import blog from '@/routes/blog'
 import contributions from '@/routes/contributions'
@@ -22,8 +22,8 @@ Vue.use(Router)
 const routes = [
   {
     path: '/',
-    name: 'About',
-    component: about
+    name: 'Work',
+    component: work
   },
   {
     path: '/achievements',

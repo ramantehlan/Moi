@@ -1,8 +1,8 @@
 <template>
 <div class="small-content-body">
-              <h1> {{ about.title }} </h1>
-              <p v-html="about.body" class="home-p"> </p>
-              <p v-html="about.signature" class="home-signature"></p>
+              <h1> {{ home.title }} </h1>
+              <p v-html="home.body" class="home-p"> </p>
+              <p v-html="home.signature" class="home-signature"></p>
               <p class="social-media-box">
                  <a :href="'https://twitter.com/intent/tweet?&text=Hey!%20Check%20this%20profile%20out.&tw_p=tweetbutton&url=' + profile.url" target="_blank" class="btn"><i class="fab fa-twitter"></i> Tweet</a>
 
@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  props: ['about','profile','document']
+  props: ['home','profile','document']
 }
 </script>

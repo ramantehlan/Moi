@@ -8,8 +8,8 @@
         <ul class="menu-list" v-if="showMenu">
           <span class="menu-list-span">
               
-            <router-link :to='item.to' v-for="item in menu" :key="item.title" :v-if="item.display" >
-                <li class="menu-list-item" :class="{'menu-list-selected':selectedLink == item.to}" v-on:click="selectLink(item.to)">
+            <router-link :to='item.to' v-for="item in menu" :key="item.title" >
+                <li class="menu-list-item" v-if="item.display" :class="{'menu-list-selected':selectedLink == item.to}" v-on:click="selectLink(item.to)">
                     <i :class="item.icon" v-if="menuIconAllow"></i>{{ item.title }}
                 </li>
             </router-link>
@@ -31,6 +31,7 @@ export default {
   }),
   created: function(){
         this.selectedLink = this.$route.path
+        console.log(this.$route.path)
   },
   methods: {
       menuToggle: function() {
