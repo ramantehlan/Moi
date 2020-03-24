@@ -191,12 +191,13 @@ opacity: 0.75;
 }
 
 .profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 3px;
   margin-top: 40px;
   align-self: center;
   background-color: var(--primary);
+  overflow: hidden;
 }
 
 .profile-pic img {
@@ -204,14 +205,13 @@ opacity: 0.75;
   height: 102%;
   margin-top: -1%;
   margin-left: -1%;
-  border-radius: 200px;
 }
 
 .profile-name {
   text-align: center;
   margin-top: 30px;
   font-family: rock;
-  font-size: 1.45rem;
+  font-size: 1.50rem;
   font-weight: bold;
 }
 
@@ -224,7 +224,7 @@ opacity: 0.75;
   text-align: justify;
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .profile-footer {

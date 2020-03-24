@@ -23,6 +23,7 @@ fetch('data.json').then((response) => {
   application.data = data
   const items = data.document
   const profile = data.profile
+  const themeNumber = data.document.theme
 
   // update title
   document.querySelector('head title').textContent = items['title']
@@ -36,6 +37,10 @@ fetch('data.json').then((response) => {
   document.head.querySelector('meta[name="charset"]').setAttribute('content', items['charset'])
   document.head.querySelector('meta[name="robots"]').setAttribute('content', items['robots'])
   document.head.querySelector('meta[name="google-site-verification"]').setAttribute('content', items['googleSiteVerificatin'])
+
+  for(var key in data.themes[themeNumber]){
+      document.documentElement.style.setProperty('--' + key, data.themes[themeNumber][key]);
+  }
 
   // Complete list can be found here
   // https://schema.org/Person
