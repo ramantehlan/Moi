@@ -1,16 +1,17 @@
 :root {
   /* Color */
-  --primary: #2708a0;
+  --primary: #685e8e;
   --primaryText: #FFFFFF;
-  --background: #efefef;
-  --card: #ffffff;
+  --background: #fff;
+  --card: #f4f4f4;
+  --card-border: #efefef;
   --backgroundText: #000000;
   --backgroundText1: rgba(0, 0, 0, 0.8);
   --backgroundText2: rgba(0, 0, 0, 0.6);
   --backgroundText3: rgba(0, 0, 0, 0.3);
   --cardText: #000000;
   /* Text */
-  --title-size: 20px;
+  --title-size: 18px;
   --subtitle-size: 12px;
   --body-size: 14px;
   --title-spacing: 0.075rem;
@@ -182,6 +183,7 @@ opacity: 0.75;
   width: 100%;
   background-color: var(--card);
   z-index: 101;
+  border-right: 1px solid var(--card-border);
 }
 
 .profile-content {
@@ -193,10 +195,10 @@ opacity: 0.75;
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-top: 40px;
   align-self: center;
-  background-color: var(--primary);
+  background-color: var(--background);
   overflow: hidden;
 }
 
@@ -210,8 +212,7 @@ opacity: 0.75;
 .profile-name {
   text-align: center;
   margin-top: 30px;
-  font-family: rock;
-  font-size: 1.50rem;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -255,9 +256,9 @@ opacity: 0.75;
   background-color: var(--card);
   color: var(--cardText);
   border-radius: var(--border-radius);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+ /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
   margin: 12px auto;
-  border: 1px solid transparent;
+  border: 1px solid var(--card-border);
 }
 
 .card:nth-child(2){
@@ -374,8 +375,9 @@ opacity: 0.75;
   margin: 0px;
   margin-bottom: 20px;
   background-color: var(--card);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);*/
   z-index: 100;
+  border-bottom: 1px solid var(--card-border);
 }
 
 .menu-list {
@@ -387,6 +389,7 @@ opacity: 0.75;
   width: 100%;
   background-color: var(--card);
   color: var(--cardText);
+  border-bottom: 1px solid var(--card-border);
 }
 
 .menu-list-item {
@@ -477,13 +480,13 @@ opacity: 0.75;
   height: 30px;
   line-height: 30px;
   min-width: 10%;
-  background-color: #f2dfdf;
-  color: var(--primaryText);
+  background-color: var(--card);
+  border: 1px solid var(--card-border);
   border-radius: var(--border-radius);
   margin: 2px;
   text-align: center;
-  padding-left: 6px;
-  padding-right: 6px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .small-card-holder {
@@ -498,10 +501,11 @@ opacity: 0.75;
   background-color: var(--card);
   color: var(--cardText);
   border-radius: var(--border-radius);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
   margin-left: 6px;
   margin-right: 6px;
   margin-top: 12px;
+  border: 1px solid var(--card-border);
   padding: 15px;
   min-width: 20%;
   cursor: pointer;
@@ -510,6 +514,7 @@ opacity: 0.75;
 
 .small-card:hover{
   background-color: var(--primary);
+  border:1px solid var(--primary);
   color: var(--primaryText);
 }
 
@@ -534,13 +539,13 @@ opacity: 0.75;
 @media only screen and (min-width: 800px) and (min-height: 450px) {
   .profile {
     width: 30%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);*/
     position: fixed;
     height: 100%;
   }
 
   .content{
-    margin-top: 10px;
+    margin-top: 40px;
   }
 
   .menu {
@@ -549,10 +554,11 @@ opacity: 0.75;
     width: 70%;
     background-color: var(--background);
     box-shadow: none;
+    border:none;
   }
 
   .menu-list {
-    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.12), 3px 1px 2px rgba(0, 0, 0, 0.24);
+    /*box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.12), 3px 1px 2px rgba(0, 0, 0, 0.24);*/
   }
 
   .menu-icon:hover {
@@ -585,9 +591,9 @@ opacity: 0.75;
 
 @media only screen and (min-width: 1200px) {
   :root{
-    --title-size: 21px;
-    --subtitle-size: 13px;
-    --body-size: 15px;
+    --title-size: 18px;
+    --subtitle-size: 14px;
+    --body-size: 14px;
   }
 
   .profile {
@@ -600,7 +606,7 @@ opacity: 0.75;
   }
 
   .content{
-    margin-top: 30px;
+    margin-top: 40px;
   }
 
   .small-content-body{
@@ -614,6 +620,7 @@ opacity: 0.75;
     height: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
+    border:none;
   }
 
   .menu-control {
@@ -626,6 +633,7 @@ opacity: 0.75;
     display: block;
     box-shadow: none;
     background: none;
+    border: none;
   }
 
   .menu-list-span {

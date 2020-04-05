@@ -2,9 +2,7 @@
 <div id="view" >
   
   <!-- Profile Box  -->
-  <div v-if="render">
-    <Profile :profile='data.profile' ></Profile>
-  </div>
+  <Profile :profile='data.profile' v-if="render"></Profile>
   
   <div v-else>
     Loading...

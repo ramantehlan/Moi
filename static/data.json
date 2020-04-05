@@ -20,8 +20,8 @@
   "themes":[
     {
       "primary": "#2708a0",
-      "background": "#efefef",
-      "card": "#ffffff",
+      "background": "#FFF",
+      "card": "#f9f9f9",
       "primaryText": "#FFFFFF",
       "backgroundText": "#000000",
       "backgroundText1": "rgba(0, 0, 0, 0.8)",
@@ -151,7 +151,7 @@
     ],
     "link": [{
       "name": "resume",
-      "url": "https://drive.google.com/file/d/10aVeMguoBKYiHypRoKK-VxfCa1PvVb3d/view?usp=sharing",
+      "url": "",
       "icon": "fas fa-file",
       "label": "Résumé"
     }, {
@@ -322,7 +322,7 @@
     "complete": true
   }],
   "contributions": [{
-    "title": "Yogdaan/suraksha",
+    "title": "Private",
     "url": "https://github.com/yogdaan/suraksha/commits?author=Elon musk"
   }],
   "communities": [{
@@ -486,7 +486,7 @@
     "icon": "far fa-circle"
   }],
   "skills": {
-    "color": ["#e67e22;", "#4288d0;", "#035E7B", "#525252;", "#E5128D;", "#2ecc71;", "#3498db;", "#b6c649;" ,"#4288d0;"],
+    "color": ["", "", "", "", "", "", "", "" ,""],
     "title": ["Frontend", "Backend", "Framework/Library", "DevOps", "Database", "Software/tool", "Mobile", "Hardware" ,"Soft Skills"],
     "data": {
       "0": [{
