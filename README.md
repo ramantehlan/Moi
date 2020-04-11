@@ -25,6 +25,9 @@ Moe is responsive with multiple themes. It uses a single JSON file to fetch data
 
 > Moi means "me" in french.
 
+[Live Example](https://ramantehlan.github.io/Moi)
+
+
 ## Usage
 
 To use this template for your own personal site, you can follow steps given below:
@@ -179,21 +182,6 @@ issues section. It will really help any one working on the development.
 
 Star this project, use it, or tell your friends about it. It will really help.
 
-# Gallery
-
-<p>
-<img src="https://user-images.githubusercontent.com/29037312/66285070-987e9500-e8e8-11e9-8440-f2bed984b190.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285072-99172b80-e8e8-11e9-99af-c2aa78d34ecd.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285073-99172b80-e8e8-11e9-9f44-8e6ae3398fc2.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285074-99afc200-e8e8-11e9-9d60-69f5e89dc011.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285075-99afc200-e8e8-11e9-958e-3cedaa684851.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285077-99afc200-e8e8-11e9-8bfa-747822fb32d8.png" width="430">
-
-<img src="https://user-images.githubusercontent.com/29037312/66285078-9a485880-e8e8-11e9-90e3-9ec8813da708.png" width="430">
-<img src="https://user-images.githubusercontent.com/29037312/66285079-9a485880-e8e8-11e9-8f39-868a7c575a26.png" width="430">
-</p>
-
- [Live Example](https://ramantehlan.github.io)
 
 ## License
 GNU General Public License v3.0

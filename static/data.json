@@ -9,7 +9,7 @@
     "robots": "INDEX , FOLLOW",
     "googleSiteVerificatin": "aAh3TeaoRYBSS0Wf8WP8EyRV8dV1d6APMbVhmMjnLSk",
     "googleAnalyticsId": "UA-135548412-1",
-    "theme": 0
+    "theme": 1
   },
   "og": {
     "title": "Official Page of Elon musk",
@@ -18,21 +18,11 @@
     "image": "https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg"
   },
   "themes":[
-    {
-      "primary": "#2708a0",
-      "background": "#FFF",
-      "card": "#f9f9f9",
-      "primaryText": "#FFFFFF",
-      "backgroundText": "#000000",
-      "backgroundText1": "rgba(0, 0, 0, 0.8)",
-      "backgroundText2": "rgba(0, 0, 0, 0.6)",
-      "backgroundText3": "rgba(0, 0, 0, 0.3)",
-      "cardText": "#000000"
-    },
      {
       "primary": "#00e070",
       "background": "#003e1f",
       "card": "#004f27",
+      "card-border": "#00e070",
       "primaryText": "#FFFFFF",
       "backgroundText": "#ffffff",
       "backgroundText1": "rgba(255, 255, 255, 0.9)",
@@ -41,15 +31,15 @@
       "cardText": "#ffffff"
     },
     {
-      "primary": "#f252df",
-      "background": "#000045",
-      "card": "#000085",
-      "primaryText": "#FFFFFF",
-      "backgroundText": "#ffffff",
-      "backgroundText1": "rgba(255, 255, 255, 0.9)",
-      "backgroundText2": "rgba(255, 255, 255, 0.7)",
-      "backgroundText3": "rgba(255, 255, 255, 0.5)",
-      "cardText": "#ffffff"
+      "primary": "#231123",
+      "background": "#eff7ff",
+      "card": "#fff",
+      "primaryText": "#000",
+      "backgroundText": "#000",
+      "backgroundText1": "#000",
+      "backgroundText2": "#558c8c",
+      "backgroundText3": "#000",
+      "cardText": "#000"
     },
     {
      "primary": "#004ed7",
