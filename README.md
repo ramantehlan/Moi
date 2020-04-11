@@ -15,7 +15,6 @@ A simple, light and highly customizable personal site template.
  	- [Requirement](#requirement)
 	- [Installation](#installation)
 4. [Contribution](#Contribution)
-5. [Gallery](#gallery)
 5. [License](#license)
 
 ## About

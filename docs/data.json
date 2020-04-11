@@ -18,6 +18,18 @@
     "image": "https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg"
   },
   "themes":[
+      {
+      "primary": "#030226",
+      "background": "#f0faff",
+      "card": "#fff",
+      "card-border": "#eaeaea",
+      "primaryText": "#FFFFFF",
+      "backgroundText": "#000000",
+      "backgroundText-1": "rgba(0, 0, 0, 0.8)",
+      "backgroundText-2": "rgba(0, 0, 0, 0.6)",
+      "backgroundText-3": "rgba(0, 0, 0, 0.3)",
+      "cardText": "#000000"
+    },
      {
       "primary": "#685e8e",
       "background": "#fff",
