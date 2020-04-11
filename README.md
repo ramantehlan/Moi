@@ -34,7 +34,7 @@ To use this template for your own personal site, you can follow steps given belo
 
 1. Fork this repository.
 2. Rename your fork to `YOURUSERNAME.github.io`.
-3. Update `data.json` file with your information.
+3. Update `data.json` file in `docs` and in `static`.
 
 You also need to go to the *settings*, then *GitHub Pages* section and select *source* as master.
 
