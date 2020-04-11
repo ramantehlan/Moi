@@ -18,10 +18,10 @@
     "image": "https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg"
   },
   "themes":[
-      {
-      "primary": "#030226",
-      "background": "#f0faff",
-      "card": "#fff",
+ {
+      "primary": "#272932",
+      "background": "#fff",
+      "card": "#f2f7f9",
       "card-border": "#eaeaea",
       "primaryText": "#FFFFFF",
       "backgroundText": "#000000",
@@ -31,21 +31,9 @@
       "cardText": "#000000"
     },
      {
-      "primary": "#685e8e",
-      "background": "#fff",
-      "card": "#FAFBFC",
-      "card-border": "#eaeaea",
-      "primaryText": "#FFFFFF",
-      "backgroundText": "#000000",
-      "backgroundText1": "rgba(0,0,0, 0.9)",
-      "backgroundText2": "rgba(0,0,0, 0.7)",
-      "backgroundText3": "rgba(0,0,0, 0.5)",
-      "cardText": "#00000"
-    },{
       "primary": "#00e070",
       "background": "#003e1f",
       "card": "#004f27",
-      "card-border": "#00e070",
       "primaryText": "#FFFFFF",
       "backgroundText": "#ffffff",
       "backgroundText1": "rgba(255, 255, 255, 0.9)",
@@ -54,17 +42,16 @@
       "cardText": "#ffffff"
     },
     {
-     "primary": "#004ed7",
-     "background": "#000045",
-     "card": "#233f82",
-     "primaryText": "#FFFFFF",
-     "backgroundText": "#ffffff",
-     "backgroundText1": "rgba(255, 255, 255, 0.9)",
-     "backgroundText2": "rgba(255, 255, 255, 0.7)",
-     "backgroundText3": "rgba(255, 255, 255, 0.5)",
-     "cardText": "#ffffff"
+      "primary": "#f252df",
+      "background": "#1b264f",
+      "card": "#233f82",
+      "primaryText": "#FFFFFF", "backgroundText": "#ffffff",
+      "backgroundText1": "rgba(255, 255, 255, 0.9)",
+      "backgroundText2": "rgba(255, 255, 255, 0.7)",
+      "backgroundText3": "rgba(255, 255, 255, 0.5)",
+      "cardText": "#ffffff"
     }
-  ]
+        ]
   ,
   "menu": [{
     "title": "home",
