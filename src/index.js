@@ -24,6 +24,7 @@ fetch('data.json').then((response) => {
   const items = data.document
   const profile = data.profile
   const themeNumber = data.document.theme
+  const og = data.og
 
   // update title
   document.querySelector('head title').textContent = items['title']
@@ -37,6 +38,13 @@ fetch('data.json').then((response) => {
   document.head.querySelector('meta[name="charset"]').setAttribute('content', items['charset'])
   document.head.querySelector('meta[name="robots"]').setAttribute('content', items['robots'])
   document.head.querySelector('meta[name="google-site-verification"]').setAttribute('content', items['googleSiteVerificatin'])
+  document.head.querySelector('meta[property="og:title"]').setAttribute('content', og['title'])
+  document.head.querySelector('meta[name="twitter:title"]').setAttribute('content', og['title'])
+  document.head.querySelector('meta[property="og:url"]').setAttribute('content', og['url'])
+  document.head.querySelector('meta[name="twitter:image"]').setAttribute('content', og['image'])
+  document.head.querySelector('meta[property="og:image"]').setAttribute('content', og['image'])
+  document.head.querySelector('meta[name="twitter:creator"]').setAttribute('content', og['creator'])
+  document.head.querySelector('meta[name="twitter:description"]').setAttribute('content', items['description'])
 
   for(var key in data.themes[themeNumber]){
       document.documentElement.style.setProperty('--' + key, data.themes[themeNumber][key]);
