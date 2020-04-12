@@ -1,4 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{HTTP_HOST} ^www\.*\.com$
-RewriteRule ^/?$ "http\:\/\/*\.com\/" [R=301,L]
